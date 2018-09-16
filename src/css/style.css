@@ -1,0 +1,213 @@
+body {
+  font-family: "Circe", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #fbebea; }
+
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+.container {
+  width: calc(100% - 40px);
+  margin: 0 auto; }
+
+.promo {
+  height: 40px;
+  background-color: #fff; }
+
+.promo__logo {
+  color: #000;
+  font-family: "Playfair Display";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 40px; }
+
+.promo__phone {
+  display: none; }
+
+.main-nav {
+  display: none; }
+  .main-nav__list {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .main-nav__link {
+    text-decoration: none; }
+
+@font-face {
+  font-family: "Playfair display";
+  src: url("../fonts/Playfair Display/PlayfairDisplay-Regular.woff2") format("woff2");
+  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.woff") format("woff");*/
+  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.tff") format("ttf");*/
+  font-style: normal; }
+
+@font-face {
+  font-family: "Playfair display";
+  src: url("../fonts/Playfair Display/PlayfairDisplay-Bold.woff2") format("woff2");
+  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.woff") format("woff");*/
+  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.tff") format("ttf");*/
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Playfair display";
+  src: url("../fonts/Playfair Display/PlayfairDisplay-BoldItalic.woff2") format("woff2");
+  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.woff") format("woff");*/
+  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.tff") format("ttf");*/
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/Circe/Circe-Regular.woff2") format("woff2");
+  /*src: url("../fonts/Circe/Circe-Regular.woff") format("woff");*/
+  /*src: url("../fonts/Circe/Circe-Regular.tff") format("ttf");*/
+  font-style: normal; }
+
+@font-face {
+  font-family: "Intro Script R";
+  src: url("../fonts/Intro script R/IntroScriptR-Regular.woff2") format("woff2");
+  /*url("../fonts/Intro script R/Intro script R.woff") format("woff");*/
+  /*url("../fonts/Intro script R/Intro script R.tff") format("ttf");*/
+  font-style: normal; }
+
+.page-header {
+  /*height: 500px;*/
+  background-image: url(../img/main-cake-bg.png);
+  background-repeat: no-repeat;
+  background-position: -20px -180px;
+  background-size: 110%; }
+  .page-header__title {
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    padding-top: 134px;
+    padding-bottom: 23px; }
+  .page-header__descr {
+    font-family: 'Intro Script R', serif;
+    display: block;
+    width: 133px;
+    font-size: 22px;
+    margin: 0 auto;
+    text-align: center; }
+  .page-header__specsbox {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column; }
+
+.specs__text {
+  position: relative;
+  padding-left: 42px;
+  padding-top: 30px; }
+  .specs__text:first-child:before {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 33px;
+    background-image: url(../img/icons/leaf-icon.png);
+    left: 0;
+    top: 23px; }
+  .specs__text:last-child:before {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 33px;
+    background-image: url(../img/icons/box-icon.png);
+    left: 0;
+    top: 28px; }
+
+.choose__btn {
+  color: #fff;
+  background-color: #f50049;
+  border-radius: 25px;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  display: block;
+  width: 226px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-decoration: none; }
+
+.cakes__title {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Playfair display', serif;
+  margin-top: 50px;
+  margin-bottom: 30px; }
+
+.cakes_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.cakes__item {
+  display: block;
+  width: 280px;
+  height: 120px;
+  padding: 13px;
+  text-decoration: none;
+  color: #000;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 10px; }
+
+.cakes__item:first-child {
+  background-image: url(../img/classic-cake.jpg);
+  background-position: 50% 10%; }
+
+.cakes__item:nth-child(2) {
+  background-image: url(../img/muss-cake.jpg); }
+
+.cakes__item:nth-child(3) {
+  background-image: url(../img/wedding-cake.jpg); }
+
+.cakes__item:nth-child(4) {
+  background-image: url(../img/men-cake.jpg); }
+
+.cakes__item:nth-child(5) {
+  background-image: url(../img/women-cake.jpg); }
+
+.cakes__item:last-child {
+  background-image: url(../img/children-cake.jpg); }
+
+.cakes__item span {
+  font-size: 10px;
+  opacity: 0.7; }
+
+.personal__title {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Playfair display', serif;
+  margin-top: 50px;
+  margin-bottom: 15px; }
+
+.personal__text {
+  display: block;
+  font-family: 'Intro Script R', serif;
+  font-size: 22px;
+  text-align: center; }
+
+.personal-card {
+  max-width: 400px;
+  height: 430px;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 10px; }
+  .personal-card__title {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    color: #f50049;
+    padding-left: 60px; }

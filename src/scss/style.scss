@@ -1,0 +1,230 @@
+$main-font: "Circe", sans-serif;
+$main-fz: 14px;
+$main-bgс: #fff;
+
+
+
+@mixin btn {
+  color: #fff;
+  background-color: #f50049;
+  border-radius: 25px;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+}
+
+@mixin section-title {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Playfair display', serif;
+  margin-top: 50px;
+}
+
+@mixin title-subtext {
+  display: block;
+  font-family: 'Intro Script R', serif;
+  font-size: 22px;
+  text-align: center;
+}
+
+@mixin before-element {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-family: $main-font;
+  font-size: $main-fz;
+  box-sizing: border-box;
+  background-color: #fbebea;
+}
+
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+.promo {
+  height: 40px;
+  background-color: #fff;
+}
+
+.promo__logo {
+  color: #000;
+  font-family: "Playfair Display";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.promo__phone {
+  display: none;
+}
+
+@import 'main-nav';
+@import 'fonts';
+
+.page-header {
+  /*height: 500px;*/
+  background-image: url(../img/main-cake-bg.png);
+  background-repeat: no-repeat;
+  background-position: -20px -180px;
+  background-size: 110%;
+  
+
+  &__title {
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    padding-top: 134px;
+    padding-bottom: 23px;
+  }
+
+  &__descr {
+    font-family: 'Intro Script R', serif;
+    display: block;
+    width: 133px;
+    font-size: 22px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__specsbox {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.specs__text {
+  position: relative;
+  padding-left: 42px;
+  padding-top: 30px;
+
+  &:first-child:before {
+    @include before-element;
+    width: 33px;
+    height: 33px;
+    background-image: url(../img/icons/leaf-icon.png);
+    left: 0;
+    top: 23px;
+  }
+
+   &:last-child:before {
+    @include before-element;
+    width: 33px;
+    height: 33px;
+    background-image: url(../img/icons/box-icon.png);
+    left: 0;
+    top: 28px;
+  }
+
+}
+
+.choose__btn {
+  @include btn;
+  display: block;
+  width: 226px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+
+.cakes {
+  &__title {
+    @include section-title;
+    margin-bottom: 30px;
+  }
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: block;
+    width: 280px;
+    height: 120px;
+    padding: 13px;
+    text-decoration: none;
+    color: #000;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  &__item:first-child {
+    background-image: url(../img/classic-cake.jpg);
+    background-position: 50% 10%;
+  }
+
+  &__item:nth-child(2) {
+    background-image: url(../img/muss-cake.jpg);
+  }
+
+  &__item:nth-child(3) {
+    background-image: url(../img/wedding-cake.jpg);
+  }
+
+  &__item:nth-child(4) {
+    background-image: url(../img/men-cake.jpg);
+  }
+
+  &__item:nth-child(5) {
+    background-image: url(../img/women-cake.jpg);
+  }
+
+  &__item:last-child {
+    background-image: url(../img/children-cake.jpg);
+  }
+  
+  &__item span {
+    font-size: 10px;
+    opacity: 0.7;
+  }
+}
+
+.personal {
+
+  &__title {
+    @include section-title;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    @include title-subtext;
+  }
+
+}
+
+.personal-card {
+  max-width: 400px;
+  height: 430px;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 10px;
+
+  &__title {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    color: #f50049;
+    padding-left: 60px;
+  }
+}
