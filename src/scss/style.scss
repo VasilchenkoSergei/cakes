@@ -5,6 +5,7 @@ $main-bgс: #fff;
 
 
 @mixin btn {
+  display: block;
   color: #fff;
   background-color: #f50049;
   border-radius: 25px;
@@ -12,7 +13,9 @@ $main-bgс: #fff;
   line-height: 50px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 auto;
   font-size: 13px;
+  border: none;
 }
 
 @mixin section-title {
@@ -34,6 +37,8 @@ $main-bgс: #fff;
   position: absolute;
   background-repeat: no-repeat;
 }
+
+@import 'fonts';
 
 body {
   font-family: $main-font;
@@ -71,160 +76,13 @@ body {
 }
 
 @import 'main-nav';
-@import 'fonts';
 
-.page-header {
-  /*height: 500px;*/
-  background-image: url(../img/main-cake-bg.png);
-  background-repeat: no-repeat;
-  background-position: -20px -180px;
-  background-size: 110%;
-  
+@import 'header';
 
-  &__title {
-    width: 180px;
-    margin: 0 auto;
-    text-align: center;
-    color: #000;
-    font-family: "Playfair Display", serif;
-    font-size: 40px;
-    padding-top: 134px;
-    padding-bottom: 23px;
-  }
+@import 'cakes-section';
 
-  &__descr {
-    font-family: 'Intro Script R', serif;
-    display: block;
-    width: 133px;
-    font-size: 22px;
-    margin: 0 auto;
-    text-align: center;
-  }
+@import 'personal-section';
 
-  &__specsbox {
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-  }
+@import 'reviews-section';
 
-}
-
-.specs__text {
-  position: relative;
-  padding-left: 42px;
-  padding-top: 30px;
-
-  &:first-child:before {
-    @include before-element;
-    width: 33px;
-    height: 33px;
-    background-image: url(../img/icons/leaf-icon.png);
-    left: 0;
-    top: 23px;
-  }
-
-   &:last-child:before {
-    @include before-element;
-    width: 33px;
-    height: 33px;
-    background-image: url(../img/icons/box-icon.png);
-    left: 0;
-    top: 28px;
-  }
-
-}
-
-.choose__btn {
-  @include btn;
-  display: block;
-  width: 226px;
-  margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 50px;
-  text-decoration: none;
-}
-
-.cakes {
-  &__title {
-    @include section-title;
-    margin-bottom: 30px;
-  }
-
-  &_list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  &__item {
-    display: block;
-    width: 280px;
-    height: 120px;
-    padding: 13px;
-    text-decoration: none;
-    color: #000;
-    background-repeat: no-repeat;
-    background-position: 50% 30%;
-    background-size: cover;
-    margin: 0 auto;
-    margin-top: 10px;
-  }
-
-  &__item:first-child {
-    background-image: url(../img/classic-cake.jpg);
-    background-position: 50% 10%;
-  }
-
-  &__item:nth-child(2) {
-    background-image: url(../img/muss-cake.jpg);
-  }
-
-  &__item:nth-child(3) {
-    background-image: url(../img/wedding-cake.jpg);
-  }
-
-  &__item:nth-child(4) {
-    background-image: url(../img/men-cake.jpg);
-  }
-
-  &__item:nth-child(5) {
-    background-image: url(../img/women-cake.jpg);
-  }
-
-  &__item:last-child {
-    background-image: url(../img/children-cake.jpg);
-  }
-  
-  &__item span {
-    font-size: 10px;
-    opacity: 0.7;
-  }
-}
-
-.personal {
-
-  &__title {
-    @include section-title;
-    margin-bottom: 15px;
-  }
-
-  &__text {
-    @include title-subtext;
-  }
-
-}
-
-.personal-card {
-  max-width: 400px;
-  height: 430px;
-  background-color: #fff;
-  padding: 20px;
-  margin-top: 10px;
-
-  &__title {
-    font-family: "Playfair Display", serif;
-    font-size: 16px;
-    color: #f50049;
-    padding-left: 60px;
-  }
-}
+@import 'about-section';

@@ -1,3 +1,39 @@
+@font-face {
+  font-family: "Playfair display";
+  src: url("../fonts/Playfair Display/PlayfairDisplay-Regular.woff2") format("woff2");
+  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.woff") format("woff");*/
+  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.tff") format("ttf");*/
+  font-style: normal; }
+
+@font-face {
+  font-family: "Playfair display";
+  src: url("../fonts/Playfair Display/PlayfairDisplay-Bold.woff2") format("woff2");
+  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.woff") format("woff");*/
+  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.tff") format("ttf");*/
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Playfair display";
+  src: url("../fonts/Playfair Display/PlayfairDisplay-BoldItalic.woff2") format("woff2");
+  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.woff") format("woff");*/
+  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.tff") format("ttf");*/
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/Circe/Circe-Regular.woff2") format("woff2");
+  /*src: url("../fonts/Circe/Circe-Regular.woff") format("woff");*/
+  /*src: url("../fonts/Circe/Circe-Regular.tff") format("ttf");*/
+  font-style: normal; }
+
+@font-face {
+  font-family: "Intro Script R";
+  src: url("../fonts/Intro script R/IntroScriptR-Regular.woff2") format("woff2");
+  /*url("../fonts/Intro script R/Intro script R.woff") format("woff");*/
+  /*url("../fonts/Intro script R/Intro script R.tff") format("ttf");*/
+  font-style: normal; }
+
 body {
   font-family: "Circe", sans-serif;
   font-size: 14px;
@@ -37,44 +73,7 @@ body {
   .main-nav__link {
     text-decoration: none; }
 
-@font-face {
-  font-family: "Playfair display";
-  src: url("../fonts/Playfair Display/PlayfairDisplay-Regular.woff2") format("woff2");
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.woff") format("woff");*/
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.tff") format("ttf");*/
-  font-style: normal; }
-
-@font-face {
-  font-family: "Playfair display";
-  src: url("../fonts/Playfair Display/PlayfairDisplay-Bold.woff2") format("woff2");
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.woff") format("woff");*/
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.tff") format("ttf");*/
-  font-weight: bold; }
-
-@font-face {
-  font-family: "Playfair display";
-  src: url("../fonts/Playfair Display/PlayfairDisplay-BoldItalic.woff2") format("woff2");
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.woff") format("woff");*/
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.tff") format("ttf");*/
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: "Circe";
-  src: url("../fonts/Circe/Circe-Regular.woff2") format("woff2");
-  /*src: url("../fonts/Circe/Circe-Regular.woff") format("woff");*/
-  /*src: url("../fonts/Circe/Circe-Regular.tff") format("ttf");*/
-  font-style: normal; }
-
-@font-face {
-  font-family: "Intro Script R";
-  src: url("../fonts/Intro script R/IntroScriptR-Regular.woff2") format("woff2");
-  /*url("../fonts/Intro script R/Intro script R.woff") format("woff");*/
-  /*url("../fonts/Intro script R/Intro script R.tff") format("ttf");*/
-  font-style: normal; }
-
 .page-header {
-  /*height: 500px;*/
   background-image: url(../img/main-cake-bg.png);
   background-repeat: no-repeat;
   background-position: -20px -180px;
@@ -124,6 +123,7 @@ body {
     top: 28px; }
 
 .choose__btn {
+  display: block;
   color: #fff;
   background-color: #f50049;
   border-radius: 25px;
@@ -131,7 +131,9 @@ body {
   line-height: 50px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 auto;
   font-size: 13px;
+  border: none;
   display: block;
   width: 226px;
   margin: 0 auto;
@@ -204,10 +206,237 @@ body {
   max-width: 400px;
   height: 430px;
   background-color: #fff;
-  padding: 20px;
+  padding: 18px;
   margin-top: 10px; }
   .personal-card__title {
     font-family: "Playfair Display", serif;
     font-size: 16px;
     color: #f50049;
-    padding-left: 60px; }
+    line-height: 16px;
+    margin-bottom: 22px; }
+  .personal-card__title span {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #f50049;
+    padding-right: 13px; }
+
+.cake-box {
+  height: 280px;
+  margin: 0 auto; }
+  .cake-box__img-wrap {
+    margin: 0 auto;
+    width: 244px;
+    height: 110px; }
+  .cake-box__img {
+    width: 100%;
+    height: 110px; }
+  .cake-box__title {
+    margin-top: 40px;
+    margin-bottom: 9px;
+    font-size: 16px;
+    font-weight: bold; }
+  .cake-box__text {
+    margin-bottom: 17px; }
+  .cake-box__size {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center; }
+
+.personal-card__btn {
+  display: block;
+  color: #fff;
+  background-color: #f50049;
+  border-radius: 25px;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 13px;
+  border: none;
+  width: 180px;
+  margin-top: 23px; }
+
+.size-box {
+  height: 280px;
+  margin: 0 auto; }
+  .size-box__img-wrap {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px; }
+  .size-box__img {
+    display: block;
+    margin: 0 auto; }
+  .size-box__title {
+    text-align: center; }
+
+.appearance-box {
+  height: 280px;
+  margin: 0 auto; }
+  .appearance-box__img-wrap {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px; }
+  .appearance-box__img {
+    display: block;
+    margin: 0 auto;
+    width: 100%; }
+  .appearance-box__title {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 7px; }
+  .appearance-box__size {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center; }
+
+.personal-card:last-child {
+  height: 360px; }
+
+.personal-card__title-final {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  margin-bottom: 14px; }
+
+.personal-card__parametr {
+  display: block;
+  font-family: 'Intro Script R', serif;
+  font-size: 22px;
+  text-align: center;
+  margin: 0 auto;
+  text-align: center;
+  color: #f50049; }
+
+.personal-card__choice {
+  width: 244px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 12px; }
+
+.reviews__title {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Playfair display', serif;
+  margin-top: 50px;
+  margin-top: 48px;
+  margin-bottom: 22px; }
+
+.reviews-item {
+  width: 230px;
+  height: 180px;
+  margin: 0 auto; }
+  .reviews-item__img-wrap {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto; }
+  .reviews-item__img {
+    width: 100%;
+    height: 100%; }
+  .reviews-item__name {
+    display: block;
+    margin-top: 7px;
+    text-align: center;
+    font-weight: bold; }
+  .reviews-item__skills {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 8px; }
+  .reviews-item__text {
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center; }
+
+.about__title {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Playfair display', serif;
+  margin-top: 50px;
+  margin-top: 48px;
+  margin-bottom: 22px; }
+
+.about__container {
+  position: relative; }
+
+.about__img-wrap {
+  width: 155px;
+  height: 155px; }
+
+.about__img {
+  width: 100%;
+  height: 100%; }
+
+.about__socials {
+  height: 140px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 55px;
+  top: 55px; }
+
+.about__subtitle {
+  font-family: 'Intro Script R', serif;
+  font-size: 22px;
+  margin-top: 15px; }
+
+.about__quotes-wrap {
+  width: 26px;
+  height: 17px;
+  margin: 0 auto;
+  margin-top: 40px; }
+
+.about__quotes {
+  width: 100%; }
+
+.about__blockquote {
+  font-family: "Playfair Display";
+  font-size: 13px;
+  font-style: italic;
+  text-align: center;
+  margin: 20px auto; }
+
+.about__sign-wrap {
+  width: 64px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 50px; }
+
+.about__sign {
+  width: 100%; }
+
+.socials__item {
+  width: 36px;
+  height: 36px; }
+
+.socials__link {
+  display: block;
+  width: 36px;
+  height: 36px;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.instagram-link {
+  background-image: url(../img/icons/inst-icon.png); }
+
+.vk-link {
+  background-image: url(../img/icons/vk-icon.png); }
+
+.twit-link {
+  background-image: url(../img/icons/twit-icon.png); }
+
+.subtext__title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px; }

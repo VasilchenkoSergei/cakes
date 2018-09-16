@@ -1,0 +1,159 @@
+.personal {
+
+  &__title {
+    @include section-title;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    @include title-subtext;
+  }
+
+}
+
+.personal-card {
+  max-width: 400px;
+  height: 430px;
+  background-color: #fff;
+  padding: 18px;
+  margin-top: 10px;
+
+  &__title {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    color: #f50049;
+    line-height: 16px;
+    margin-bottom: 22px;
+  }
+
+  &__title span {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #f50049;
+    padding-right: 13px;
+  }
+}
+
+.cake-box {
+  height: 280px;
+  margin: 0 auto;
+
+  &__img-wrap {
+    margin: 0 auto;
+    width: 244px;
+    height: 110px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 110px;
+  }
+
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 9px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__text {
+    margin-bottom: 17px;
+  }
+
+  &__size {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.personal-card__btn {
+  @include btn;
+  width: 180px;
+  margin-top: 23px;
+}
+
+.size-box {
+  height: 280px;
+  margin: 0 auto;
+
+  &__img-wrap {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+  }
+}
+
+.appearance-box {
+  height: 280px;
+  margin: 0 auto;
+
+  &__img-wrap {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 7px;
+  }
+
+  &__size {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.personal-card {
+
+  &:last-child {
+    height: 360px;
+  }
+
+  &__title-final {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  &__parametr {
+    @include title-subtext;
+    margin: 0 auto;
+    text-align: center;
+    color: #f50049;
+  }
+
+  &__choice {
+  width: 244px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+}

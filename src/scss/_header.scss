@@ -1,0 +1,69 @@
+.page-header {
+  background-image: url(../img/main-cake-bg.png);
+  background-repeat: no-repeat;
+  background-position: -20px -180px;
+  background-size: 110%;
+  
+
+  &__title {
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    padding-top: 134px;
+    padding-bottom: 23px;
+  }
+
+  &__descr {
+    font-family: 'Intro Script R', serif;
+    display: block;
+    width: 133px;
+    font-size: 22px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__specsbox {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.specs__text {
+  position: relative;
+  padding-left: 42px;
+  padding-top: 30px;
+
+  &:first-child:before {
+    @include before-element;
+    width: 33px;
+    height: 33px;
+    background-image: url(../img/icons/leaf-icon.png);
+    left: 0;
+    top: 23px;
+  }
+
+   &:last-child:before {
+    @include before-element;
+    width: 33px;
+    height: 33px;
+    background-image: url(../img/icons/box-icon.png);
+    left: 0;
+    top: 28px;
+  }
+
+}
+
+.choose__btn {
+  @include btn;
+  display: block;
+  width: 226px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-decoration: none;
+}

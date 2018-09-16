@@ -1,0 +1,56 @@
+.cakes {
+  &__title {
+    @include section-title;
+    margin-bottom: 30px;
+  }
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: block;
+    width: 280px;
+    height: 120px;
+    padding: 13px;
+    text-decoration: none;
+    color: #000;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  &__item:first-child {
+    background-image: url(../img/classic-cake.jpg);
+    background-position: 50% 10%;
+  }
+
+  &__item:nth-child(2) {
+    background-image: url(../img/muss-cake.jpg);
+  }
+
+  &__item:nth-child(3) {
+    background-image: url(../img/wedding-cake.jpg);
+  }
+
+  &__item:nth-child(4) {
+    background-image: url(../img/men-cake.jpg);
+  }
+
+  &__item:nth-child(5) {
+    background-image: url(../img/women-cake.jpg);
+  }
+
+  &__item:last-child {
+    background-image: url(../img/children-cake.jpg);
+  }
+  
+  &__item span {
+    font-size: 10px;
+    opacity: 0.7;
+  }
+}

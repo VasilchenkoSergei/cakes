@@ -1,0 +1,46 @@
+.reviews {
+  &__title {
+    @include section-title;
+    margin-top: 48px;
+    margin-bottom: 22px;
+  }
+
+  &-item {
+    width: 230px;
+    height: 180px;
+    margin: 0 auto;
+
+    &__img-wrap {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__name {
+      display: block;
+      margin-top: 7px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    &__skills {
+      display: block;
+      text-align: center;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    &__text {
+      margin: 0 auto;
+      font-size: 12px;
+      text-align: center;
+      
+    }
+  }
+}
+
