@@ -1,0 +1,22 @@
+.clientcare {
+  height: 300px;
+  background-image: url(../img/advantage-cake1.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 150px;
+  background-size: cover;
+  
+  
+
+  &__title {
+    @include section-title;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    display: block;
+    font-family: $intro-font;
+    font-size: 22px;
+    margin-bottom: 7px;
+    text-align: center;
+  }
+}

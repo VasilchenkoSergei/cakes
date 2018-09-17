@@ -1,0 +1,47 @@
+.advantages {
+
+  &__title {
+    @include section-title;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-family: $intro-font;
+    font-size: 22px;
+    margin-bottom: 13px;
+    text-align: center;
+  }
+
+  &-block {
+    background-color: #fff;
+    margin: 0 -20px;
+    text-align: center;
+    padding-top: 86px;
+    position: relative;
+    padding-bottom: 10px;
+
+      &:before {
+        content:'';
+        width: 61px;
+        height: 61px;
+        position: absolute;
+        background-image: url(../img/icons/leaf-icon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        left: 0;
+        right: 0;
+        top: 10px;
+        margin: auto;
+      }
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__text {
+      width: 260px;
+      margin: 0 auto;
+    }
+  }
+}

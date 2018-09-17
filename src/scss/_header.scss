@@ -10,14 +10,14 @@
     margin: 0 auto;
     text-align: center;
     color: #000;
-    font-family: "Playfair Display", serif;
+    font-family: $fair-font;
     font-size: 40px;
     padding-top: 134px;
     padding-bottom: 23px;
   }
 
   &__descr {
-    font-family: 'Intro Script R', serif;
+    font-family: $intro-font;
     display: block;
     width: 133px;
     font-size: 22px;

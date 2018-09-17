@@ -1,6 +1,9 @@
 $main-font: "Circe", sans-serif;
 $main-fz: 14px;
 $main-bgс: #fff;
+$intro-font: 'Intro Script R', sans-serif;
+$fair-font: 'Playfair display', serif;
+$circe-font: 'Circe', serif;
 
 
 
@@ -21,13 +24,13 @@ $main-bgс: #fff;
 @mixin section-title {
   font-size: 24px;
   text-align: center;
-  font-family: 'Playfair display', serif;
-  margin-top: 50px;
+  font-family: $fair-font;
+  margin-top: 45px;
 }
 
 @mixin title-subtext {
   display: block;
-  font-family: 'Intro Script R', serif;
+  font-family: $intro-font;
   font-size: 22px;
   text-align: center;
 }
@@ -65,7 +68,7 @@ body {
 
 .promo__logo {
   color: #000;
-  font-family: "Playfair Display";
+  font-family: $fair-font;
   font-size: 16px;
   font-weight: bold;
   line-height: 40px;
@@ -86,3 +89,7 @@ body {
 @import 'reviews-section';
 
 @import 'about-section';
+
+@import 'advantages-section';
+
+@import 'clientcare-section';

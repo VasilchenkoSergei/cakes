@@ -19,7 +19,7 @@
   margin-top: 10px;
 
   &__title {
-    font-family: "Playfair Display", serif;
+    font-family: $fair-font;
     font-size: 16px;
     color: #f50049;
     line-height: 16px;
@@ -27,7 +27,7 @@
   }
 
   &__title span {
-    font-family: "Playfair Display", serif;
+    font-family: $fair-font;
     font-size: 30px;
     font-weight: bold;
     color: #f50049;
@@ -63,7 +63,7 @@
 
   &__size {
     display: block;
-    font-family: "Playfair Display", serif;
+    font-family: $fair-font;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -120,7 +120,7 @@
 
   &__size {
     display: block;
-    font-family: "Playfair Display", serif;
+    font-family: $fair-font;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -134,7 +134,7 @@
   }
 
   &__title-final {
-    font-family: "Playfair Display", serif;
+    font-family: $fair-font;
     font-size: 22px;
     margin-bottom: 14px;
   }

@@ -55,7 +55,7 @@ body {
 
 .promo__logo {
   color: #000;
-  font-family: "Playfair Display";
+  font-family: "Playfair display", serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 40px; }
@@ -83,12 +83,12 @@ body {
     margin: 0 auto;
     text-align: center;
     color: #000;
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair display", serif;
     font-size: 40px;
     padding-top: 134px;
     padding-bottom: 23px; }
   .page-header__descr {
-    font-family: 'Intro Script R', serif;
+    font-family: "Intro Script R", sans-serif;
     display: block;
     width: 133px;
     font-size: 22px;
@@ -144,8 +144,8 @@ body {
 .cakes__title {
   font-size: 24px;
   text-align: center;
-  font-family: 'Playfair display', serif;
-  margin-top: 50px;
+  font-family: "Playfair display", serif;
+  margin-top: 45px;
   margin-bottom: 30px; }
 
 .cakes_list {
@@ -192,13 +192,13 @@ body {
 .personal__title {
   font-size: 24px;
   text-align: center;
-  font-family: 'Playfair display', serif;
-  margin-top: 50px;
+  font-family: "Playfair display", serif;
+  margin-top: 45px;
   margin-bottom: 15px; }
 
 .personal__text {
   display: block;
-  font-family: 'Intro Script R', serif;
+  font-family: "Intro Script R", sans-serif;
   font-size: 22px;
   text-align: center; }
 
@@ -209,13 +209,13 @@ body {
   padding: 18px;
   margin-top: 10px; }
   .personal-card__title {
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair display", serif;
     font-size: 16px;
     color: #f50049;
     line-height: 16px;
     margin-bottom: 22px; }
   .personal-card__title span {
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair display", serif;
     font-size: 30px;
     font-weight: bold;
     color: #f50049;
@@ -240,7 +240,7 @@ body {
     margin-bottom: 17px; }
   .cake-box__size {
     display: block;
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair display", serif;
     font-size: 18px;
     font-weight: bold;
     text-align: center; }
@@ -290,7 +290,7 @@ body {
     margin-bottom: 7px; }
   .appearance-box__size {
     display: block;
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair display", serif;
     font-size: 18px;
     font-weight: bold;
     text-align: center; }
@@ -299,13 +299,13 @@ body {
   height: 360px; }
 
 .personal-card__title-final {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair display", serif;
   font-size: 22px;
   margin-bottom: 14px; }
 
 .personal-card__parametr {
   display: block;
-  font-family: 'Intro Script R', serif;
+  font-family: "Intro Script R", sans-serif;
   font-size: 22px;
   text-align: center;
   margin: 0 auto;
@@ -324,8 +324,8 @@ body {
 .reviews__title {
   font-size: 24px;
   text-align: center;
-  font-family: 'Playfair display', serif;
-  margin-top: 50px;
+  font-family: "Playfair display", serif;
+  margin-top: 45px;
   margin-top: 48px;
   margin-bottom: 22px; }
 
@@ -358,8 +358,8 @@ body {
 .about__title {
   font-size: 24px;
   text-align: center;
-  font-family: 'Playfair display', serif;
-  margin-top: 50px;
+  font-family: "Playfair display", serif;
+  margin-top: 45px;
   margin-top: 48px;
   margin-bottom: 22px; }
 
@@ -386,7 +386,7 @@ body {
   top: 55px; }
 
 .about__subtitle {
-  font-family: 'Intro Script R', serif;
+  font-family: "Intro Script R", sans-serif;
   font-size: 22px;
   margin-top: 15px; }
 
@@ -400,7 +400,7 @@ body {
   width: 100%; }
 
 .about__blockquote {
-  font-family: "Playfair Display";
+  font-family: "Playfair display", serif;
   font-size: 13px;
   font-style: italic;
   text-align: center;
@@ -440,3 +440,61 @@ body {
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 10px; }
+
+.advantages__title {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Playfair display", serif;
+  margin-top: 45px;
+  margin-bottom: 10px; }
+
+.advantages__subtitle {
+  font-family: "Intro Script R", sans-serif;
+  font-size: 22px;
+  margin-bottom: 13px;
+  text-align: center; }
+
+.advantages-block {
+  background-color: #fff;
+  margin: 0 -20px;
+  text-align: center;
+  padding-top: 86px;
+  position: relative;
+  padding-bottom: 10px; }
+  .advantages-block:before {
+    content: '';
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    background-image: url(../img/icons/leaf-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 10px;
+    margin: auto; }
+  .advantages-block__title {
+    font-size: 16px; }
+  .advantages-block__text {
+    width: 260px;
+    margin: 0 auto; }
+
+.clientcare {
+  height: 300px;
+  background-image: url(../img/advantage-cake1.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 150px;
+  background-size: cover; }
+  .clientcare__title {
+    font-size: 24px;
+    text-align: center;
+    font-family: "Playfair display", serif;
+    margin-top: 45px;
+    margin-bottom: 10px; }
+  .clientcare__subtitle {
+    display: block;
+    font-family: "Intro Script R", sans-serif;
+    font-size: 22px;
+    margin-bottom: 7px;
+    text-align: center; }
