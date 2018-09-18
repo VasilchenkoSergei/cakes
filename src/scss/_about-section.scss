@@ -1,7 +1,7 @@
 .about {
   &__title {
     @include section-title;
-    margin-top: 48px;
+    /*margin-top: 48px;*/
     margin-bottom: 22px;
   }
 
@@ -17,18 +17,6 @@
   &__img {
     width: 100%;
     height: 100%;
-  }
-
-  &__socials {
-    height: 140px;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-    right: 55px;
-    top: 55px;
   }
 
   &__subtitle {
@@ -69,6 +57,16 @@
 }
 
 .socials {
+  height: 200px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: -60px;
+  top: 100px;
+
   &__item {
     width: 36px;
     height: 36px;
@@ -80,16 +78,20 @@
     height: 36px;
     text-decoration: none;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+    border-radius: 18px;
   }
 }
 
 .instagram-link {
   background-image: url(../img/icons/inst-icon.png);
+  background-size: 50%;
 }
 
 .vk-link {
   background-image: url(../img/icons/vk-icon.png);
+  background-size: 50%;
 }
 
 .twit-link {

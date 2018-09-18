@@ -1,0 +1,74 @@
+.contacts {
+  &__title {
+    @include section-title;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  &__subtitle {
+    display: block;
+    font-family: $intro-font;
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 8px;
+  }
+
+  &-form {
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 350px;
+      height: 50px;
+      border: none;
+      margin-top: 10px;
+    }
+
+    &__btn {
+      @include btn;
+      width: 180px;
+      margin-top: 20px;
+      margin-bottom: 29px;
+    }
+  }
+
+  &__phone,
+  &__mail {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  &__socialtext {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+  .contacts-socials {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+    &__instagram,
+    &__vk {
+      width: 62px;
+      height: 62px;
+      background-color: #fff;
+      border-radius: 31px;
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: center;
+    }
+
+    &__instagram {
+      background-image: url(../img/icons/inst-icon.png);
+    }
+
+    &__vk {
+      background-image: url(../img/icons/vk-icon.png);
+    }
+  }

@@ -1,0 +1,52 @@
+.order {
+  background-color: #e3353d;
+  background-image: url(../img/order-bg-320.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  &__title {
+    @include section-title;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 37px;
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    text-align: left;
+    color: #fff;
+    padding-left: 46px;
+    padding-right: 14px;
+    position: relative;
+
+      &:last-child {
+        padding-bottom: 130px;
+      }
+  }
+
+  &-block {
+    &__title {
+      font-size: 15px;
+      font-weight: bold;
+      padding-bottom: 7px;
+      position: relative;
+
+      & span {
+        font-family: $fair-font;
+        font-size: 35px;
+        position: absolute;
+        left: -30px;
+        top: -15px;
+      }
+    }
+
+    &__text {
+      padding-bottom: 23px;
+    }
+  }
+  
+}

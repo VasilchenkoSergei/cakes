@@ -107,15 +107,18 @@ body {
     content: '';
     position: absolute;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 33px;
     height: 33px;
     background-image: url(../img/icons/leaf-icon.png);
+    background-position: center;
     left: 0;
     top: 23px; }
   .specs__text:last-child:before {
     content: '';
     position: absolute;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 33px;
     height: 33px;
     background-image: url(../img/icons/box-icon.png);
@@ -145,7 +148,7 @@ body {
   font-size: 24px;
   text-align: center;
   font-family: "Playfair display", serif;
-  margin-top: 45px;
+  padding-top: 45px;
   margin-bottom: 30px; }
 
 .cakes_list {
@@ -193,7 +196,7 @@ body {
   font-size: 24px;
   text-align: center;
   font-family: "Playfair display", serif;
-  margin-top: 45px;
+  padding-top: 45px;
   margin-bottom: 15px; }
 
 .personal__text {
@@ -325,8 +328,8 @@ body {
   font-size: 24px;
   text-align: center;
   font-family: "Playfair display", serif;
-  margin-top: 45px;
-  margin-top: 48px;
+  padding-top: 45px;
+  /*margin-top: 48px;*/
   margin-bottom: 22px; }
 
 .reviews-item {
@@ -359,8 +362,8 @@ body {
   font-size: 24px;
   text-align: center;
   font-family: "Playfair display", serif;
-  margin-top: 45px;
-  margin-top: 48px;
+  padding-top: 45px;
+  /*margin-top: 48px;*/
   margin-bottom: 22px; }
 
 .about__container {
@@ -373,17 +376,6 @@ body {
 .about__img {
   width: 100%;
   height: 100%; }
-
-.about__socials {
-  height: 140px;
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: absolute;
-  right: 55px;
-  top: 55px; }
 
 .about__subtitle {
   font-family: "Intro Script R", sans-serif;
@@ -415,23 +407,36 @@ body {
 .about__sign {
   width: 100%; }
 
-.socials__item {
-  width: 36px;
-  height: 36px; }
-
-.socials__link {
-  display: block;
-  width: 36px;
-  height: 36px;
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-size: cover; }
+.socials {
+  height: 200px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: -60px;
+  top: 100px; }
+  .socials__item {
+    width: 36px;
+    height: 36px; }
+  .socials__link {
+    display: block;
+    width: 36px;
+    height: 36px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    border-radius: 18px; }
 
 .instagram-link {
-  background-image: url(../img/icons/inst-icon.png); }
+  background-image: url(../img/icons/inst-icon.png);
+  background-size: 50%; }
 
 .vk-link {
-  background-image: url(../img/icons/vk-icon.png); }
+  background-image: url(../img/icons/vk-icon.png);
+  background-size: 50%; }
 
 .twit-link {
   background-image: url(../img/icons/twit-icon.png); }
@@ -445,7 +450,7 @@ body {
   font-size: 24px;
   text-align: center;
   font-family: "Playfair display", serif;
-  margin-top: 45px;
+  padding-top: 45px;
   margin-bottom: 10px; }
 
 .advantages__subtitle {
@@ -461,15 +466,26 @@ body {
   padding-top: 86px;
   position: relative;
   padding-bottom: 10px; }
-  .advantages-block:before {
+  .advantages-block:nth-child(3):before {
     content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 61px;
     height: 61px;
-    position: absolute;
     background-image: url(../img/icons/leaf-icon.png);
+    left: 0;
+    right: 0;
+    top: 10px;
+    margin: auto; }
+  .advantages-block:nth-child(4):before {
+    content: '';
+    position: absolute;
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    width: 84px;
+    height: 50px;
+    background-image: url(../img/icons/cake24-icon.png);
     left: 0;
     right: 0;
     top: 10px;
@@ -481,16 +497,15 @@ body {
     margin: 0 auto; }
 
 .clientcare {
-  height: 300px;
-  background-image: url(../img/advantage-cake1.jpg);
+  background-image: url(../img/advantage-cake1.png);
   background-repeat: no-repeat;
-  background-position: 0 150px;
+  background-position: 0 200px;
   background-size: cover; }
   .clientcare__title {
     font-size: 24px;
     text-align: center;
     font-family: "Playfair display", serif;
-    margin-top: 45px;
+    padding-top: 45px;
     margin-bottom: 10px; }
   .clientcare__subtitle {
     display: block;
@@ -498,3 +513,154 @@ body {
     font-size: 22px;
     margin-bottom: 7px;
     text-align: center; }
+  .clientcare__text {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 150px; }
+
+.order {
+  background-color: #e3353d;
+  background-image: url(../img/order-bg-320.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  .order__title {
+    font-size: 24px;
+    text-align: center;
+    font-family: "Playfair display", serif;
+    padding-top: 45px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 37px; }
+  .order__list {
+    padding: 0;
+    list-style: none; }
+  .order__item {
+    text-align: left;
+    color: #fff;
+    padding-left: 46px;
+    padding-right: 14px;
+    position: relative; }
+    .order__item:last-child {
+      padding-bottom: 130px; }
+  .order-block__title {
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 7px;
+    position: relative; }
+    .order-block__title span {
+      font-family: "Playfair display", serif;
+      font-size: 35px;
+      position: absolute;
+      left: -30px;
+      top: -15px; }
+  .order-block__text {
+    padding-bottom: 23px; }
+
+.contacts__title {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Playfair display", serif;
+  padding-top: 45px;
+  text-align: center;
+  padding-bottom: 15px; }
+
+.contacts__subtitle {
+  display: block;
+  font-family: "Intro Script R", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 8px; }
+
+.contacts-form__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 350px;
+  height: 50px;
+  border: none;
+  margin-top: 10px; }
+
+.contacts-form__btn {
+  display: block;
+  color: #fff;
+  background-color: #f50049;
+  border-radius: 25px;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 13px;
+  border: none;
+  width: 180px;
+  margin-top: 20px;
+  margin-bottom: 29px; }
+
+.contacts__phone, .contacts__mail {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 10px; }
+
+.contacts__socialtext {
+  display: block;
+  margin-bottom: 10px; }
+
+.contacts-socials {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px; }
+  .contacts-socials__instagram, .contacts-socials__vk {
+    width: 62px;
+    height: 62px;
+    background-color: #fff;
+    border-radius: 31px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center; }
+  .contacts-socials__instagram {
+    background-image: url(../img/icons/inst-icon.png); }
+  .contacts-socials__vk {
+    background-image: url(../img/icons/vk-icon.png); }
+
+.page-footer {
+  background-color: #898989;
+  padding-top: 45px; }
+  .page-footer__logo {
+    font-family: "Playfair display", serif;
+    font-size: 28px;
+    padding-bottom: 30px;
+    color: #fff; }
+  .page-footer__copyright {
+    display: block;
+    border-top: 1px solid #b8b8b8;
+    color: #b8b8b8;
+    padding: 10px 0; }
+
+.footer-nav {
+  padding: 0;
+  list-style: none; }
+  .footer-nav__item {
+    padding-bottom: 15px; }
+  .footer-nav__link {
+    text-decoration: none;
+    color: #fff; }
+
+.footer-socials {
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 30px 0; }
+  .footer-socials__instagram, .footer-socials__vk {
+    width: 40px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: left; }
+  .footer-socials__instagram {
+    background-image: url(../img/icons/inst-icon.png);
+    background-size: 65%; }
+  .footer-socials__vk {
+    background-image: url(../img/icons/vk-icon.png);
+    background-size: 85%; }

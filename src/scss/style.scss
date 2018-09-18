@@ -25,7 +25,7 @@ $circe-font: 'Circe', serif;
   font-size: 24px;
   text-align: center;
   font-family: $fair-font;
-  margin-top: 45px;
+  padding-top: 45px;
 }
 
 @mixin title-subtext {
@@ -39,6 +39,7 @@ $circe-font: 'Circe', serif;
   content: '';
   position: absolute;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @import 'fonts';
@@ -93,3 +94,9 @@ body {
 @import 'advantages-section';
 
 @import 'clientcare-section';
+
+@import 'order-section';
+
+@import 'contacts-section';
+
+@import 'footer';

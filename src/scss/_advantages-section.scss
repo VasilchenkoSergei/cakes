@@ -20,20 +20,27 @@
     position: relative;
     padding-bottom: 10px;
 
-      &:before {
-        content:'';
-        width: 61px;
-        height: 61px;
-        position: absolute;
-        background-image: url(../img/icons/leaf-icon.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        left: 0;
-        right: 0;
-        top: 10px;
-        margin: auto;
-      }
+    &:nth-child(3):before {
+      @include before-element;
+      width: 61px;
+      height: 61px;
+      background-image: url(../img/icons/leaf-icon.png);
+      left: 0;
+      right: 0;
+      top: 10px;
+      margin: auto;
+    }
+
+    &:nth-child(4):before {
+      @include before-element;
+      width: 84px;
+      height: 50px;
+      background-image: url(../img/icons/cake24-icon.png);
+      left: 0;
+      right: 0;
+      top: 10px;
+      margin: auto;
+    }
 
     &__title {
       font-size: 16px;

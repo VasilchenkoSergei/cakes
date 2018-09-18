@@ -1,0 +1,58 @@
+.page-footer {
+  background-color: #898989;
+  padding-top: 45px;
+
+  &__logo {
+    font-family: $fair-font;
+    font-size: 28px;
+    padding-bottom: 30px;
+    color: #fff;
+  }
+
+  &__copyright {
+    display: block;
+    border-top: 1px solid #b8b8b8;
+    color: #b8b8b8;
+    padding: 10px 0;
+  }
+}
+
+.footer-nav {
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    padding-bottom: 15px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.footer-socials {
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 30px 0;
+
+  &__instagram,
+  &__vk {
+    width: 40px;
+    height: 25px;
+    background-repeat: no-repeat;
+   
+    background-position: left;
+  }
+
+  &__instagram {
+    background-image: url(../img/icons/inst-icon.png);
+     background-size:65%;
+  }
+
+  &__vk {
+    background-image: url(../img/icons/vk-icon.png);
+     background-size:85%;
+  }
+}
