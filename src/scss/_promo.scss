@@ -1,0 +1,19 @@
+.promo {
+  height: 40px;
+  background-color: #fff;
+
+  &__logo {
+    color: #000;
+    font-family: $fair-font;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+
+  &__phone {
+    display: none;
+  }
+}
+
+
+

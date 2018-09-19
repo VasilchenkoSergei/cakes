@@ -1,8 +1,5 @@
 .order {
-  background-color: #e3353d;
-  background-image: url(../img/order-bg-320.jpg);
-  background-position: bottom;
-  background-repeat: no-repeat;
+  background: url(../img/order-bg-320.jpg) bottom no-repeat #e3353d;
 
   &__title {
     @include section-title;

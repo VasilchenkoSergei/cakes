@@ -1,10 +1,6 @@
 .page-header {
-  background-image: url(../img/main-cake-bg.png);
-  background-repeat: no-repeat;
-  background-position: -20px -180px;
-  background-size: 110%;
+  background: url(../img/main-cake-bg.png) (-10px -200px) /100% no-repeat;
   
-
   &__title {
     width: 180px;
     margin: 0 auto;
@@ -25,46 +21,95 @@
     text-align: center;
   }
 
-  &__specsbox {
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
+  &__btn {
+    @include btn;
+    margin-top: 40px;
+    text-decoration: none;
   }
-
 }
 
-.specs__text {
+.header-specsbox {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    position: relative;
+    padding-left: 42px;
+    padding-top: 30px;
+
+    &:before {
+      @include before-element;
+      width: 33px;
+      height: 33px;
+      left: 0;
+      background-position: center;
+    }
+
+    &:first-child:before {
+      background-image: url(../img/icons/leaf-icon.png);
+      top: 23px;
+    }
+
+    &:last-child:before {
+      background-image: url(../img/icons/box-icon.png);
+      top: 28px;
+    }
+  }
+}
+
+@media(min-width: 767px) {
+  
+.page-header {
   position: relative;
-  padding-left: 42px;
-  padding-top: 30px;
 
-  &:first-child:before {
-    @include before-element;
-    width: 33px;
-    height: 33px;
-    background-image: url(../img/icons/leaf-icon.png);
-    background-position: center;
-    left: 0;
-    top: 23px;
+  &__title {
+    text-align: left;
+    width: 300px;
+    font-size: 60px;
+    padding-top: 112px;
+    padding-bottom: 29px;
+    margin-left: 26px;
   }
 
-   &:last-child:before {
-    @include before-element;
-    width: 33px;
-    height: 33px;
-    background-image: url(../img/icons/box-icon.png);
-    left: 0;
-    top: 28px;
+  &__descr {
+    width: 230px;
+    font-size: 36px;
+    margin-left: 26px;
   }
 
+  &__btn {
+    @include btn;
+      margin-left: 26px;
+      position: absolute;
+      top: 350px;
+  }
 }
 
-.choose__btn {
-  @include btn;
-  display: block;
-  width: 226px;
-  margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 50px;
-  text-decoration: none;
+.header-specsbox {
+  padding-top: 250px;
+  flex-direction: row;
+
+  &__text {
+    width: 180px;
+    margin-left: 50px;
+    padding-top: 0;
+
+    &:before {
+      @include before-element;
+      width: 57px;
+      height: 56px;
+      left: -20px;
+    }
+
+    &:first-child:before {
+      top: -10px;
+    }
+
+    &:last-child:before {
+      top: -10px;
+    }
+  }
+}
+
 }

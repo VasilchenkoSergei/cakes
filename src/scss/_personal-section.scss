@@ -1,5 +1,4 @@
 .personal {
-
   &__title {
     @include section-title;
     margin-bottom: 15px;
@@ -8,15 +7,15 @@
   &__text {
     @include title-subtext;
   }
-
 }
 
 .personal-card {
-  max-width: 400px;
+  width: 280px;
   height: 430px;
   background-color: #fff;
   padding: 18px;
-  margin-top: 10px;
+  border-radius: 30px;
+  margin: 10px auto;
 
   &__title {
     font-family: $fair-font;
@@ -33,9 +32,14 @@
     color: #f50049;
     padding-right: 13px;
   }
+
+  &__btn {
+    @include btn;
+    margin-top: 23px;
+  }
 }
 
-.cake-box {
+.personal-cakebox {
   height: 280px;
   margin: 0 auto;
 
@@ -51,14 +55,14 @@
   }
 
   &__title {
-    margin-top: 40px;
-    margin-bottom: 9px;
+    margin: 40px 0 9px 0;
     font-size: 16px;
     font-weight: bold;
   }
 
   &__text {
     margin-bottom: 17px;
+    max-width: 300px;
   }
 
   &__size {
@@ -70,25 +74,27 @@
   }
 }
 
-.personal-card__btn {
-  @include btn;
-  width: 180px;
-  margin-top: 23px;
-}
-
-.size-box {
+.personal-sizebox {
   height: 280px;
   margin: 0 auto;
 
   &__img-wrap {
     margin: 0 auto;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
   }
 
   &__img {
-    display: block;
-    margin: 0 auto;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   &__title {
@@ -96,7 +102,7 @@
   }
 }
 
-.appearance-box {
+.personal-appearbox {
   height: 280px;
   margin: 0 auto;
 
@@ -128,12 +134,11 @@
 }
 
 .personal-card {
-
   &:last-child {
     height: 360px;
   }
 
-  &__title-final {
+  &__title--final {
     font-family: $fair-font;
     font-size: 22px;
     margin-bottom: 14px;
@@ -142,18 +147,49 @@
   &__parametr {
     @include title-subtext;
     margin: 0 auto;
-    text-align: center;
     color: #f50049;
+    padding-bottom: 7px;
   }
 
   &__choice {
-  width: 244px;
-  height: 30px;
-  border: 1px solid #ddd;
-  border-radius: 15px;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 12px;
+    width: 244px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 12px;
+  }
 }
+
+@media(min-width: 767px) {
+  
+.personal-card {
+  width: 100%;
+
+  &__title {
+    width: 90px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+
+  &__title span {
+    position: absolute;
+    top: -30px;
+    
+  }
+}
+
+.personal-cakebox {
+
+  &__img-wrap {
+    margin: 0 auto;
+    width: 210px;
+    height: 110px;
+  }
+}
+
+
 
 }

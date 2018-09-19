@@ -5,8 +5,6 @@ $intro-font: 'Intro Script R', sans-serif;
 $fair-font: 'Playfair display', serif;
 $circe-font: 'Circe', serif;
 
-
-
 @mixin btn {
   display: block;
   color: #fff;
@@ -19,6 +17,7 @@ $circe-font: 'Circe', serif;
   margin: 0 auto;
   font-size: 13px;
   border: none;
+  width: 180px;
 }
 
 @mixin section-title {
@@ -40,6 +39,7 @@ $circe-font: 'Circe', serif;
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 @import 'fonts';
@@ -55,6 +55,8 @@ body {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 .container {
@@ -62,22 +64,7 @@ body {
   margin: 0 auto;
 }
 
-.promo {
-  height: 40px;
-  background-color: #fff;
-}
-
-.promo__logo {
-  color: #000;
-  font-family: $fair-font;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 40px;
-}
-
-.promo__phone {
-  display: none;
-}
+@import 'promo';
 
 @import 'main-nav';
 

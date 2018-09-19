@@ -1,7 +1,6 @@
 .about {
   &__title {
     @include section-title;
-    /*margin-top: 48px;*/
     margin-bottom: 22px;
   }
 
@@ -12,10 +11,13 @@
   &__img-wrap {
     width: 155px;
     height: 155px;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 50%;
   }
 
   &__img {
-    width: 100%;
+    width: 110%;
     height: 100%;
   }
 
@@ -25,18 +27,16 @@
     margin-top: 15px;
   }
 
-  &__quotes-wrap {
+  &__quotes {
+    background: url(../img/icons/quotes-pic.png) center /100% no-repeat;
     width: 26px;
     height: 17px;
     margin: 0 auto;
     margin-top: 40px;
   }
 
-  &__quotes {
-    width: 100%;
-  }
-
   &__blockquote {
+    max-width: 400px;
     font-family: $fair-font;
     font-size: 13px;
     font-style: italic;
@@ -44,27 +44,21 @@
     margin: 20px auto;
   }
 
-  &__sign-wrap {
-    width: 64px;
-    height: 30px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-  }
-
   &__sign {
-    width: 100%;
+    background: url(../img/icons/sign-pic.png) center /100% no-repeat;
+    width: 64px;
+    height: 33px;
+    margin: 0 auto;
   }
 }
 
-.socials {
-  height: 200px;
-  list-style: none;
-  padding: 0;
+.about-socials {
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
-  right: -60px;
+  right: 60px;
   top: 100px;
 
   &__item {
@@ -76,7 +70,6 @@
     display: block;
     width: 36px;
     height: 36px;
-    text-decoration: none;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #fff;
@@ -98,7 +91,7 @@
   background-image: url(../img/icons/twit-icon.png);
 }
 
-.subtext {
+.about-subtext {
   &__title {
     font-weight: bold;
     margin-bottom: 10px;

@@ -1,8 +1,5 @@
 .clientcare {
-  background-image: url(../img/advantage-cake1.png);
-  background-repeat: no-repeat;
-  background-position: 0 200px;
-  background-size: cover;
+  background: url(../img/advantage-cake1.png) (0 200px) /100% no-repeat;
 
   &__title {
     @include section-title;
@@ -18,6 +15,7 @@
   }
 
   &__text {
+    max-width: 400px;
     text-align: center;
     margin: 0 auto;
     padding-bottom: 150px;

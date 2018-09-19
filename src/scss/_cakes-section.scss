@@ -4,7 +4,7 @@
     margin-bottom: 30px;
   }
 
-  &_list {
+  &__list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -53,4 +53,66 @@
     font-size: 10px;
     opacity: 0.7;
   }
+}
+
+@media(min-width: 767px) {
+  
+.cakes {
+  height: 920px;
+  &__list {
+    display: block;
+  }
+
+  &__item {
+    float: left;
+    background-position: 50% 30%;
+    background-size: cover;
+  }
+
+  &__item:first-child {
+    background-image: url(../img/classic-cake.jpg);
+    background-position: 50% 10%;
+    width: 420px;
+    height: 388px;
+
+  }
+
+  &__item:nth-child(2) {
+    background-image: url(../img/muss-cake.jpg);
+    width: 288px;
+    height: 184px;
+  }
+
+  &__item:nth-child(3) {
+    background-image: url(../img/wedding-cake.jpg);
+    width: 288px;
+    height: 184px;
+  }
+
+  &__item:nth-child(4) {
+    background-image: url(../img/men-cake.jpg);
+    width: 288px;
+    height: 184px;
+  }
+
+  &__item:nth-child(5) {
+    background-image: url(../img/women-cake.jpg);
+    width: 288px;
+    height: 184px;
+  }
+
+  &__item:last-child {
+    background-image: url(../img/children-cake.jpg);
+    width: 420px;
+    height: 388px;
+
+  }
+
+
+}
+
+
+
+
+
 }
