@@ -64,51 +64,88 @@
 
   <section class="personal">
     <div class="personal__container  container">
-      <h2 class="personal__title">Индивидуальный<br>заказ</h2>
+      <h2 class="personal__title">Индивидуальный заказ</h2>
       <span class="personal__text">Соберите торт в 3 шага</span>
 
       <article class="personal-card">
         <h3 class="personal-card__title"><span>01</span> Выберите начинку</h3>
-        <div class="personal-card__box  personal-cakebox">
-          <div class="personal-cakebox__img-wrap">
-            <img src="img/filling1.jpg" alt="ганаш" class="personal-cakebox__img">
+        <div class="personal-card__cakebox-list cakebox-list">
+          <div class="personal-cakebox">
+            <div class="personal-cakebox__img-wrap">
+              <img src="img/filling1.jpg" alt="ганаш" class="personal-cakebox__img">
+            </div>
+            <div class="personal-cakebox__block  cakebox-block">
+              <h4 class="cakebox-block__title">Шоколадный ганаш</h4>
+              <p class="cakebox-block__text">Ароматный шоколадный бисквит, густой шоколадный крем - самы шоколадный из всех возможных десертов!</p>
+              <span class="cakebox-block__size">1000 руб/кг</span>
+            </div>
           </div>
-          <h4 class="personal-cakebox__title">Шоколадный ганаш</h4>
-          <p class="personal-cakebox__text">Ароматный шоколадный бисквит, густой шоколадный крем - самы шоколадный из всех возможных десертов!</p>
-          <span class="personal-cakebox__size">1000 руб/кг</span>
         </div>
-        <button class="personal-card__btn">Выбрать</button>
+        <button class="personal-card__btn  personal-cakebox__btn">Выбрать</button>
       </article>
+
       <article class="personal-card">
         <h3 class="personal-card__title"><span>02</span>Размер</h3>
-        <div class="personal-card__box  personal-sizebox">
-          <div class="personal-sizebox__img-wrap">
-            <img src="img/icons/1-kilo-icon.png" alt="Размер 1" class="personal-sizebox__img">
+        <div class="personal-card__sizebox-list  sizebox-list">
+          <div class="personal-sizebox">
+            <div class="personal-sizebox__img-wrap">
+              <img src="img/icons/1-kilo-icon.png" alt="Размер 1" class="personal-sizebox__img">
+            </div>
+            <h4 class="personal-sizebox__title">17-18 см<br>(1 кг - 6 персон)</h4>
           </div>
-          <h4 class="personal-sizebox__title">17-18 см<br>(1 кг - 6 персон)</h4>
+          <div class="personal-sizebox">
+            <div class="personal-sizebox__img-wrap">
+              <img src="img/icons/2-kilo-icon.png" alt="Размер 2" class="personal-sizebox__img">
+            </div>
+            <h4 class="personal-sizebox__title">23 - 24 см<br>(10 - 12 персон)</h4>
+          </div>
+          <div class="personal-sizebox">
+            <div class="personal-sizebox__img-wrap">
+              <img src="img/icons/5-kilo-icon.png" alt="Размер 3" class="personal-sizebox__img">
+            </div>
+            <h4 class="personal-sizebox__title">Два яруса 25 и 20 см<br>(15 - 20 персон)</h4>
+          </div>
+          <div class="personal-sizebox">
+            <div class="personal-sizebox__img-wrap">
+              <img src="img/icons/8-kilo-icon.png" alt="Размер 4" class="personal-sizebox__img">
+            </div>
+            <h4 class="personal-sizebox__title">Три яруса 30, 25 и 18 см<br>(25 - 30 персон)</h4>
+          </div>
         </div>
-        <button class="personal-card__btn">Выбрать</button>
+        <button class="personal-card__btn  personal-sizebox__btn">Выбрать</button>
       </article>
+
       <article class="personal-card">
         <h3 class="personal-card__title"><span>03</span>Оформление</h3>
-        <div class="personal-card__box personal-appearbox">
-          <div class="personal-appearbox__img-wrap">
-            <img src="img/marshmallow-cake.jpg" alt="маршмэллоу" class="personal-appearbox__img">
+        <div class="personal-card__appearbox-list  appearbox-list">
+          <div class="personal-appearbox">
+            <div class="personal-appearbox__img-wrap">
+              <img src="img/marshmallow-cake.jpg" alt="маршмэллоу" class="personal-appearbox__img">
+            </div>
+            <h4 class="personal-appearbox__title">Маршмэллоу</h4>
+            <span class="personal-appearbox__size">600 руб/кг</span>
           </div>
-          <h4 class="personal-appearbox__title">Маршмэллоу</h4>
-          <span class="personal-appearbox__size">600 руб/кг</span>
         </div>
-        <button class="personal-card__btn">Выбрать</button>
+        <button class="personal-card__btn  personal-appearbox__btn">Выбрать</button>
       </article>
+
       <article class="personal-card">
-        <h4 class="personal-card__title--final">Ваш выбор</h4>
-        <span class="personal-card__parametr">Начинка</span>
-        <div class="personal-card__choice"></div>
-        <span class="personal-card__parametr">Размер</span>
-        <div class="personal-card__choice"></div>
-        <span class="personal-card__parametr">Оформление</span>
-        <div class="personal-card__choice"></div>
-        <button class="personal-card__btn">Заказать торт</button>
+        <h3 class="personal-card__title--final">Ваш выбор</h3>
+        <div class="personal-card__final-order  final-order">
+          <div class="final-order__box">
+            <span class="final-order__parametr">Начинка</span>
+            <div class="final-order__choice"></div>
+          </div>
+          <div class="final-order__box">
+            <span class="final-order__parametr">Размер</span>
+            <div class="final-order__choice"></div>
+          </div>
+          <div class="final-order__box">
+            <span class="final-order__parametr">Оформление</span>
+            <div class="final-order__choice"></div>
+          </div>
+        </div>
+        <button class="personal-card__btn  final-order__btn">Заказать торт</button>
       </article>
     </div>
   </section>
@@ -121,10 +158,12 @@
           <div class="reviews-item__img-wrap">
             <img src="img/review-photo1.jpg" alt="фото клиента" class="reviews-item__img">
           </div>
-          <span class="reviews-item__name">Мария</span>
-          <span class="reviews-item__skills">Юрист, 33 года</span>
-          <p class="reviews-item__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)</p>
-      </article>
+          <div class="reviews-item__block  reviews-block">
+            <span class="reviews-item__name">Мария</span>
+            <span class="reviews-item__skills">Юрист, 33 года</span>
+            <p class="reviews-item__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)</p>
+          </div>
+        </article>
       </div>
     </div>
   </section>

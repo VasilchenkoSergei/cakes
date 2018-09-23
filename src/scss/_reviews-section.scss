@@ -34,7 +34,6 @@
 
   &__name {
     display: block;
-    margin-top: 7px;
     text-align: center;
     font-weight: bold;
   }
@@ -53,4 +52,38 @@
   }
 }
 
+.reviews-block {
+  margin-top: 7px;
+}
 
+
+@media(min-width: 767px) {
+
+.reviews-item {
+  width: 420px;
+  display: flex;
+  justify-content: space-between;
+
+  &__img-wrap {
+    width: 110px;
+    height: 110px;
+  }
+
+  &__block {
+    width: 260px;
+  }
+
+  &__name,
+  &__skills,
+  &__text {
+    text-align: left;
+  }
+}
+
+
+
+
+
+
+
+}

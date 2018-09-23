@@ -1,7 +1,8 @@
 .personal {
   &__title {
     @include section-title;
-    margin-bottom: 15px;
+    width: 215px;
+    margin: 0 auto 15px;
   }
 
   &__text {
@@ -16,6 +17,7 @@
   padding: 18px;
   border-radius: 30px;
   margin: 10px auto;
+  position: relative;
 
   &__title {
     font-family: $fair-font;
@@ -53,9 +55,13 @@
     width: 100%;
     height: 110px;
   }
+}
+
+.cakebox-block {
+  margin-top: 40px;
 
   &__title {
-    margin: 40px 0 9px 0;
+    margin-bottom: 9px;
     font-size: 16px;
     font-weight: bold;
   }
@@ -102,6 +108,10 @@
   }
 }
 
+.personal-sizebox:not(:first-child) {
+  display: none;
+}
+
 .personal-appearbox {
   height: 280px;
   margin: 0 auto;
@@ -143,7 +153,9 @@
     font-size: 22px;
     margin-bottom: 14px;
   }
+}
 
+.final-order {
   &__parametr {
     @include title-subtext;
     margin: 0 auto;
@@ -159,36 +171,211 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 12px;
+    line-height: 30px;
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 767px) {
+
+.personal {
+  &__title {
+    width: 300px;
   }
 }
 
-@media(min-width: 767px) {
-  
 .personal-card {
   width: 100%;
+  height: 350px;
+  box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.1);
 
   &__title {
+    display: inline-block;
+    height: 20px;
     width: 90px;
     position: relative;
     margin-top: 50px;
     margin-left: 30px;
+    margin-bottom: 0;
   }
 
   &__title span {
     position: absolute;
     top: -30px;
-    
   }
 }
 
 .personal-cakebox {
+  height: 140px;
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
 
   &__img-wrap {
-    margin: 0 auto;
     width: 210px;
-    height: 110px;
+    height: 210px;
+    overflow: hidden;
+  }
+
+  &__img {
+    height: 100%;
+    width: 200%;
+  }
+
+  &__btn {
+    position: absolute;
+    left: 390px;
+    top: 200px;
   }
 }
+  
+.cakebox-block {
+  width: 200px;
+  margin-top: 10px;
+
+  &__size {
+    text-align: left;
+  }
+}
+
+.sizebox-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.personal-sizebox {
+  &:not(:first-child) {
+    display: block;
+  }
+
+  &__img-wrap {
+    width: 160px;
+    height: 160px;
+  }
+
+  &:first-child .personal-sizebox__img-wrap {
+    width: 80px;
+    height: 80px;
+  }
+
+  &:nth-child(2) .personal-sizebox__img-wrap {
+    width: 110px;
+    height: 110px;
+  }
+
+  &:nth-child(3) .personal-sizebox__img-wrap {
+    width: 120px;
+    height: 120px;
+  }
+
+  &:nth-child(4) .personal-sizebox__img-wrap {
+    width: 140px;
+    height: 140px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &___btn {
+    display: none;
+  }
+}
+
+.appearbox-list {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+}
+
+.personal-appearbox {
+  width: 200px;
+  height: 270px;
+  box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.1);
+
+  &__btn {
+    display: none;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    background: url(../img/cake-picture.png) no-repeat center / cover;
+    width: 120px;
+    height: 150px;
+    left: -270px;
+    bottom: 20px;
+  }
+
+  &__title {
+    margin-top: 5px;
+  }
+
+  &__size {
+    font-size: 14px;
+  }
+}
+
+.personal-card {
+  &:last-child {
+    height: 150px;
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 330px;
+      height: 80px;
+      position: absolute;
+      left: -20px;
+      bottom: -75px;
+      background: url(../img/illustrations/flags-left.png) no-repeat center / cover;
+   }
+
+    &:after {
+      content: '';
+      width: 330px;
+      height: 80px;
+      position: absolute;
+      right: -20px;
+      bottom: -75px;
+      background: url(../img/illustrations/flags-right.png) no-repeat center / cover;
+    }
+  }
+}
+
+.final-order {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+
+  &__choice {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+  }
+}
+
 
 
 
