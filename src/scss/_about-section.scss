@@ -27,28 +27,36 @@
     margin-top: 15px;
   }
 
-  &__quotes {
-    background: url(../img/icons/quotes-pic.png) center /100% no-repeat;
-    width: 26px;
-    height: 17px;
-    margin: 0 auto;
-    margin-top: 40px;
-  }
-
   &__blockquote {
     max-width: 400px;
     font-family: $fair-font;
     font-size: 13px;
     font-style: italic;
     text-align: center;
-    margin: 20px auto;
-  }
+    margin: 70px auto;
+    position: relative;
 
-  &__sign {
-    background: url(../img/icons/sign-pic.png) center /100% no-repeat;
-    width: 64px;
-    height: 33px;
-    margin: 0 auto;
+    &:before {
+      @include before-element;
+      background-image: url(../img/icons/quotes-pic.png);
+      width: 26px;
+      height: 17px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: -30px;
+    }
+
+    &:after {
+      @include before-element;
+      background-image: url(../img/icons/sign-pic.png);
+      width: 70px;
+      height: 35px;
+      left: 0;
+      right: 0;
+      top: 70px;
+      margin: auto;
+    }
   }
 }
 
@@ -67,7 +75,7 @@
   }
 
   &__link {
-    display: block;
+    display: inline-block;
     width: 36px;
     height: 36px;
     background-repeat: no-repeat;
@@ -97,4 +105,40 @@
     margin-bottom: 10px;
     margin-top: 10px;
   }
+}
+
+@media(min-width: 767px) {
+
+.about {
+
+  &__container {
+    width:calc(100% - 90px);
+  }
+
+  &__img-wrap {
+    width: 310px;
+    height: 310px;
+    position: absolute;
+    right: 0;
+  }
+
+  &__text {
+    width: 315px;
+  }
+}
+
+.about-socials {
+  display: block;
+  position: static;
+  width: 160px;
+  height: 50px;
+  margin-top: 20px;
+
+  &__item {
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+
+
 }

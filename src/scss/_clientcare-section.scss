@@ -21,3 +21,39 @@
     padding-bottom: 150px;
   }
 }
+
+@media(min-width: 767px) {
+
+.clientcare {
+  background-image: none;
+  padding-top: 50px;
+  position: relative;
+
+  &__container {
+    width:calc(100% - 90px);
+  }
+
+  &:before {
+    content:'';
+    background: url(../img/advantage-cake1.png) no-repeat center / cover;
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    right: 0;
+    top: -80px;
+  }
+
+  &__title,
+  &__subtitle,
+  &__text {
+    text-align: left;
+  }
+
+  &__text {
+    display: inline-block;
+    width: 310px;
+  }
+}
+
+
+}

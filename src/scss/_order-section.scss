@@ -45,5 +45,26 @@
       padding-bottom: 23px;
     }
   }
-  
+}
+
+@media(min-width: 767px) {
+
+.order {
+  background: url(../img/order-bg.jpg) no-repeat #e3353d;
+  background-position: -170px 0;
+  background-size: 125%;
+
+  &__item {
+    &:last-child {
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.order-block {
+  width: 340px;
+  margin-left: 22rem;
+}
+
+
 }

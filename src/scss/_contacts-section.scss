@@ -73,3 +73,14 @@
       background-image: url(../img/icons/vk-icon.png);
     }
   }
+
+  @media(min-width: 767px) {
+
+.contacts {
+  /*background: url(../img/contacts-pic.jpg) no-repeat bottom right;*/
+  width: 600px;
+  height: 400px;
+  
+}
+
+  }

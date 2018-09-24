@@ -10,44 +10,90 @@
     margin-bottom: 13px;
     text-align: center;
   }
+}
 
-  &-block {
-    background-color: #fff;
-    margin: 0 -20px;
-    text-align: center;
-    padding-top: 86px;
-    position: relative;
-    padding-bottom: 10px;
+.advantages-block {
+  background-color: #fff;
+  margin: 0 -20px;
+  text-align: center;
+  padding-top: 86px;
+  position: relative;
+  padding-bottom: 10px;
 
-    &:nth-child(3):before {
-      @include before-element;
-      width: 61px;
-      height: 61px;
-      background-image: url(../img/icons/leaf-icon.png);
-      left: 0;
-      right: 0;
-      top: 10px;
-      margin: auto;
-    }
+  &:nth-child(3):before {
+    @include before-element;
+    width: 61px;
+    height: 61px;
+    background-image: url(../img/icons/leaf-icon.png);
+    left: 0;
+    right: 0;
+    top: 10px;
+    margin: auto;
+  }
 
-    &:nth-child(4):before {
-      @include before-element;
-      width: 84px;
-      height: 50px;
-      background-image: url(../img/icons/cake24-icon.png);
-      left: 0;
-      right: 0;
-      top: 10px;
-      margin: auto;
-    }
+  &:nth-child(4):before {
+    @include before-element;
+    width: 84px;
+    height: 50px;
+    background-image: url(../img/icons/cake24-icon.png);
+    left: 0;
+    right: 0;
+    top: 10px;
+    margin: auto;
+  }
 
-    &__title {
-      font-size: 16px;
-    }
+  &__title {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
 
-    &__text {
-      width: 260px;
-      margin: 0 auto;
+  &__text {
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+
+@media(min-width: 767px) {
+
+.advantages {
+    background-image: url(../img/advantage-cake2.png);
+    background-repeat: no-repeat;
+    background-position: -20px 140px;
+    background-size: 295px 295px;
+    padding-bottom: 90px;
+
+    &__container {
+      width:calc(100% - 90px);
     }
   }
+
+.advantages-block {
+  width: 280px;
+  margin-left: 420px;
+  background-color: #fbebea;
+
+  &:nth-child(3):before {
+    left: -370px;
+    top: 80px;
+  }
+
+  &:nth-child(4) {
+    padding-top: 10px;
+  }
+
+  &:nth-child(4):before {
+    left: -380px;
+    top: 7px;
+  }
+
+  &__title,
+  &__text {
+    text-align: left;
+    margin: 0;
+  }
+}
+
+
+
+
 }
