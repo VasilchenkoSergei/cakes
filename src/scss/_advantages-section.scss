@@ -20,7 +20,7 @@
   position: relative;
   padding-bottom: 10px;
 
-  &:nth-child(3):before {
+  &:first-child:before {
     @include before-element;
     width: 61px;
     height: 61px;
@@ -31,7 +31,7 @@
     margin: auto;
   }
 
-  &:nth-child(4):before {
+  &:nth-child(2):before {
     @include before-element;
     width: 84px;
     height: 50px;
@@ -72,16 +72,16 @@
   margin-left: 420px;
   background-color: #fbebea;
 
-  &:nth-child(3):before {
+  &:first-child:before {
     left: -370px;
     top: 80px;
   }
 
-  &:nth-child(4) {
+  &:nth-child(2) {
     padding-top: 10px;
   }
 
-  &:nth-child(4):before {
+  &:nth-child(2):before {
     left: -380px;
     top: 7px;
   }

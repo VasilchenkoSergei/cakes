@@ -23,7 +23,6 @@
   }
 
   &__link {
-    text-decoration: none;
     color: #fff;
   }
 }
@@ -51,4 +50,52 @@
     background-image: url(../img/icons/vk-icon.png);
      background-size:85%;
   }
+}
+
+@media(min-width: 767px) {
+
+.page-footer {
+  height: 140px;
+  
+  &__container {
+    position: relative;
+  }
+
+  &__logo {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -15px;
+  }
+
+  &__copyright {
+    padding-left: 250px;
+  }
+}
+
+.footer-nav {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 130px;
+  padding-bottom: 20px;
+
+  &__item:last-child {
+    display: none;
+  }
+}
+
+.footer-socials {
+  margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 15px;
+  position: absolute;
+  right: 250px;
+  bottom: -12px;
+}
+
+
+
+
 }

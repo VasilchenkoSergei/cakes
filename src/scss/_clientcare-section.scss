@@ -44,14 +44,15 @@
   }
 
   &__title,
-  &__subtitle,
-  &__text {
+  &__subtitle {
+    padding-left: 45px;
     text-align: left;
   }
 
   &__text {
     display: inline-block;
     width: 310px;
+    text-align: left;
   }
 }
 
