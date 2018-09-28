@@ -16,3 +16,22 @@
 		text-decoration: none;
 	}
 }
+
+@media (min-width: 1199px) {
+  
+.main-nav {
+  display: block;
+  width: 750px;
+  padding-top: 65px;
+  margin-left: 190px;
+  
+  &__link {
+    color: #000;
+    text-transform: uppercase;
+  }
+}
+
+
+
+
+}
