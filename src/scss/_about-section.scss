@@ -1,4 +1,6 @@
 .about {
+  max-width: 800px;
+  margin: 0 auto;
   &__title {
     @include section-title;
     margin-bottom: 22px;
@@ -14,6 +16,7 @@
     overflow: hidden;
     z-index: 1;
     border-radius: 50%;
+    margin: 0 auto;
   }
 
   &__img {
@@ -22,9 +25,11 @@
   }
 
   &__subtitle {
+    display: block;
+    width: 200px;
+    margin: 15px auto 0 auto;
     font-family: $intro-font;
     font-size: 22px;
-    margin-top: 15px;
   }
 
   &__blockquote {
@@ -60,13 +65,26 @@
   }
 }
 
+.about-subtext {
+
+  &__title {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+  }
+  &__lines {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
 .about-socials {
   height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
-  right: 60px;
+  right: 10%;
   top: 10px;
 
   &__item {
@@ -126,6 +144,15 @@
     width: 315px;
   }
 }
+
+.about-subtext {
+
+  &__lines {
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+
 
 .about-socials {
   display: block;

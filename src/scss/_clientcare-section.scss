@@ -25,36 +25,48 @@
 @media(min-width: 767px) {
 
 .clientcare {
+  width: 800px;
   background-image: none;
   padding-top: 50px;
   position: relative;
+  padding-left: 7%;
+  margin: 0 auto;
 
   &__container {
-    width:calc(100% - 90px);
+    margin-left: 0;
   }
 
   &:before {
     content:'';
-    background: url(../img/advantage-cake1.png) no-repeat center / cover;
     position: absolute;
-    width: 430px;
-    height: 430px;
-    right: 0;
+    width: 440px;
+    height: 440px;
+    left: 45%;
     top: -80px;
+    background: url(../img/advantage-cake1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &__title,
   &__subtitle {
-    padding-left: 45px;
     text-align: left;
   }
 
   &__text {
-    display: inline-block;
     width: 310px;
     text-align: left;
+    margin-left: 0;
   }
 }
+}
+
+@media(min-width: 1199px) {
+
+.clientcare {
+  width: 900px;
+}
+
 
 
 }

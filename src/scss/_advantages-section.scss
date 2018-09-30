@@ -1,4 +1,6 @@
 .advantages {
+  position: relative;
+  
   &__title {
     @include section-title;
     margin-bottom: 10px;
@@ -56,25 +58,30 @@
 @media(min-width: 767px) {
 
 .advantages {
-    background-image: url(../img/advantage-cake2.png);
-    background-repeat: no-repeat;
-    background-position: -20px 140px;
-    background-size: 295px 295px;
-    padding-bottom: 90px;
-
-    &__container {
-      width:calc(100% - 90px);
-    }
-  }
+  width: 800px;
+  margin: 0 auto 80px;
+}
 
 .advantages-block {
   width: 280px;
-  margin-left: 420px;
+  margin-left: 55%;
   background-color: #fbebea;
 
   &:first-child:before {
     left: -370px;
     top: 80px;
+  }
+
+  &:first-child:after {
+    content:'';
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background-image: url(../img/advantage-cake2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: -380px;
+    top: 20px;
   }
 
   &:nth-child(2) {
@@ -92,8 +99,20 @@
     margin: 0;
   }
 }
+}
 
 
+@media(min-width: 1199px) {
+
+.advantages {
+  width: 900px;
+}
+
+.advantages-block {
+    &:first-child:after {
+    left: -400px;
+  }
+}
 
 
 }

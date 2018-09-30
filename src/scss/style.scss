@@ -27,11 +27,20 @@ $circe-font: 'Circe', serif;
   padding-top: 45px;
 }
 
+@mixin section-title-1200 {
+  font-size: 40px;
+  padding-top: 100px;
+}
+
 @mixin title-subtext {
   display: block;
   font-family: $intro-font;
   font-size: 22px;
   text-align: center;
+}
+
+@mixin title-subtext-1200 {
+  font-size: 35px;
 }
 
 @mixin before-element {
@@ -63,6 +72,7 @@ body {
 
 .container {
   width: calc(100% - 40px);
+  max-width: 1220px;
   margin: 0 auto;
 }
 
