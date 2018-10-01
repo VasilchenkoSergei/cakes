@@ -106,6 +106,14 @@
 
 .advantages {
   width: 900px;
+
+  &__title {
+    @include section-title-1200;
+  }
+
+  &__subtitle {
+    @include title-subtext-1200;
+  }
 }
 
 .advantages-block {

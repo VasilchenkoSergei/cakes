@@ -1,5 +1,9 @@
 .order {
   background: url(../img/order-bg-320.jpg) bottom no-repeat #e3353d;
+  background-size: contain;
+  /*max-width: 1200px;*/
+  margin: 0 auto;
+  height: 50vh;
 
   &__title {
     @include section-title;
@@ -9,16 +13,19 @@
   }
 
   &__list {
+    max-width: 1200px;
     padding: 0;
     list-style: none;
   }
 
   &__item {
+    max-width: 400px;
     text-align: left;
     color: #fff;
     padding-left: 46px;
     padding-right: 14px;
     position: relative;
+    margin: 0 auto;
 
       &:last-child {
         padding-bottom: 130px;
@@ -47,12 +54,20 @@
   }
 }
 
+@media(min-width: 620px) {
+.order {
+  height: 55vh;
+}
+}
+
+
 @media(min-width: 767px) {
 
 .order {
   background: url(../img/order-bg.jpg) no-repeat #e3353d;
   background-position: -170px 0;
   background-size: 125%;
+  height: 100%;
 
   &__item {
     &:last-child {
@@ -63,8 +78,34 @@
 
 .order-block {
   width: 340px;
-  margin-left: 22rem;
+  margin-left: 55%;
+}
 }
 
+@media(min-width: 1199px) {
+.order {
+  height: 700px;
+  background-position: -170px 10px;
 
+  &__title {
+    font-size: 40px;
+    padding-bottom: 80px;
+  }
+}
+
+.order-block {
+  width: 450px;
+  margin-left: 60%;
+
+  &__title,
+  &__text {
+    font-size: 20px;
+  }
+}
+}
+
+@media(min-width: 1500px) {
+.order-block {
+  margin-left: 65%;
+}
 }

@@ -19,7 +19,7 @@
       flex-direction: column;
       justify-content: space-between;
       width: 100%;
-      max-width: 350px;
+      width: 350px;
       height: 50px;
       border: none;
       margin: 10px auto;
@@ -44,7 +44,7 @@
   }
   
   &__socialtext {
-    display: block;
+    display: inline-block;
     margin-bottom: 10px;
   }
 }
@@ -80,8 +80,8 @@
 
 .contacts {
   /*background: url(../img/contacts-pic.jpg) no-repeat bottom right;*/
-  /*width: 600px;*/
-  height: 600px;
+  width: 800px;
+  margin: 0 auto;
   
   &__container {
     width: calc(100% - 90px);
@@ -111,4 +111,67 @@
   margin: 0;
 }
 
+}
+
+@media(min-width: 1199px) {
+.contacts {
+  width: 1000px;
+  margin-left: 45px;
+
+  &__title {
+    @include section-title-1200;
+  }
+
+  &__subtitle {
+    @include title-subtext-1200;
+  }
+
+  &__title,
+  &__subtitle {
+    text-align: left;
+  }
+
+  &__container {
+    margin-left: 0;
+  }
+} 
+
+.contacts-form {
+
+  &__text {
+    display: block;
+    text-align: left;
+    margin: 0;
+    font-size: 20px;
+  }
+
+  &__box {
+    width: 560px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #000;
+    opacity: 0.2;
+    border-radius: 0;
+    padding-bottom: 0;
+  }
+
+  &__btn {
+    margin-top: 75px;
+  }
+}
+
+.contacts-textblock {
+  width: 300px;
+
+  & * {
+    font-size: 20px;
+  }
+
+  &__phone,
+  &__mail {
+    margin-bottom: 30px;
+  }
+
+
+}
 }
