@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cakes - Торты на заказ</title>
+  <link rel="stylesheet" href="css/fontello.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <div class="promo">
     <div class="promo__container  container">
-      <div class="promo__logo  logo">Cakes</div>
+      <a href="index.html" class="promo__logo  logo">Cakes</a>
       <div class="promo__burger">
         <div class="burgerline burgerline-1 no-animation"></div>
         <div class="burgerline burgerline-2 no-animation"></div>
@@ -70,24 +73,46 @@
 
 	      <article class="personal-card">
 	        <h4 class="personal-card__title"><span>01</span> Выберите начинку</h4>
-	        <div class="personal-card__cakebox-list cakebox-list">
+	        <div class="personal-card__cakebox-list cakebox-list owl-carousel">
 	          <div class="personal-cakebox">
 	            <div class="personal-cakebox__img-wrap">
 	              <img src="img/filling1.jpg" alt="ганаш" class="personal-cakebox__img">
 	            </div>
 	            <div class="personal-cakebox__block  cakebox-block">
 	              <h5 class="cakebox-block__title">Шоколадный ганаш</h5>
-	              <p class="cakebox-block__text">Ароматный шоколадный бисквит, густой шоколадный крем - самы шоколадный из всех возможных десертов!</p>
+	              <p class="cakebox-block__text">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов!</p>
 	              <span class="cakebox-block__size">1000 руб/кг</span>
                 <button class="personal-card__btn  cakebox-block__btn">Выбрать</button>
 	            </div>
 	          </div>
+            <div class="personal-cakebox">
+              <div class="personal-cakebox__img-wrap">
+                <img src="img/filling1.jpg" alt="ганаш" class="personal-cakebox__img">
+              </div>
+              <div class="personal-cakebox__block  cakebox-block">
+                <h5 class="cakebox-block__title">Шоколадный ганаш2</h5>
+                <p class="cakebox-block__text">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов!</p>
+                <span class="cakebox-block__size">1000 руб/кг</span>
+                <button class="personal-card__btn  cakebox-block__btn">Выбрать</button>
+              </div>
+            </div>
+            <div class="personal-cakebox">
+              <div class="personal-cakebox__img-wrap">
+                <img src="img/filling1.jpg" alt="ганаш" class="personal-cakebox__img">
+              </div>
+              <div class="personal-cakebox__block  cakebox-block">
+                <h5 class="cakebox-block__title">Шоколадный ганаш3</h5>
+                <p class="cakebox-block__text">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов!</p>
+                <span class="cakebox-block__size">1000 руб/кг</span>
+                <button class="personal-card__btn  cakebox-block__btn">Выбрать</button>
+              </div>
+            </div>
 	        </div>
 	      </article>
 
 	      <article class="personal-card">
 	        <h4 class="personal-card__title"><span>02</span>Размер</h4>
-	        <div class="personal-card__sizebox-list  sizebox-list">
+	        <div class="personal-card__sizebox-list  sizebox-list owl-carousel">
 	          <div class="personal-sizebox">
 	            <div class="personal-sizebox__img-wrap">
 	              <img src="img/icons/1-kilo-icon.png" alt="Размер 1" class="personal-sizebox__img">
@@ -147,7 +172,6 @@
 	          </div>
             <button class="personal-card__btn  final-order__btn">Заказать торт</button>
 	        </div>
-	        
 	      </article>
 	    </div>
 	  </section>
@@ -248,9 +272,9 @@
 	    <div class="contacts__container  container">
 	      <form class="contacts-form">
 	      	<span class="contacts-form__text">Заполните форму ниже и наш кондитер свяжется с Вами</span>
-	        <input type="text" name="user-name" class="contacts-form__box" placeholder="  Ваше имя">
-	        <input type="text" name="user-email" class="contacts-form__box" placeholder="  Email адрес">
-	        <input type="text" name="user-text" class="contacts-form__box" placeholder="  Ваш вопрос">
+	        <input type="text" name="user-name" class="contacts-form__box" placeholder="  Ваше имя" required>
+	        <input type="text" name="user-email" class="contacts-form__box" placeholder="  Email адрес" required>
+	        <input type="text" name="user-text" class="contacts-form__box" placeholder="  Ваш вопрос" required>
 	        <button class="contacts-form__btn">Отправить</button>
 	      </form>
 	      <div class="contacts__textblock contacts-textblock">
@@ -270,7 +294,7 @@
 
   <footer class="page-footer">
     <div class="page-footer__container  container">
-      <div class="page-footer__logo  logo">Cakes</div>
+      <a href="index.html" class="page-footer__logo  logo">Cakes</a>
       <ul class="footer-nav">
         <li class="footer-nav__item">
           <a href="#" class="footer-nav__link">Наши торты</a>
@@ -295,11 +319,16 @@
         </li>
       </ul>
       <div class="page-footer__socials  footer-socials">
-        <a href="#" class="footer-socials__instagram"></a>
+        <a href="#" class="footer-socials__instagram"><i class="icon-instagram"></i></a>
+        
         <a href="#" class="footer-socials__vk"></a>
       </div>
       <span class="page-footer__copyright">&copy;  2018 Cakes</span>
     </div>
   </footer>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

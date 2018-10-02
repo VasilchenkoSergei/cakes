@@ -12,12 +12,13 @@
 
 .personal-card {
   max-width: 1220px;
-  height: 430px;
+  min-height: 430px;
   background-color: #fff;
   padding: 18px;
   border-radius: 30px;
   margin: 10px auto;
   position: relative;
+  box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.1);
 
   &__title {
     font-family: $fair-font;
@@ -42,12 +43,19 @@
 }
 
 .personal-cakebox {
+  width: 200px;
   height: 280px;
-  margin: 0 auto;
+  border-radius: 5px;
+  margin: 0 30px;
+  box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.1);
+
+  &:hover {
+    @include box-hover;
+  }
 
   &__img-wrap {
     margin: 0 auto;
-    width: 244px;
+    width: 190px;
     height: 110px;
   }
 
@@ -82,8 +90,13 @@
 }
 
 .personal-sizebox {
+  width: 200px;
   height: 280px;
   margin: 0 auto;
+
+  &:hover {
+    @include box-hover;
+  }
 
   &__img-wrap {
     margin: 0 auto;
@@ -115,8 +128,15 @@
 }
 
 .personal-appearbox {
+  width: 250px;
   height: 280px;
+  border-radius: 5px;
   margin: 0 auto;
+  box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.1);
+
+  &:hover {
+    @include box-hover;
+  }
 
   &__img-wrap {
     margin: 0 auto;
@@ -146,9 +166,6 @@
 }
 
 .personal-card {
-  &:last-child {
-    height: 360px;
-  }
 
   &__title--final {
     font-family: $fair-font;
@@ -199,7 +216,7 @@
 .personal-card {
   width: 100%;
   height: 350px;
-  box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.1);
+  
 
   &__title {
     display: inline-block;
@@ -226,6 +243,7 @@
 
 .personal-cakebox {
   width: 450px;
+  height: 260px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -322,7 +340,6 @@
 .personal-appearbox {
   width: 200px;
   height: 270px;
-  box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.1);
 
   &__btn {
     display: none;
@@ -422,6 +439,7 @@
 
 .personal-cakebox {
   width: 700px;
+  height: 400px;
 
   &__img-wrap {
     width: 340px;

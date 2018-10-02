@@ -95,6 +95,10 @@
   &__item {
     width: 36px;
     height: 36px;
+
+    &:hover {
+      @include link-hover;
+    }
   }
 
   &__link {

@@ -1,6 +1,6 @@
 .page-header {
   position: relative;
-  background: url(../img/main-cake-bg.png) (-10px -200px) /100% no-repeat;
+  background: url(../img/main-cake-bg.png) (center -200px) /contain no-repeat;
   
   &__title {
     width: 180px;
@@ -56,6 +56,12 @@
       background-image: url(../img/icons/box-icon.png);
       top: 28px;
     }
+  }
+}
+
+@media(min-width: 380px) {
+  .page-header {
+    background-position: center -250px;
   }
 }
 

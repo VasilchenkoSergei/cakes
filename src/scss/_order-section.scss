@@ -1,9 +1,8 @@
 .order {
   background: url(../img/order-bg-320.jpg) bottom no-repeat #e3353d;
   background-size: contain;
-  /*max-width: 1200px;*/
   margin: 0 auto;
-  height: 50vh;
+  height: 50%;
 
   &__title {
     @include section-title;
