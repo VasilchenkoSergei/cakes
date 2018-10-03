@@ -496,6 +496,9 @@ a {
 .personal-sizebox:not(:first-child) {
   display: none; }
 
+.appearbox-list {
+  width: 100%; }
+
 .personal-appearbox {
   width: 250px;
   height: 280px;
@@ -626,10 +629,11 @@ a {
     height: 150px;
     left: 50px;
     top: 120px; }
-  .appearbox-list {
-    position: absolute;
-    top: 50px;
-    left: 300px; }
+  /*.appearbox-list {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+}*/
   .personal-appearbox {
     width: 200px;
     height: 270px; }
@@ -647,17 +651,19 @@ a {
       width: 330px;
       height: 80px;
       position: absolute;
-      left: -20px;
-      bottom: -75px;
-      background: url(../img/illustrations/flags-left.png) no-repeat center/cover; }
+      left: 10px;
+      bottom: -60px;
+      background: url(../img/illustrations/flags-left.png) no-repeat center/cover;
+      transform: rotate(5deg); }
     .personal-card:last-child:after {
       content: '';
       width: 330px;
       height: 80px;
       position: absolute;
-      right: -20px;
-      bottom: -75px;
-      background: url(../img/illustrations/flags-right.png) no-repeat center/cover; }
+      right: 10px;
+      bottom: -60px;
+      background: url(../img/illustrations/flags-right.png) no-repeat center/cover;
+      transform: rotate(-5deg); }
   .final-order {
     display: flex;
     justify-content: space-between;
@@ -856,7 +862,6 @@ a {
     margin: 0 auto; }
   .about__subtitle {
     display: block;
-    /*max-width: 400px;*/
     margin: 15px auto 0 auto;
     font-family: "Intro Script R", sans-serif;
     font-size: 22px; }
@@ -922,21 +927,13 @@ a {
     display: inline-block;
     width: 36px;
     height: 36px;
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: #fff;
-    border-radius: 18px; }
-
-.instagram-link {
-  background-image: url(../img/icons/inst-icon.png);
-  background-size: 50%; }
-
-.vk-link {
-  background-image: url(../img/icons/vk-icon.png);
-  background-size: 50%; }
-
-.twit-link {
-  background-image: url(../img/icons/twit-icon.png); }
+    border-radius: 18px;
+    text-align: center; }
+    .about-socials__link i {
+      font-size: 18px;
+      color: #f50049;
+      line-height: 36px; }
 
 .about-subtext__title {
   font-weight: bold;
@@ -1267,17 +1264,16 @@ a {
     width: 62px;
     height: 62px;
     background-color: #fff;
-    border-radius: 31px;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: center; }
+    border-radius: 31px; }
     .contacts-socials__instagram:hover, .contacts-socials__vk:hover {
       transition: transform 0.3s;
       transform: scale(1.5); }
-  .contacts-socials__instagram {
-    background-image: url(../img/icons/inst-icon.png); }
-  .contacts-socials__vk {
-    background-image: url(../img/icons/vk-icon.png); }
+  .contacts-socials__instagram i,
+  .contacts-socials__vk i {
+    line-height: 62px;
+    font-size: 32px;
+    text-align: center;
+    color: #f50049; }
 
 @media (min-width: 767px) {
   .contacts {
@@ -1297,7 +1293,8 @@ a {
   .contacts-form__btn {
     margin-left: 0; }
   .contacts-socials {
-    margin: 0; } }
+    margin: 0;
+    text-align: center; } }
 
 @media (min-width: 1199px) {
   .contacts {
@@ -1368,27 +1365,14 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 20px 0 30px 0; }
-  .footer-socials__instagram, .footer-socials__vk {
-    width: 40px;
-    height: 25px;
-    background-repeat: no-repeat;
-    background-position: left; }
-    .footer-socials__instagram:hover, .footer-socials__vk:hover {
-      transition: transform 0.3s;
-      transform: scale(1.5); }
-  .footer-socials__instagram {
-    /*background-image: url(../img/icons/inst-icon.png);*/
-    /*background-size:65%;*/
-    width: 150px;
-    height: 150px;
-    color: red; }
-  .footer-socials__vk {
-    background-image: url(../img/icons/vk-icon.png);
-    background-size: 85%; }
+  .footer-socials__instagram:hover, .footer-socials__vk:hover {
+    transition: transform 0.3s;
+    transform: scale(1.5); }
 
-.icon-instagram {
-  color: red;
-  font-size: 40px; }
+.icon-instagram,
+.icon-vkontakte {
+  color: #b6b6b6;
+  font-size: 30px; }
 
 @media (min-width: 767px) {
   .page-footer {
@@ -1414,7 +1398,7 @@ a {
   .footer-socials {
     margin: 0 auto;
     padding-top: 0;
-    padding-bottom: 15px;
+    padding-bottom: 7px;
     position: absolute;
     right: 30vw;
     bottom: -12px; } }

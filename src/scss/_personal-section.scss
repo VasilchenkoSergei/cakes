@@ -127,6 +127,10 @@
   display: none;
 }
 
+.appearbox-list {
+  width: 100%;
+}
+
 .personal-appearbox {
   width: 250px;
   height: 280px;
@@ -331,11 +335,12 @@
   }
 }
 
-.appearbox-list {
+/*.appearbox-list {
   position: absolute;
   top: 50px;
   left: 300px;
-}
+}*/
+
 
 .personal-appearbox {
   width: 200px;
@@ -364,9 +369,10 @@
       width: 330px;
       height: 80px;
       position: absolute;
-      left: -20px;
-      bottom: -75px;
+      left: 10px;
+      bottom: -60px;
       background: url(../img/illustrations/flags-left.png) no-repeat center / cover;
+      transform: rotate(5deg);
    }
 
     &:after {
@@ -374,9 +380,10 @@
       width: 330px;
       height: 80px;
       position: absolute;
-      right: -20px;
-      bottom: -75px;
+      right: 10px;
+      bottom: -60px;
       background: url(../img/illustrations/flags-right.png) no-repeat center / cover;
+      transform: rotate(-5deg);
     }
   }
 }

@@ -31,7 +31,6 @@
 
   &__subtitle {
     display: block;
-    /*max-width: 400px;*/
     margin: 15px auto 0 auto;
     font-family: $intro-font;
     font-size: 22px;
@@ -105,25 +104,17 @@
     display: inline-block;
     width: 36px;
     height: 36px;
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: #fff;
     border-radius: 18px;
+    text-align: center;
+    
+
+    & i {
+      font-size: 18px;
+      color: #f50049;
+      line-height: 36px;
+    } 
   }
-}
-
-.instagram-link {
-  background-image: url(../img/icons/inst-icon.png);
-  background-size: 50%;
-}
-
-.vk-link {
-  background-image: url(../img/icons/vk-icon.png);
-  background-size: 50%;
-}
-
-.twit-link {
-  background-image: url(../img/icons/twit-icon.png);
 }
 
 .about-subtext {
@@ -137,7 +128,6 @@
 @media(min-width: 450px) {
 .about-socials {
   right: 18%;
-
 }
 }
 

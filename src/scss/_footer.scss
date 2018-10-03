@@ -46,32 +46,16 @@
 
   &__instagram,
   &__vk {
-    width: 40px;
-    height: 25px;
-    background-repeat: no-repeat;
-    background-position: left;
-
     &:hover {
       @include link-hover;
     }
   }
-
-  &__instagram {
-    /*background-image: url(../img/icons/inst-icon.png);*/
-     /*background-size:65%;*/
-     width: 150px;
-     height: 150px;
-     color: red;
-  }
-
-  &__vk {
-    background-image: url(../img/icons/vk-icon.png);
-     background-size:85%;
-  }
 }
-.icon-instagram {
-  color: red;
-  font-size: 40px;
+
+.icon-instagram,
+.icon-vkontakte {
+  color: #b6b6b6;
+  font-size: 30px;
 }
 
 
@@ -112,7 +96,7 @@
 .footer-socials {
   margin: 0 auto;
   padding-top: 0;
-  padding-bottom: 15px;
+  padding-bottom: 7px;
   position: absolute;
   right: 30vw;
   bottom: -12px;

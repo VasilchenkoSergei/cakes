@@ -8,51 +8,60 @@ $(document).ready(function(){
 
 
 
-$('.cakebox-list').owlCarousel({
-    loop:true,
-    center:true,
-    margin:10,
-    items: 1
-});
-
-$('.sizebox-list').owlCarousel({
-    // loop:true,
-    center:true,
-    margin:10,
-    items: 1,
-    // nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        768:{
-            items:3
-        },
-        1200:{
-            items:5
+  $('.cakebox-list').slick({
+    dots: false,
+    arrows: false,
+    centerMode: true,
+    variableWidth: true,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToScroll: 1,
+          slidesToShow: 1
         }
-    }
-});
+      },
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToScroll: 1,
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 
+  $('.sizebox-list').slick({
+    dots: true,
+    arrows: false,
+    centerMode: true,
+    variableWidth: true,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: 'unslick'
+      }
+    ]
+  });
 
-
-  // $('.cakebox-list').slick({
-  //   dots: true,
-  //   arrows: false,
-  //   centerMode: true,
-  //   variableWidth: true,
-  //   infinite: true,
-  //   slidesToShow: 1,
-  // });
-
-  // $('.sizebox-list').slick({
-  //   dots: true,
-  //   arrows: false,
-  //   centerMode: true,
-  //   variableWidth: true,
-  //   infinite: true,
-  //   slidesToShow: 1,
-  // });
+    $('.appearbox-list').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 1,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
+  });
 
   // $('.coach-photos__list').slick({
   //   arrows: false,
