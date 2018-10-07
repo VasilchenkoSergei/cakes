@@ -10,7 +10,6 @@ $('.cakebox-list').owlCarousel ({
   dots: true,
   center: true,
   nav: false,
-  dots: true,
   responsive : {
     0 : {
         items : 1,
@@ -25,18 +24,47 @@ $('.cakebox-list').owlCarousel ({
 });
 
 $('.sizebox-list').owlCarousel ({
-  loop:true,
-  margin:10,
+  loop: true,
   responsive : {
       0 : {
           items : 1,
-
       },
       767 : {
           items : 4,
           loop : false,
           mouseDrag: false,
-          autoHeight:false,
+      }
+  }
+});
+
+$('.appearbox-list').owlCarousel ({
+  loop: true,
+  margin: 10,
+  responsive : {
+      0 : {
+          items : 1,
+      },
+      767 : {
+          items : 2,
+          dots: false,
+          nav: true,
+          navText: ["<img src='img/icons/left-icon.svg'>", "<img src='img/icons/right-icon.svg'>"],
+      }
+  }
+});
+
+$('.reviews__list').owlCarousel ({
+  loop: true,
+  dots: true,
+  responsive : {
+      0 : {
+          items : 1,
+      },
+      950 : {
+          items : 1,
+          dots: false,
+          nav: true,
+          navText: ["<img src='img/icons/left-icon.svg'>", "<img src='img/icons/right-icon.svg'>"],
       }
   }
 });
@@ -44,9 +72,14 @@ $('.sizebox-list').owlCarousel ({
 
 
 
+
+
+
+
+
 $(window).resize(function() {
     if ( $(window).width() > 767 ) {
-        $('.sizebox-list').removeClass();
+        $('.personal-card div').removeClass('owl-carousel');
         }
     else {
         $('.sizebox-list').addClass();

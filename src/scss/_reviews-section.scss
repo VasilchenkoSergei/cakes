@@ -3,12 +3,22 @@
     @include section-title;
     margin-bottom: 22px;
   }
+
+  &__container {
+    margin: 0 auto;
+  }
+
+  &__list {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+  }
 }
 
 .reviews-item {
   width: 230px;
   height: 180px;
-  margin: 0 auto;
+  margin: 0;
 
   &__img-wrap {
     width: 60px;

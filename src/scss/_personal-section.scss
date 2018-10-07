@@ -12,7 +12,6 @@
 
 .personal-card {
   max-width: 1220px;
-  min-height: 430px;
   background-color: #fff;
   padding: 18px;
   border-radius: 30px;
@@ -44,10 +43,9 @@
 
 .personal-cakebox {
   width: 200px;
-  height: 280px;
   border-radius: 5px;
-  margin: 0 auto;
-  box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.1);
+  margin: 10px auto;
+  padding-bottom: 10px;
 
   &:hover {
     @include box-hover;
@@ -87,18 +85,13 @@
     font-weight: bold;
     text-align: center;
   }
-
-  &__btn {
-    position: absolute;
-    right: 20%;
-    bottom: 20%;
-  }
 }
 
 .personal-sizebox {
   width: 200px;
-  height: 280px;
-  margin: 0 auto;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding-bottom: 10px;
 
   &:hover {
     @include box-hover;
@@ -139,10 +132,9 @@
 
 .personal-appearbox {
   width: 250px;
-  height: 280px;
   border-radius: 5px;
-  margin: 0 auto;
-  box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.1);
+  margin: 10px auto;
+  padding-bottom: 10px;
 
   &:hover {
     @include box-hover;
@@ -151,7 +143,7 @@
   &__img-wrap {
     margin: 0 auto;
     width: 200px;
-    height: 200px;
+    height: 150px;
   }
 
   &__img {
@@ -224,9 +216,6 @@
 }
 
 .personal-card {
-  /*width: 100%;*/
-  height: 350px;
-  
 
   &__title {
     display: inline-block;
@@ -249,6 +238,7 @@
     top: -30px;
     font-size: 36px;
   }
+
 }
 
 .personal-cakebox {
@@ -257,10 +247,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /*position: absolute;*/
-  /*left: 0;*/
-  /*right: 0;*/
-  /*top: 60px;*/
+  position: relative;
+  
 
   &__img-wrap {
     width: 210px;
@@ -283,7 +271,9 @@
   }
 
   &__btn {
-    margin-left: 0;
+    position: absolute;
+    right: 4%;
+    bottom: 12%;
   }
 }
 
@@ -336,21 +326,19 @@
     background: url(../img/cake-picture.png) no-repeat center / cover;
     width: 120px;
     height: 150px;
-    left: 50px;
+    left: 20px;
     top: 120px;
   }
 }
 
-/*.appearbox-list {
-  position: absolute;
-  top: 50px;
-  left: 300px;
-}*/
-
+.appearbox-list {
+  width: 430px;
+  margin-left: 200px;
+}
 
 .personal-appearbox {
   width: 200px;
-  height: 270px;
+  height: 220px;
 
   &__btn {
     display: none;
@@ -367,7 +355,7 @@
 
 .personal-card {
   &:last-child {
-    height: 150px;
+    min-height: 150px;
     position: relative;
 
     &:before {
@@ -413,6 +401,15 @@
 }
 }
 
+
+@media (min-width: 900px) {
+
+.appearbox-list {
+  margin: 0 auto;
+}
+
+}
+
 @media (min-width: 1199px) {
 
 .personal {
@@ -452,16 +449,18 @@
 
 .personal-cakebox {
   width: 700px;
-  height: 400px;
+  height: 350px;
+  bottom: 70px;
+  margin-top: 80px;
 
   &__img-wrap {
-    width: 340px;
-    height: 390px;
+    width: 350px;
+    height: 350px;
   }
 
-  &__btn {
-    top: 300px;
-    left: 700px;
+  &__img {
+    height: 100%;
+    width: 200%;
   }
 }
 
@@ -483,7 +482,8 @@
   }
 
   &__btn {
-    margin-top: 50px;
+    bottom: 10%;
+    right: 17%;
   }
 }
 
@@ -519,13 +519,13 @@
 }
 
 .appearbox-list {
-  margin-left: 100px;
+  width: 700px;
+  margin-left: 350px;
 }
 
 .personal-appearbox {
   width: 320px;
   height: 430px;
-
 
   &:before {
     width: 250px;
@@ -549,8 +549,8 @@
 
 .personal-card:nth-child(3) {
   &:before {
-    width: 250px;
-    height: 330px;
+    width: 230px;
+    height: 300px;
     top: 180px;
   }
 }

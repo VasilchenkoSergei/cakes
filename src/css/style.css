@@ -113,15 +113,22 @@ a {
       padding-top: 55px; } }
 
 .main-nav {
-  display: none; }
+  display: none;
+  background-color: #fbebea;
+  width: calc(100% + 40px); }
   .main-nav__list {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
+  .main-nav__item {
+    margin-top: 30px; }
   .main-nav__link {
     text-decoration: none;
-    padding: 0 5px; }
+    padding: 0 5px;
+    color: #000;
+    font-size: 24px; }
     .main-nav__link:hover {
       color: #fbebea;
       background-color: #f50049;
@@ -394,7 +401,6 @@ a {
 
 .personal-card {
   max-width: 1220px;
-  min-height: 430px;
   background-color: #fff;
   padding: 18px;
   border-radius: 30px;
@@ -435,12 +441,11 @@ a {
 
 .personal-cakebox {
   width: 200px;
-  height: 280px;
   border-radius: 5px;
-  margin: 0 auto;
-  box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.1); }
+  margin: 10px auto;
+  padding-bottom: 10px; }
   .personal-cakebox:hover {
-    box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.7);
+    box-shadow: 0 5px 10px 1px rgba(163, 6, 60, 0.7);
     transition: all 0.3s; }
   .personal-cakebox__img-wrap {
     margin: 0 auto;
@@ -466,17 +471,14 @@ a {
     font-size: 18px;
     font-weight: bold;
     text-align: center; }
-  .cakebox-block__btn {
-    position: absolute;
-    right: 20%;
-    bottom: 20%; }
 
 .personal-sizebox {
   width: 200px;
-  height: 280px;
-  margin: 0 auto; }
+  border-radius: 5px;
+  margin: 10px auto;
+  padding-bottom: 10px; }
   .personal-sizebox:hover {
-    box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.7);
+    box-shadow: 0 5px 10px 1px rgba(163, 6, 60, 0.7);
     transition: all 0.3s; }
   .personal-sizebox__img-wrap {
     margin: 0 auto;
@@ -505,17 +507,16 @@ a {
 
 .personal-appearbox {
   width: 250px;
-  height: 280px;
   border-radius: 5px;
-  margin: 0 auto;
-  box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.1); }
+  margin: 10px auto;
+  padding-bottom: 10px; }
   .personal-appearbox:hover {
-    box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.7);
+    box-shadow: 0 5px 10px 1px rgba(163, 6, 60, 0.7);
     transition: all 0.3s; }
   .personal-appearbox__img-wrap {
     margin: 0 auto;
     width: 200px;
-    height: 200px; }
+    height: 150px; }
   .personal-appearbox__img {
     display: block;
     margin: 0 auto;
@@ -558,35 +559,29 @@ a {
 @media (min-width: 767px) {
   .personal__title {
     width: 300px; }
-  .personal-card {
-    /*width: 100%;*/
-    height: 350px; }
-    .personal-card__title {
-      display: inline-block;
-      height: 20px;
-      width: 90px;
-      position: relative;
-      margin-top: 50px;
-      margin-left: 30px;
-      margin-bottom: 0;
-      font-size: 18px; }
-    .personal-card__title--final {
-      margin-left: 30px;
-      margin-bottom: 10px; }
-    .personal-card__title span {
-      position: absolute;
-      top: -30px;
-      font-size: 36px; }
+  .personal-card__title {
+    display: inline-block;
+    height: 20px;
+    width: 90px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    font-size: 18px; }
+  .personal-card__title--final {
+    margin-left: 30px;
+    margin-bottom: 10px; }
+  .personal-card__title span {
+    position: absolute;
+    top: -30px;
+    font-size: 36px; }
   .personal-cakebox {
     width: 450px;
     height: 260px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*top: 60px;*/ }
+    position: relative; }
     .personal-cakebox__img-wrap {
       width: 210px;
       height: 240px;
@@ -600,7 +595,9 @@ a {
     .cakebox-block__size {
       text-align: left; }
     .cakebox-block__btn {
-      margin-left: 0; }
+      position: absolute;
+      right: 4%;
+      bottom: 12%; }
   .sizebox-list {
     display: flex;
     justify-content: space-between;
@@ -631,16 +628,14 @@ a {
     background: url(../img/cake-picture.png) no-repeat center/cover;
     width: 120px;
     height: 150px;
-    left: 50px;
+    left: 20px;
     top: 120px; }
-  /*.appearbox-list {
-  position: absolute;
-  top: 50px;
-  left: 300px;
-}*/
+  .appearbox-list {
+    width: 430px;
+    margin-left: 200px; }
   .personal-appearbox {
     width: 200px;
-    height: 270px; }
+    height: 220px; }
     .personal-appearbox__btn {
       display: none; }
     .personal-appearbox__title {
@@ -648,7 +643,7 @@ a {
     .personal-appearbox__size {
       font-size: 14px; }
   .personal-card:last-child {
-    height: 150px;
+    min-height: 150px;
     position: relative; }
     .personal-card:last-child:before {
       content: '';
@@ -681,6 +676,10 @@ a {
     .final-order__btn {
       margin: 0; } }
 
+@media (min-width: 900px) {
+  .appearbox-list {
+    margin: 0 auto; } }
+
 @media (min-width: 1199px) {
   .personal__title {
     width: 100%;
@@ -704,13 +703,15 @@ a {
       font-size: 27px; }
   .personal-cakebox {
     width: 700px;
-    height: 400px; }
+    height: 350px;
+    bottom: 70px;
+    margin-top: 80px; }
     .personal-cakebox__img-wrap {
-      width: 340px;
-      height: 390px; }
-    .personal-cakebox__btn {
-      top: 300px;
-      left: 700px; }
+      width: 350px;
+      height: 350px; }
+    .personal-cakebox__img {
+      height: 100%;
+      width: 200%; }
   .cakebox-block {
     width: 300px;
     height: 180px;
@@ -722,7 +723,8 @@ a {
     .cakebox-block__size {
       font-size: 22px; }
     .cakebox-block__btn {
-      margin-top: 50px; }
+      bottom: 10%;
+      right: 17%; }
   .personal-sizebox__img-wrap {
     width: 110px;
     height: 110px; }
@@ -741,7 +743,8 @@ a {
   .personal-sizebox__btn {
     display: none; }
   .appearbox-list {
-    margin-left: 100px; }
+    width: 700px;
+    margin-left: 350px; }
   .personal-appearbox {
     width: 320px;
     height: 430px; }
@@ -757,8 +760,8 @@ a {
     .personal-appearbox__size {
       font-size: 22px; }
   .personal-card:nth-child(3):before {
-    width: 250px;
-    height: 330px;
+    width: 230px;
+    height: 300px;
     top: 180px; }
   .final-order__parametr {
     font-size: 27px; }
@@ -772,10 +775,18 @@ a {
   padding-top: 45px;
   margin-bottom: 22px; }
 
+.reviews__container {
+  margin: 0 auto; }
+
+.reviews__list {
+  position: relative;
+  width: 500px;
+  margin: 0 auto; }
+
 .reviews-item {
   width: 230px;
   height: 180px;
-  margin: 0 auto; }
+  margin: 0; }
   .reviews-item__img-wrap {
     width: 60px;
     height: 60px;
@@ -1109,7 +1120,7 @@ a {
       position: absolute;
       width: 440px;
       height: 440px;
-      left: 50%;
+      left: 40%;
       top: -80px;
       background: url(../img/advantage-cake1.png);
       background-repeat: no-repeat;
