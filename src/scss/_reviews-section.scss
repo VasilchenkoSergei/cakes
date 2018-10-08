@@ -10,7 +10,7 @@
 
   &__list {
     position: relative;
-    width: 500px;
+    width: 280px;
     margin: 0 auto;
   }
 }
@@ -18,7 +18,7 @@
 .reviews-item {
   width: 230px;
   height: 180px;
-  margin: 0;
+  margin: 0 auto;
 
   &__img-wrap {
     width: 60px;
@@ -69,8 +69,14 @@
 
 @media(min-width: 767px) {
 
+.reviews {
+  &__list {
+    width: 500px;
+  }
+}
+
 .reviews-item {
-  width: 420px;
+  width: 400px;
   display: flex;
   justify-content: space-between;
 

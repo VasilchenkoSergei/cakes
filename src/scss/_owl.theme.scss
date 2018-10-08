@@ -14,6 +14,8 @@
 			display: inline-block;
 			cursor: pointer;
 			border-radius: 3px;
+			width: 30px;
+			height: 30px;
 
 			&:hover {
 				background: $nav-background-hover;
@@ -21,8 +23,6 @@
 				text-decoration: none;
 			}
 		}
-
-
 
 		.disabled {
 			opacity: $nav-disabled-opacity;
@@ -71,7 +71,7 @@
 
 .cakebox-list {
   .owl-dots {
-    top: 110px;
+    top: 120px;
   }
 
   .owl-nav {
@@ -117,7 +117,7 @@
 
 .reviews__list {
 	.owl-dots {
-		bottom: 30px;
+		bottom: -20px;
 	}
 
   .owl-nav {

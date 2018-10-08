@@ -1,10 +1,9 @@
 $(document).ready(function(){
 
-  // $('.promo__burger').bind('click', function() {
-  // $(this).toggleClass('active');
-  // $(this).find('div').removeClass('no-animation');
-  // $(".page-header").toggle();
-  //   });
+  $('.promo__burger').on('click', function() {
+  $('.main-nav').toggleClass('.active');
+  $('.main-nav').toggle();
+    });
 
 $('.cakebox-list').owlCarousel ({
   dots: true,

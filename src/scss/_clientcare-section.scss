@@ -25,7 +25,7 @@
 @media(min-width: 767px) {
 
 .clientcare {
-  width: 800px;
+  width: 720px;
   background-image: none;
   padding-top: 50px;
   position: relative;
@@ -74,8 +74,10 @@
   &__subtitle {
     @include title-subtext-1200;
   }
+
+    &:before {
+    left: 50%;
+  }
+
 }
-
-
-
 }
