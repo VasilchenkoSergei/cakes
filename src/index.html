@@ -74,16 +74,16 @@
 	      <article class="personal-card">
 	        <h4 class="personal-card__title"><span>01</span> Выберите начинку</h4>
 	        <div class="personal-card__cakebox-list cakebox-list owl-carousel owl-theme">
-	          <div class="personal-cakebox">
+	          <div class="personal-cakebox personal-cakebox1">
 	            <div class="personal-cakebox__img-wrap">
 	              <img src="img/filling1.jpg" alt="ганаш" class="personal-cakebox__img">
 	            </div>
 	            <div class="personal-cakebox__block  cakebox-block">
-	              <h5 class="cakebox-block__title">Шоколадный ганаш</h5>
+	              <h5 class="cakebox-block__title cakebox-block__title1">Шоколадный ганаш</h5>
 	              <p class="cakebox-block__text">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов!</p>
 	              <span class="cakebox-block__size">1000 руб/кг</span>
 	            </div>
-              <button class="personal-card__btn  cakebox-block__btn">Выбрать</button>
+              <button class="personal-card__btn  cakebox-block__btn cakebox-block__btn1">Выбрать</button>
 	          </div>
             <div class="personal-cakebox">
               <div class="personal-cakebox__img-wrap">
@@ -108,7 +108,6 @@
               <button class="personal-card__btn  cakebox-block__btn">Выбрать</button>
             </div>
 	        </div>
-          
 	      </article>
 
 	      <article class="personal-card">
@@ -175,7 +174,7 @@
 	        <div class="personal-card__final-order  final-order">
 	          <div class="final-order__box">
 	            <span class="final-order__parametr">Начинка</span>
-	            <div class="final-order__choice"></div>
+	            <div class="final-order__choice choice-cakebox"></div>
 	          </div>
 	          <div class="final-order__box">
 	            <span class="final-order__parametr">Размер</span>
@@ -297,9 +296,9 @@
 	    <div class="contacts__container  container">
 	      <form class="contacts-form">
 	      	<span class="contacts-form__text">Заполните форму ниже и наш кондитер свяжется с Вами</span>
-	        <input type="text" name="user-name" class="contacts-form__box" placeholder="  Ваше имя" required>
-	        <input type="text" name="user-email" class="contacts-form__box" placeholder="  Email адрес" required>
-	        <input type="text" name="user-text" class="contacts-form__box" placeholder="  Ваш вопрос" required>
+	        <label><input type="text" name="user-name" class="contacts-form__box" placeholder="Ваше имя" required></label>
+	        <label><input type="text" name="user-email" class="contacts-form__box" placeholder="Email адрес" required></label>
+	        <label><input type="textarea" name="user-text" class="contacts-form__box" placeholder="Ваш вопрос" required></label>
 	        <button class="contacts-form__btn">Отправить</button>
 	      </form>
 	      <div class="contacts__textblock contacts-textblock">
@@ -351,8 +350,22 @@
     </div>
   </footer>
 
+  <div class="popup">
+    <div class="popup-container">
+      <form class="popup-form">
+        <span class="popup-form__text">Введите свои данные</span>
+        <label><input type="text" name="user-name" class="popup-form__box" placeholder="Ваше имя" required></label>
+        <label><input type="text" name="user-email" class="popup-form__box" placeholder="Email адрес" required></label>
+        <label><input type="tel" name="user-phone" id="phone" class="popup-form__box" placeholder="Ваш телефон" required></label>
+        <button class="popup-form__btn popup-order__btn">Оформить заказ</button>
+        <button class="popup-form__btn popup-cancel__btn">Отмена</button>
+      </form>
+    </div>
+  </div>
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/owl.carousel.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

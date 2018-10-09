@@ -23,6 +23,13 @@
       border: none;
       margin: 10px auto;
       border-radius: 10px;
+      padding-left: 15px;
+      font-size: 20px;
+
+      &::placeholder {
+        opacity: 0.4;
+        line-height: 50px;
+      }
     }
 
     &__btn {
@@ -80,7 +87,6 @@
 @media(min-width: 767px) {
 
 .contacts {
-  /*background: url(../img/contacts-pic.jpg) no-repeat bottom right;*/
   width: 100%;
   margin: 0 auto;
   
@@ -111,15 +117,12 @@
 .contacts-socials {
   margin: 0;
   text-align: center;
-  
 }
-
 }
 
 @media(min-width: 1199px) {
 .contacts {
   width: 1000px;
-  /*margin-left: 45px;*/
   margin: 0 auto;
 
   &__title {
@@ -153,8 +156,7 @@
     width: 560px;
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid #000;
-    opacity: 0.2;
+    border-bottom: 2px solid #e2d4d3;
     border-radius: 0;
     padding-bottom: 0;
   }

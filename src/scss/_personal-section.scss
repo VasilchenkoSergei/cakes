@@ -257,7 +257,7 @@
   }
 
   &__img {
-    height: 200px;
+    height: 100%;
     width: 200%;
   }
 }
@@ -390,7 +390,7 @@
   margin: 0 auto;
 
   &__choice {
-    width: 100%;
+    width: 130%;
     padding: 0 10px;
     margin-bottom: 0;
   }
@@ -556,10 +556,8 @@
   }
 
   &__choice {
+    width: 180%;
     height: 40px;
   }
 }
-
-
-
 }

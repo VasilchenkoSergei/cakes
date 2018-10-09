@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  $('.popup').hide();
+
   $('.promo__burger').on('click', function() {
   $('.main-nav').toggleClass('.active');
   $('.main-nav').toggle();
@@ -28,11 +30,11 @@ $('.sizebox-list').owlCarousel ({
       0 : {
           items : 1,
       },
-      767 : {
-          items : 4,
-          loop : false,
-          mouseDrag: false,
-      }
+      // 767 : {
+      //     items : 4,
+      //     loop : false,
+      //     mouseDrag: false,
+      // }
   }
 });
 
@@ -69,102 +71,40 @@ $('.reviews__list').owlCarousel ({
 });
 
 
+  $('cakebox-block__btn1').on('click', function() {
+    alert('yess');
+    // $('choice-cakebox').text(('cakebox-block__title1').text());
+  });
 
 
-
-
-
-
-
-$(window).resize(function() {
-    if ( $(window).width() > 767 ) {
-        $('.personal-card div').removeClass('owl-carousel');
-        }
+$(window).width(function() {
+    if ($(window).width() > 767) {
+      $('.sizebox-list').trigger('destroy.owl.carousel');
+    }
     else {
-        $('.sizebox-list').addClass();
-        }
+      return false;
+    }
     });
 
-  // $('.cakebox-list').slick({
-  //   dots: false,
-  //   arrows: false,
-  //   centerMode: true,
-  //   variableWidth: true,
-  //   infinite: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 767,
-  //       settings: {
-  //         slidesToScroll: 1,
-  //         slidesToShow: 1
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 1199,
-  //       settings: {
-  //         slidesToScroll: 1,
-  //         slidesToShow: 1
-  //       }
-  //     }
-  //   ]
-  // });
 
-  // $('.sizebox-list').slick({
-  //   dots: true,
-  //   arrows: false,
-  //   centerMode: true,
-  //   variableWidth: true,
-  //   infinite: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 767,
-  //       settings: 'unslick'
-  //     }
-  //   ]
-  // });
 
-  //   $('.appearbox-list').slick({
-  //   dots: true,
-  //   arrows: false,
-  //   infinite: true,
-  //   slidesToShow: 1,
-  //   centerMode: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 767,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 2
-  //       }
-  //     }
-  //   ]
-  // });
+  $('.final-order__btn').on('click', function() {
+    $('.popup').fadeIn(500);
+  });
 
-  // $('.coach-photos__list').slick({
-  //   arrows: false,
-  //   slidesToShow: 5,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1050,
-  //       settings: {
-  //         slidesToShow: 4,
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 3,
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         centerMode: true,
-  //         slidesToShow: 1,
-  //       }
-  //     }
-  //   ]
-  // });
+  $('.popup-cancel__btn').on('click', function() {
+    $('.popup').fadeOut(500);
+  });
+
+$(function($){
+  $("#phone").mask("(999) 999-9999");
+});
+
+
+
+
+
+
 
 
 });
