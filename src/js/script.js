@@ -1,11 +1,15 @@
 $(document).ready(function(){
 
-  $('.popup').hide();
+$('.popup').hide();
 
-  $('.promo__burger').on('click', function() {
+$('.promo__burger').on('click', function() {
   $('.main-nav').toggleClass('.active');
   $('.main-nav').toggle();
-    });
+});
+
+
+// !!!!!!!!!!!!!!SLIDER!!!!!!!!!!!!!!!!!!!!
+
 
 $('.cakebox-list').owlCarousel ({
   dots: true,
@@ -30,11 +34,6 @@ $('.sizebox-list').owlCarousel ({
       0 : {
           items : 1,
       },
-      // 767 : {
-      //     items : 4,
-      //     loop : false,
-      //     mouseDrag: false,
-      // }
   }
 });
 
@@ -70,35 +69,75 @@ $('.reviews__list').owlCarousel ({
   }
 });
 
-
-  $('cakebox-block__btn1').on('click', function() {
-    alert('yess');
-    // $('choice-cakebox').text(('cakebox-block__title1').text());
-  });
-
-
 $(window).width(function() {
-    if ($(window).width() > 767) {
-      $('.sizebox-list').trigger('destroy.owl.carousel');
-    }
-    else {
-      return false;
-    }
-    });
+  if ($(window).width() > 767) {
+    $('.sizebox-list').trigger('destroy.owl.carousel');
+  }
+  else {
+    return false;
+  }
+});
 
+// !!!!!!!!!!POPUP!!!!!!!!!!!!!
 
+$('.final-order__btn').on('click', function() {
+  $('.popup').fadeIn(500);
+});
 
-  $('.final-order__btn').on('click', function() {
-    $('.popup').fadeIn(500);
-  });
+$('.popup-cancel__btn').on('click', function() {
+  $('.popup').fadeOut(500);
+});
 
-  $('.popup-cancel__btn').on('click', function() {
-    $('.popup').fadeOut(500);
-  });
+// !!!!!!!!!!МАСКА ДЛЯ ВВОАД ТЕЛЕФОНА!!!!!!!!!!!!
 
 $(function($){
   $("#phone").mask("(999) 999-9999");
 });
+
+$('.cakebox-block__btn').on('click', function() {
+  $('.choice-cakebox').text($(this).prev('.cakebox-block').children('.cakebox-block__title').text());
+});
+
+
+$('.personal-sizebox').on('click', function() {
+  $('.choice-sizebox').text($(this).children('.personal-sizebox__title').text().split('(')[0]);
+});
+
+
+$('.personal-appearbox').on('click', function() {
+  $('.choice-appearbox').text($(this).children('.personal-appearbox__title').text());
+});
+
+
+// !!!!!!!!!!!!!!!!VISITED LINKS!!!!!!!!!!!!
+
+$('.main-nav__link').on('click', function() {
+  $(this).css({'color':'blue'});
+});
+
+
+// !!!!!!!!!!!!!!ITEM CHOICE!!!!!!!!!!!!!!!!!!!!!!!
+
+$('.personal-sizebox').on('click', function() {
+  if ($(this).attr('click-state') == 1) {
+    $(this).attr('click-state', 0)
+    $(this).css({'box-shadow':'0 0 7px 2px transparent'});
+  } else {
+    $(this).attr('click-state', 1)
+    $(this).css({'box-shadow':'0 0 7px 2px #f50049'});
+  }
+});
+
+
+
+
+
+
+
+
+// $(document).on('click', '.main-nav__link', function() {
+//   $(this).addClass('main-nav__link--active').siblings().removeClass('main-nav__link--active');
+// });
 
 
 

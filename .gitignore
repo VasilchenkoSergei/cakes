@@ -2,3 +2,4 @@ src/design/
 dist/
 node_modules/
 *.psd
+*.txt
