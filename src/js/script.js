@@ -95,7 +95,7 @@ $(function($){
 });
 
 $('.cakebox-block__btn').on('click', function() {
-  $('.choice-cakebox').text($(this).prev('.cakebox-block').children('.cakebox-block__title').text());
+  $('.choice-cakebox').text($(this).prev('.cakebox-block').children('.cakebox-block__title').text().split('(')[0]);
 });
 
 
@@ -103,11 +103,18 @@ $('.personal-sizebox').on('click', function() {
   $('.choice-sizebox').text($(this).children('.personal-sizebox__title').text().split('(')[0]);
 });
 
-
-$('.personal-appearbox').on('click', function() {
-  $('.choice-appearbox').text($(this).children('.personal-appearbox__title').text());
+$('.personal-sizebox__btn').on('click', function() {
+  $('.choice-sizebox').text($(this).prev('.personal-sizebox').children('.personal-sizebox__title').text().split('(')[0]);
 });
 
+
+$('.personal-appearbox').on('click', function() {
+  $('.choice-appearbox').text($(this).children('.personal-appearbox__title').text().split('(')[0]);
+});
+
+$('.personal-appearbox__btn').on('click', function() {
+  $('.choice-appearbox').text($(this).prev('.personal-appearbox').prev('.personal-appearbox').children('.personal-appearbox__title').text().split('(')[0]);
+});
 
 // !!!!!!!!!!!!!!!!VISITED LINKS!!!!!!!!!!!!
 
@@ -118,7 +125,7 @@ $('.main-nav__link').on('click', function() {
 
 // !!!!!!!!!!!!!!ITEM CHOICE!!!!!!!!!!!!!!!!!!!!!!!
 
-$('.personal-sizebox').on('click', function() {
+$('.personal-sizebox', 'personal-appearbox').on('click', function() {
   if ($(this).attr('click-state') == 1) {
     $(this).attr('click-state', 0)
     $(this).css({'box-shadow':'0 0 7px 2px transparent'});

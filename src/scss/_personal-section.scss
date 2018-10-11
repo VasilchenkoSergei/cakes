@@ -37,7 +37,7 @@
 
   &__btn {
     @include btn;
-    margin-top: 23px;
+    margin-top: 50px;
   }
 }
 
@@ -46,6 +46,7 @@
   border-radius: 5px;
   margin: 10px auto;
   padding-bottom: 10px;
+  cursor: pointer;
 
   &:hover {
     @include box-hover;
@@ -54,7 +55,7 @@
   &__img-wrap {
     margin: 0 auto;
     width: 190px;
-    height: 110px;
+    height: 100px;
   }
 
   &__img {
@@ -76,6 +77,9 @@
   &__text {
     margin-bottom: 17px;
     max-width: 300px;
+    max-height: 70px;
+    overflow: scroll;
+    
   }
 
   &__size {
@@ -92,6 +96,7 @@
   border-radius: 5px;
   margin: 10px auto;
   padding-bottom: 10px;
+  cursor: pointer;
 
   &:hover {
     @include box-hover;
@@ -131,10 +136,11 @@
 }
 
 .personal-appearbox {
-  width: 250px;
+  width: 230px;
   border-radius: 5px;
   margin: 10px auto;
   padding-bottom: 10px;
+  cursor: pointer;
 
   &:hover {
     @include box-hover;
@@ -546,11 +552,14 @@
 .final-order {
   &__parametr {
     font-size: 27px;
+    text-align: center;
   }
 
   &__choice {
-    width: 180%;
+    width: 250px;
     height: 40px;
+    line-height: 40px;
+    font-size: 18px;
   }
 }
 }

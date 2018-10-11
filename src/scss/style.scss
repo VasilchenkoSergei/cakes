@@ -18,6 +18,7 @@ $circe-font: 'Circe', serif;
   font-size: 13px;
   border: none;
   width: 180px;
+  cursor: pointer;
 
   &:hover {
   color: #f50049;
@@ -76,7 +77,6 @@ body {
   box-sizing: border-box;
   background-color: #fbebea;
   position: relative;
-  
 }
 
 * {
@@ -85,6 +85,7 @@ body {
   margin: 0;
   list-style: none;
   text-decoration: none;
+  /*outline: 1px solid red;*/
 }
 
 .container {
