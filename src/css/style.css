@@ -345,7 +345,7 @@ a {
       top: 20%; } }
 
 .cakes__title {
-  font-size: 24px;
+  font-size: 1.7rem;
   text-align: center;
   font-family: "Playfair display", serif;
   padding-top: 45px;
@@ -431,7 +431,7 @@ a {
 
 @media (min-width: 1199px) {
   .cakes__title {
-    font-size: 40px;
+    font-size: 2.85rem;
     padding-top: 100px;
     padding-top: 0; }
   .cakes__item {
@@ -440,7 +440,7 @@ a {
       font-size: 20px; } }
 
 .personal__title {
-  font-size: 24px;
+  font-size: 1.7rem;
   text-align: center;
   font-family: "Playfair display", serif;
   padding-top: 45px;
@@ -450,7 +450,7 @@ a {
 .personal__subtitle {
   display: block;
   font-family: "Intro Script R", sans-serif;
-  font-size: 22px;
+  font-size: 1.6rem;
   text-align: center; }
 
 .personal-card {
@@ -601,7 +601,7 @@ a {
 .final-order__parametr {
   display: block;
   font-family: "Intro Script R", sans-serif;
-  font-size: 22px;
+  font-size: 1.6rem;
   text-align: center;
   margin: 0 auto;
   color: #f50049;
@@ -744,10 +744,10 @@ a {
 @media (min-width: 1199px) {
   .personal__title {
     width: 100%;
-    font-size: 40px;
+    font-size: 2.85rem;
     padding-top: 100px; }
   .personal__subtitle {
-    font-size: 35px; }
+    font-size: 2.5rem; }
   .personal-card__title {
     font-size: 27px;
     line-height: 27px;
@@ -769,7 +769,7 @@ a {
       width: 350px;
       height: 350px; }
     .personal-cakebox__img {
-      height: 100%;
+      height: 90%;
       width: 200%; }
   .cakebox-block {
     width: 300px;
@@ -831,7 +831,7 @@ a {
     font-size: 18px; } }
 
 .reviews__title {
-  font-size: 24px;
+  font-size: 1.7rem;
   text-align: center;
   font-family: "Playfair display", serif;
   padding-top: 45px;
@@ -901,10 +901,10 @@ a {
 
 @media (min-width: 1199px) {
   .reviews__title {
-    font-size: 40px;
+    font-size: 2.85rem;
     padding-top: 100px; }
   .reviews__subtitle {
-    font-size: 35px; }
+    font-size: 2.5rem; }
   .reviews-item__img-wrap {
     margin-top: 5%; }
   .reviews-item__name {
@@ -919,7 +919,7 @@ a {
   max-width: 800px;
   margin: 0 auto; }
   .about__title {
-    font-size: 24px;
+    font-size: 1.7rem;
     text-align: center;
     font-family: "Playfair display", serif;
     padding-top: 45px;
@@ -1049,15 +1049,15 @@ a {
 
 @media (min-width: 1199px) {
   .about__title {
-    font-size: 40px;
+    font-size: 2.85rem;
     padding-top: 100px; }
   .about__subtitle {
-    font-size: 35px; } }
+    font-size: 2.5rem; } }
 
 .advantages {
   position: relative; }
   .advantages__title {
-    font-size: 24px;
+    font-size: 1.7rem;
     text-align: center;
     font-family: "Playfair display", serif;
     padding-top: 45px;
@@ -1142,17 +1142,17 @@ a {
   .advantages {
     width: 900px; }
     .advantages__title {
-      font-size: 40px;
+      font-size: 2.85rem;
       padding-top: 100px; }
     .advantages__subtitle {
-      font-size: 35px; }
+      font-size: 2.5rem; }
   .advantages-block:first-child:after {
     left: -400px; } }
 
 .clientcare {
   background: url(../img/advantage-cake1.png) 0 200px/100% no-repeat; }
   .clientcare__title {
-    font-size: 24px;
+    font-size: 1.7rem;
     text-align: center;
     font-family: "Playfair display", serif;
     padding-top: 45px;
@@ -1200,13 +1200,13 @@ a {
   .clientcare {
     width: 900px; }
     .clientcare__title {
-      font-size: 40px;
+      font-size: 2.85rem;
       padding-top: 100px;
       padding-top: 20px; }
     .clientcare__subtitle {
-      font-size: 35px; }
+      font-size: 2.5rem; }
     .clientcare:before {
-      left: 50%; } }
+      left: 55%; } }
 
 .order {
   background: url(../img/order-bg-320.jpg) bottom no-repeat #e3353d;
@@ -1214,7 +1214,7 @@ a {
   margin: 0 auto;
   height: 50%; }
   .order__title {
-    font-size: 24px;
+    font-size: 1.7rem;
     text-align: center;
     font-family: "Playfair display", serif;
     padding-top: 45px;
@@ -1284,7 +1284,7 @@ a {
 .contacts {
   text-align: center; }
   .contacts__title {
-    font-size: 24px;
+    font-size: 1.7rem;
     text-align: center;
     font-family: "Playfair display", serif;
     padding-top: 45px;
@@ -1386,10 +1386,10 @@ a {
     width: 1000px;
     margin: 0 auto; }
     .contacts__title {
-      font-size: 40px;
+      font-size: 2.85rem;
       padding-top: 100px; }
     .contacts__subtitle {
-      font-size: 35px; }
+      font-size: 2.5rem; }
     .contacts__title, .contacts__subtitle {
       text-align: left; }
     .contacts__container {
