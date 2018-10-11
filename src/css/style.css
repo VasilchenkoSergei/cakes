@@ -188,12 +188,12 @@ a {
     color: #fff;
     background-color: #f50049;
     border-radius: 25px;
-    height: 50px;
-    line-height: 50px;
+    height: 3.3em;
+    line-height: 3.3em;
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
-    font-size: 13px;
+    font-size: 1em;
     border: none;
     width: 180px;
     cursor: pointer;
@@ -281,12 +281,12 @@ a {
       color: #fff;
       background-color: #f50049;
       border-radius: 25px;
-      height: 50px;
-      line-height: 50px;
+      height: 3.3em;
+      line-height: 3.3em;
       text-transform: uppercase;
       text-align: center;
       margin: 0 auto;
-      font-size: 13px;
+      font-size: 1em;
       border: none;
       width: 180px;
       cursor: pointer;
@@ -478,12 +478,12 @@ a {
     color: #fff;
     background-color: #f50049;
     border-radius: 25px;
-    height: 50px;
-    line-height: 50px;
+    height: 3.3em;
+    line-height: 3.3em;
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
-    font-size: 13px;
+    font-size: 1em;
     border: none;
     width: 180px;
     cursor: pointer;
@@ -512,7 +512,7 @@ a {
     height: auto; }
 
 .cakebox-block {
-  margin-top: 40px;
+  margin-top: 20px;
   position: relative; }
   .cakebox-block__title {
     margin-bottom: 9px;
@@ -521,8 +521,8 @@ a {
   .cakebox-block__text {
     margin-bottom: 17px;
     max-width: 300px;
-    max-height: 70px;
-    overflow: scroll; }
+    max-height: 90px;
+    overflow: hidden; }
   .cakebox-block__size {
     display: block;
     font-family: "Playfair display", serif;
@@ -774,11 +774,12 @@ a {
   .cakebox-block {
     width: 300px;
     height: 180px;
-    margin-top: 80px; }
+    margin-top: 30px; }
     .cakebox-block__title {
       font-size: 20px; }
     .cakebox-block__text {
-      font-size: 18px; }
+      font-size: 18px;
+      max-height: 120px; }
     .cakebox-block__size {
       font-size: 22px; }
     .cakebox-block__btn {
@@ -1312,12 +1313,12 @@ a {
     color: #fff;
     background-color: #f50049;
     border-radius: 25px;
-    height: 50px;
-    line-height: 50px;
+    height: 3.3em;
+    line-height: 3.3em;
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
-    font-size: 13px;
+    font-size: 1em;
     border: none;
     width: 180px;
     cursor: pointer;
@@ -1543,12 +1544,12 @@ a {
     color: #fff;
     background-color: #f50049;
     border-radius: 25px;
-    height: 50px;
-    line-height: 50px;
+    height: 3.3em;
+    line-height: 3.3em;
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
-    font-size: 13px;
+    font-size: 1em;
     border: none;
     width: 180px;
     cursor: pointer;
