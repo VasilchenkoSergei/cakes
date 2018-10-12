@@ -33,13 +33,13 @@
     display: block;
     margin: 15px auto 0 auto;
     font-family: $intro-font;
-    font-size: 22px;
+    font-size: 1.6rem;
   }
 
   &__blockquote {
     max-width: 400px;
     font-family: $fair-font;
-    font-size: 13px;
+    font-size: $main-fz;
     font-style: italic;
     text-align: center;
     margin: 70px auto;
@@ -110,7 +110,7 @@
     
 
     & i {
-      font-size: 18px;
+      font-size: 1.3rem;
       color: #f50049;
       line-height: 36px;
     } 

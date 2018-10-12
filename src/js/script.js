@@ -80,6 +80,16 @@ $(window).width(function() {
 
 // !!!!!!!!!!POPUP!!!!!!!!!!!!!
 
+// $('.final-order__btn').on('click', function() {
+//   if ($('.choice-cakebox').textContent('')) {
+//     $('.popup').fadeIn(500);
+//   }
+//   else {
+//     alert('Выберите начинку, размер и оформление торта');
+//   }
+// });
+
+
 $('.final-order__btn').on('click', function() {
   $('.popup').fadeIn(500);
 });
@@ -134,22 +144,6 @@ $('.personal-sizebox', 'personal-appearbox').on('click', function() {
     $(this).css({'box-shadow':'0 0 7px 2px #f50049'});
   }
 });
-
-
-
-
-
-
-
-
-// $(document).on('click', '.main-nav__link', function() {
-//   $(this).addClass('main-nav__link--active').siblings().removeClass('main-nav__link--active');
-// });
-
-
-
-
-
 
 
 

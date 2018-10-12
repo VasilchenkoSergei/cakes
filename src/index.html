@@ -3,7 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/icons/favicon/ms-icon-144x144.png">
   <title>Cakes - Торты на заказ</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/icons/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/icons/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/icons/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/icons/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/icons/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/icons/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/icons/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/icons/favicon/manifest.json">
   <link rel="stylesheet" type="text/css" href="css/fontello.css">
   <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
   <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
@@ -23,22 +39,22 @@
     </div>
   </div>
 
-  <header class="page-header">
+  <header class="page-header" role="banner">
     <div class="page-header__container  container">
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Наши торты</a></li>
+            <a href="#cakes" class="main-nav__link">Наши торты</a></li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Индивидуальный заказ</a></li>
+            <a href="#personal" class="main-nav__link">Индивидуальный заказ</a></li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Отзывы</a></li>
+            <a href="#reviews" class="main-nav__link">Отзывы</a></li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">О нас</a></li>
+            <a href="#about" class="main-nav__link">О нас</a></li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Как заказать</a></li>
+            <a href="#order" class="main-nav__link">Как заказать</a></li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Контакты</a></li>
+            <a href="#contacts" class="main-nav__link">Контакты</a></li>
         </ul>
       </nav>
       <h1 class="page-header__title">Торты<br>на заказ</h1>
@@ -56,17 +72,17 @@
       <h2 class="cakes__title">Наши торты</h2>
 	    <div class="cakes__container  container">
 	      <div class="cakes__list">
-	        <a href="#" class="cakes__item">Классические<br><span>24 вида</span></a>     
-	        <a href="#" class="cakes__item">Муссовые<br><span>12 видов</span></a>      
-	        <a href="#" class="cakes__item">Свадебные<br><span>20 видов</span></a>      
-	        <a href="#" class="cakes__item">Мужчинам<br><span>16 видов</span></a>      
-	        <a href="#" class="cakes__item">Женщинам<br><span>22 вида</span></a>      
+	        <a href="#" class="cakes__item">Классические<br><span>24 вида</span></a>
+	        <a href="#" class="cakes__item">Муссовые<br><span>12 видов</span></a>
+	        <a href="#" class="cakes__item">Свадебные<br><span>20 видов</span></a>
+	        <a href="#" class="cakes__item">Мужчинам<br><span>16 видов</span></a>
+	        <a href="#" class="cakes__item">Женщинам<br><span>22 вида</span></a>
 	        <a href="#" class="cakes__item">Детские<br><span>18 видов</span></a>
 	      </div>
 	    </div>
 	  </section>
 
-	  <section class="personal">
+	  <section class="personal" id="personal">
 	  	<h2 class="personal__title">Индивидуальный заказ</h2>
       <h3 class="personal__subtitle">Соберите торт в 3 шага</h3>
 	    <div class="personal__container  container">
@@ -74,9 +90,9 @@
 	      <article class="personal-card">
 	        <h4 class="personal-card__title"><span>01</span> Выберите начинку</h4>
 	        <div class="personal-card__cakebox-list cakebox-list owl-carousel owl-theme">
-	          <div class="personal-cakebox personal-cakebox1">
+	          <div class="personal-cakebox">
 	            <div class="personal-cakebox__img-wrap">
-	              <img src="img/filling1.jpg" alt="ганаш" class="personal-cakebox__img">
+	              <img src="img/filling1.jpg" alt="ганаш" class="personal-cakebox__img" width="200" height="200">
 	            </div>
 	            <div class="personal-cakebox__block  cakebox-block">
 	              <h5 class="cakebox-block__title cakebox-block__title1">Шоколадный ганаш</h5>
@@ -87,7 +103,7 @@
 	          </div>
             <div class="personal-cakebox">
               <div class="personal-cakebox__img-wrap">
-                <img src="img/filling1.jpg" alt="ганаш" class="personal-cakebox__img">
+                <img src="img/filling1.jpg" alt="ганаш" class="personal-cakebox__img" width="200" height="200">
               </div>
               <div class="personal-cakebox__block  cakebox-block">
                 <h5 class="cakebox-block__title">Фруктовый крем</h5>
@@ -98,7 +114,7 @@
             </div>
             <div class="personal-cakebox">
               <div class="personal-cakebox__img-wrap">
-                <img src="img/filling2.jpg" alt="ганаш" class="personal-cakebox__img">
+                <img src="img/filling2.jpg" alt="ганаш" class="personal-cakebox__img" width="200" height="200">
               </div>
               <div class="personal-cakebox__block  cakebox-block">
                 <h5 class="cakebox-block__title">Ореховое пралине</h5>
@@ -115,28 +131,28 @@
 	        <div class="personal-card__sizebox-list  sizebox-list owl-carousel owl-theme">
 	          <div class="personal-sizebox">
 	            <div class="personal-sizebox__img-wrap">
-	              <img src="img/icons/1-kilo-icon.png" alt="Размер 1" class="personal-sizebox__img">
+	              <img src="img/icons/1-kilo-icon.png" alt="Размер 1" class="personal-sizebox__img" width="100" height="100">
 	            </div>
 	            <h5 class="personal-sizebox__title">17-18 см<br>(1 кг - 6 персон)</h5>
               <button class="personal-card__btn  personal-sizebox__btn">Выбрать</button>
 	          </div>
 	          <div class="personal-sizebox">
 	            <div class="personal-sizebox__img-wrap">
-	              <img src="img/icons/2-kilo-icon.png" alt="Размер 2" class="personal-sizebox__img">
+	              <img src="img/icons/2-kilo-icon.png" alt="Размер 2" class="personal-sizebox__img" width="100" height="100">
 	            </div>
 	            <h5 class="personal-sizebox__title">23 - 24 см<br>(10 - 12 персон)</h5>
               <button class="personal-card__btn  personal-sizebox__btn">Выбрать</button>
 	          </div>
 	          <div class="personal-sizebox">
 	            <div class="personal-sizebox__img-wrap">
-	              <img src="img/icons/5-kilo-icon.png" alt="Размер 3" class="personal-sizebox__img">
+	              <img src="img/icons/5-kilo-icon.png" alt="Размер 3" class="personal-sizebox__img" width="100" height="100">
 	            </div>
 	            <h5 class="personal-sizebox__title">Два яруса 25 и 20 см<br>(15 - 20 персон)</h5>
               <button class="personal-card__btn  personal-sizebox__btn">Выбрать</button>
 	          </div>
 	          <div class="personal-sizebox">
 	            <div class="personal-sizebox__img-wrap">
-	              <img src="img/icons/8-kilo-icon.png" alt="Размер 4" class="personal-sizebox__img">
+	              <img src="img/icons/8-kilo-icon.png" alt="Размер 4" class="personal-sizebox__img" width="100" height="100">
 	            </div>
 	            <h5 class="personal-sizebox__title">Три яруса 30, 25 и 18 см<br>(25 - 30 персон)</h5>
               <button class="personal-card__btn  personal-sizebox__btn">Выбрать</button>
@@ -149,7 +165,7 @@
 	        <div class="personal-card__appearbox-list  appearbox-list owl-carousel owl-theme">
 	          <div class="personal-appearbox">
 	            <div class="personal-appearbox__img-wrap">
-	              <img src="img/marshmallow-cake.jpg" alt="маршмэллоу" class="personal-appearbox__img">
+	              <img src="img/marshmallow-cake.jpg" alt="маршмэллоу" class="personal-appearbox__img" width="200" height="200">
 	            </div>
 	            <h5 class="personal-appearbox__title">Маршмэллоу</h5>
 	            <span class="personal-appearbox__size">600 руб/кг</span>
@@ -157,7 +173,7 @@
 	          </div>
             <div class="personal-appearbox">
               <div class="personal-appearbox__img-wrap">
-                <img src="img/berries-cake.jpg" alt="маршмэллоу" class="personal-appearbox__img">
+                <img src="img/berries-cake.jpg" alt="маршмэллоу" class="personal-appearbox__img" width="200" height="200">
               </div>
               <h5 class="personal-appearbox__title">Ягодное ассорти</h5>
               <span class="personal-appearbox__size">700 руб/кг</span>
@@ -165,7 +181,7 @@
             </div>
             <div class="personal-appearbox">
               <div class="personal-appearbox__img-wrap">
-                <img src="img/marshmallow-cake.jpg" alt="маршмэллоу" class="personal-appearbox__img">
+                <img src="img/marshmallow-cake.jpg" alt="маршмэллоу" class="personal-appearbox__img" width="200" height="200">
               </div>
               <h5 class="personal-appearbox__title">Графские развалины</h5>
               <span class="personal-appearbox__size">1000 руб/кг</span>
@@ -195,13 +211,13 @@
 	    </div>
 	  </section>
 
-	  <section class="reviews">
+	  <section class="reviews" id="reviews">
 	  	<h2 class="reviews__title">Отзывы</h2>
 	    <div class="reviews__container  container">
 	      <div class="reviews__list owl-carousel owl-theme">
 	        <article class="reviews-item">
             <div class="reviews-item__img-wrap">
-              <img src="img/review-photo1.jpg" alt="фото клиента" class="reviews-item__img">
+              <img src="img/review-photo1.jpg" alt="фото клиента" class="reviews-item__img" width="200" height="200">
             </div>
             <div class="reviews-item__block  reviews-block">
               <span class="reviews-item__name">Мария</span>
@@ -211,7 +227,7 @@
           </article>
           <article class="reviews-item">
 	          <div class="reviews-item__img-wrap">
-	            <img src="img/review-photo2.jpg" alt="фото клиента" class="reviews-item__img">
+	            <img src="img/review-photo2.jpg" alt="фото клиента" class="reviews-item__img" width="200" height="200">
 	          </div>
 	          <div class="reviews-item__block  reviews-block">
 	            <span class="reviews-item__name">Сергей</span>
@@ -223,11 +239,11 @@
 	    </div>
 	  </section>
 
-	  <section class="about">
+	  <section class="about" id="about">
 	    <h2 class="about__title">О нас</h2>
 	    <div class="about__container  container">
 	      <div class="about__img-wrap">
-	        <img src="img/cake-maker-photo.jpg" alt="фото кондитера" class="about__img">
+	        <img src="img/cake-maker-photo.jpg" alt="фото кондитера" class="about__img" width="200" height="200">
 	      </div>
 	      <div class="about__text">
 	        <h3 class="about__subtitle">О кондитере</h3>
@@ -252,7 +268,7 @@
 	    </div>
 	  </section>
 
-	  <section class="advantages">
+	  <section class="advantages" id="advantages">
 	    <h2 class="advantages__title">Наши преимущества</h2>
 	    <h3 class="advantages__subtitle">Почему нас выбирают?</h3>
 	    <div class="advantages__container  container">
@@ -267,7 +283,7 @@
 	    </div>
 	  </section>
 
-	  <section class="clientcare">
+	  <section class="clientcare" id="clientcare">
 	    <h2 class="clientcare__title">Забота о клиентах</h2>
 	    <h3 class="clientcare__subtitle">Для нас важно</h3>
 	    <div class="clientcare__container  container">
@@ -275,7 +291,7 @@
 	    </div>
 	  </section>
 
-	  <section class="order">
+	  <section class="order" id="order">
 	  	<h2 class="order__title">Как заказать</h2>
 	    <div class="order__container  container">
 	        <ul class="order__list">
@@ -295,7 +311,7 @@
 	     </div>
 	  </section>
 
-	  <section class="contacts">
+	  <section class="contacts" id="contacts">
 	    <h2 class="contacts__title">Контакты</h2>
 	    <h3 class="contacts__subtitle">Остались вопросы?</h3>
 	    <div class="contacts__container  container">
@@ -304,7 +320,7 @@
 	        <label><input type="text" name="user-name" autocapitalize="on" class="contacts-form__box" placeholder="Ваше имя" required></label>
 	        <label><input type="email" name="user-email" autocapitalize="off" autocorrect="off" class="contacts-form__box" placeholder="Email адрес" required></label>
           <textarea rows="5" name="user-text" class="contacts-form__box" placeholder="Ваш вопрос"></textarea>
-	        <button class="contacts-form__btn">Отправить</button>
+	        <button type="submit" class="contacts-form__btn">Отправить</button>
 	      </form>
 	      <div class="contacts__textblock contacts-textblock">
 		      <span class="contacts-textblock__phonetext">Или звоните по телефону</span><br>
@@ -326,22 +342,22 @@
       <a href="index.html" class="page-footer__logo  logo">Cakes</a>
       <ul class="footer-nav">
         <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Наши торты</a>
+          <a href="#cakes" class="footer-nav__link">Наши торты</a>
         </li>
         <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Индивидуальный заказ</a>
+          <a href="#personal" class="footer-nav__link">Индивидуальный заказ</a>
         </li>
         <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Отзывы</a>
+          <a href="#reviews" class="footer-nav__link">Отзывы</a>
         </li>
         <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">О нас</a>
+          <a href="#about" class="footer-nav__link">О нас</a>
         </li>
         <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Как заказать</a>
+          <a href="#order" class="footer-nav__link">Как заказать</a>
         </li>
         <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Контакты</a>
+          <a href="#contacts" class="footer-nav__link">Контакты</a>
         </li>
         <li class="footer-nav__item">
           <a href="+79068999296" class="footer-nav__link">+7 906 899 92 96</a>

@@ -44,8 +44,7 @@
 .personal-cakebox {
   width: 200px;
   border-radius: 5px;
-  margin: 10px auto;
-  padding-bottom: 10px;
+  margin: 10px auto 0 auto;
   cursor: pointer;
 
   &:hover {
@@ -65,7 +64,7 @@
 }
 
 .cakebox-block {
-  margin-top: 20px;
+  margin-top: 40px;
   position: relative;
 
   &__title {
@@ -273,7 +272,7 @@
   &__btn {
     position: absolute;
     right: 4%;
-    bottom: 12%;
+    bottom: 15%;
   }
 }
 
@@ -312,6 +311,7 @@
 
   &__img {
     width: 100%;
+    height: auto;
   }
 
   &__btn {
@@ -481,7 +481,6 @@
   }
 
   &__btn {
-    bottom: 10%;
     right: 17%;
   }
 }
