@@ -1,0 +1,21 @@
+mixin review-item(reviewPhoto, reviewName, reviewSkills)
+	article.reviews-item
+		.reviews-item__img-wrap
+			img(
+				src=`img/${reviewPhoto}.jpg`
+				alt="фото клиента"
+				width="200"
+				height="200").reviews-item__img
+		.reviews-item__block.reviews-block
+			span.reviews-item__name #{reviewName}
+			span.reviews-item__skills #{reviewSkills}
+			block
+
+section#reviews.reviews
+	h2.reviews__title Отзывы
+	.reviews__container.container
+		.reviews__list.owl-carousel.owl-theme
+			+review-item('review-photo1', 'Мария', 'Юрист, 33 года')
+				p.reviews-item__text Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)
+			+review-item('review-photo2', 'Сергей', 'Инженер, 25 лет')
+				p.reviews-item__text Все было супер! Очень вкусно! И быстрая доставка)

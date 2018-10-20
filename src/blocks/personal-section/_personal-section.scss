@@ -1,0 +1,182 @@
+
+
+.personal {
+  &__title {
+    @include section-title;
+    width: 215px;
+    margin: 0 auto 15px;
+  }
+
+  &__subtitle {
+    @include title-subtext;
+  }
+}
+
+.personal-card {
+  max-width: 1220px;
+  background-color: #fff;
+  padding: 18px;
+  border-radius: 30px;
+  margin: 10px auto;
+  position: relative;
+  box-shadow: 0 5px 13px 1px rgba(163, 6, 60, 0.1);
+
+  &__title {
+    font-family: $fair-font;
+    font-size: 16px;
+    color: #f50049;
+    line-height: 16px;
+    margin-bottom: 22px;
+  }
+
+  &__title span {
+    font-family: $fair-font;
+    font-size: 30px;
+    font-weight: bold;
+    color: #f50049;
+    padding-right: 13px;
+  }
+
+  &__btn {
+    @include btn;
+    margin-top: 50px;
+  }
+}
+
+.personal-card {
+
+  &__title--final {
+    font-family: $fair-font;
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+}
+
+@media(min-width: 767px) {
+
+.personal {
+  &__title {
+    width: 300px;
+  }
+}
+
+.personal-card {
+
+  &__title {
+    display: inline-block;
+    height: 20px;
+    width: 90px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  &__title--final {
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__title span {
+    position: absolute;
+    top: -30px;
+    font-size: 36px;
+  }
+}
+
+.personal-card:nth-child(3) {
+  &:before {
+    content: '';
+    position: absolute;
+    background: url(../img/cake-picture.png) no-repeat center / cover;
+    width: 120px;
+    height: 150px;
+    left: 20px;
+    top: 120px;
+  }
+}
+
+.personal-card {
+  &:last-child {
+    min-height: 150px;
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 330px;
+      height: 80px;
+      position: absolute;
+      left: 10px;
+      bottom: -60px;
+      background: url(../img/illustrations/flags-left.png) no-repeat center / cover;
+      transform: rotate(5deg);
+   }
+
+    &:after {
+      content: '';
+      width: 330px;
+      height: 80px;
+      position: absolute;
+      right: 10px;
+      bottom: -60px;
+      background: url(../img/illustrations/flags-right.png) no-repeat center / cover;
+      transform: rotate(-5deg);
+    }
+  }
+}
+}
+
+
+@media (min-width: 1199px) {
+
+.personal {
+  &__title {
+    width: 100%;
+    @include section-title-1200;
+  }
+
+  &__subtitle {
+    @include title-subtext-1200;
+  }
+}
+
+.personal-card {
+
+  &__title {
+    font-size: 27px;
+    line-height: 27px;
+    margin-left: 60px;
+    margin-top: 100px;
+
+    span {
+      font-size: 58px;
+      top: -50px;
+    }
+  }
+
+  &:last-child {
+    height: 200px;
+  }
+
+  &__title--final {
+    font-size: 27px;
+  }
+}
+
+.personal-card:nth-child(3) {
+  &:before {
+    width: 230px;
+    height: 300px;
+    top: 180px;
+  }
+}
+}
+
+@import 'personal-cakebox/personal-cakebox';
+
+@import 'personal-sizebox/personal-sizebox';
+
+@import 'personal-appearbox/personal-appearbox';
+
+@import 'final-order/final-order';

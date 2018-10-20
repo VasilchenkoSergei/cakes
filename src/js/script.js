@@ -13,6 +13,7 @@ $('.promo__burger').on('click', function() {
 
 $('.cakebox-list').owlCarousel ({
   dots: true,
+  loop: true,
   center: true,
   nav: false,
   responsive : {

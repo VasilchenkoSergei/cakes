@@ -1,0 +1,28 @@
+.popup
+	.popup-container
+		form.popup-form
+			span.popup-form__text Введите свои данные
+				label
+					input(
+						type="text"
+						name="user-name"
+						autocapitalize="on"
+						autofocus placeholder="Ваше имя"
+						required).popup-form__box
+				label
+					input(
+						type="email"
+						name="user-email"
+						autocapitalize="off"
+						autocorrect="off"
+						placeholder="Email адрес"
+						required).popup-form__box
+				label
+					input(
+						type="tel"
+						name="user-phone"
+						id="phone"
+						placeholder="Ваш телефон"
+						required).popup-form__box
+			button.popup-form__btn.popup-order__btn Оформить заказ
+			button.popup-form__btn.popup-cancel__btn Отмена

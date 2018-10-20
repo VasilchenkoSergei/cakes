@@ -1,37 +1,27 @@
 @font-face {
   font-family: "Playfair display";
-  src: url("../fonts/Playfair Display/PlayfairDisplay-Regular.woff2") format("woff2");
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.woff") format("woff");*/
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.tff") format("ttf");*/
+  src: url("../fonts/Playfair Display/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/Playfair_Display/PlayfairDisplay-Regular.woff") format("woff"), url("../fonts/Playfair_Display/PlayfairDisplay-Regular.tff") format("ttf");
   font-style: normal; }
 
 @font-face {
   font-family: "Playfair display";
-  src: url("../fonts/Playfair Display/PlayfairDisplay-Bold.woff2") format("woff2");
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.woff") format("woff");*/
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.tff") format("ttf");*/
+  src: url("../fonts/Playfair Display/PlayfairDisplay-Bold.woff2") format("woff2"), url("../fonts/Playfair_Display/PlayfairDisplay-Bold.woff") format("woff"), url("../fonts/Playfair_Display/PlayfairDisplay-Bold.tff") format("ttf");
   font-weight: bold; }
 
 @font-face {
   font-family: "Playfair display";
-  src: url("../fonts/Playfair Display/PlayfairDisplay-BoldItalic.woff2") format("woff2");
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.woff") format("woff");*/
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.tff") format("ttf");*/
+  src: url("../fonts/Playfair Display/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.woff") format("woff"), url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.tff") format("ttf");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: "Circe";
-  src: url("../fonts/Circe/Circe-Regular.woff2") format("woff2");
-  /*src: url("../fonts/Circe/Circe-Regular.woff") format("woff");*/
-  /*src: url("../fonts/Circe/Circe-Regular.tff") format("ttf");*/
+  src: url("../fonts/Circe/Circe-Regular.woff2") format("woff2"), url("../fonts/Circe/Circe-Regular.woff") format("woff"), url("../fonts/Circe/Circe-Regular.tff") format("ttf");
   font-style: normal; }
 
 @font-face {
   font-family: "Intro Script R";
-  src: url("../fonts/Intro script R/IntroScriptR-Regular.woff2") format("woff2");
-  /*url("../fonts/Intro script R/Intro script R.woff") format("woff");*/
-  /*url("../fonts/Intro script R/Intro script R.tff") format("ttf");*/
+  src: url("../fonts/Intro script R/IntroScriptR-Regular.woff2") format("woff2"), url("../fonts/Intro script R/Intro script R.woff") format("woff"), url("../fonts/Intro script R/Intro script R.tff") format("ttf");
   font-style: normal; }
 
 body {
@@ -490,6 +480,84 @@ body {
       box-shadow: inset 0 0 10px 0 #f50049, 0 0 2px 1px #f50049;
       transition: all 0.3s; }
 
+.personal-card__title--final {
+  font-family: "Playfair display", serif;
+  font-size: 22px;
+  margin-bottom: 14px; }
+
+@media (min-width: 767px) {
+  .personal__title {
+    width: 300px; }
+  .personal-card__title {
+    display: inline-block;
+    height: 20px;
+    width: 90px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    font-size: 18px; }
+  .personal-card__title--final {
+    margin-left: 30px;
+    margin-bottom: 10px; }
+  .personal-card__title span {
+    position: absolute;
+    top: -30px;
+    font-size: 36px; }
+  .personal-card:nth-child(3):before {
+    content: '';
+    position: absolute;
+    background: url(../img/cake-picture.png) no-repeat center/cover;
+    width: 120px;
+    height: 150px;
+    left: 20px;
+    top: 120px; }
+  .personal-card:last-child {
+    min-height: 150px;
+    position: relative; }
+    .personal-card:last-child:before {
+      content: '';
+      width: 330px;
+      height: 80px;
+      position: absolute;
+      left: 10px;
+      bottom: -60px;
+      background: url(../img/illustrations/flags-left.png) no-repeat center/cover;
+      transform: rotate(5deg); }
+    .personal-card:last-child:after {
+      content: '';
+      width: 330px;
+      height: 80px;
+      position: absolute;
+      right: 10px;
+      bottom: -60px;
+      background: url(../img/illustrations/flags-right.png) no-repeat center/cover;
+      transform: rotate(-5deg); } }
+
+@media (min-width: 1199px) {
+  .personal__title {
+    width: 100%;
+    font-size: 2.85rem;
+    padding-top: 100px; }
+  .personal__subtitle {
+    font-size: 2.5rem; }
+  .personal-card__title {
+    font-size: 27px;
+    line-height: 27px;
+    margin-left: 60px;
+    margin-top: 100px; }
+    .personal-card__title span {
+      font-size: 58px;
+      top: -50px; }
+  .personal-card:last-child {
+    height: 200px; }
+  .personal-card__title--final {
+    font-size: 27px; }
+  .personal-card:nth-child(3):before {
+    width: 230px;
+    height: 300px;
+    top: 180px; } }
+
 .personal-cakebox {
   width: 200px;
   border-radius: 5px;
@@ -525,6 +593,57 @@ body {
     font-weight: bold;
     text-align: center; }
 
+@media (min-width: 767px) {
+  .personal-cakebox {
+    width: 450px;
+    height: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative; }
+    .personal-cakebox__img-wrap {
+      width: 210px;
+      height: 240px;
+      overflow: hidden; }
+    .personal-cakebox__img {
+      height: 100%;
+      width: 200%; }
+  .cakebox-block {
+    width: 200px;
+    margin-top: 30px; }
+    .cakebox-block__size {
+      text-align: left; }
+    .cakebox-block__btn {
+      position: absolute;
+      right: 4%;
+      bottom: 15%; } }
+
+@media (min-width: 1199px) {
+  .personal-cakebox {
+    width: 700px;
+    height: 350px;
+    bottom: 70px;
+    margin-top: 80px; }
+    .personal-cakebox__img-wrap {
+      width: 350px;
+      height: 350px; }
+    .personal-cakebox__img {
+      height: 90%;
+      width: 200%; }
+  .cakebox-block {
+    width: 300px;
+    height: 180px;
+    margin-top: 30px; }
+    .cakebox-block__title {
+      font-size: 20px; }
+    .cakebox-block__text {
+      font-size: 18px;
+      max-height: 120px; }
+    .cakebox-block__size {
+      font-size: 22px; }
+    .cakebox-block__btn {
+      right: 17%; } }
+
 .personal-sizebox {
   width: 200px;
   border-radius: 5px;
@@ -543,6 +662,7 @@ body {
     position: relative; }
   .personal-sizebox__img {
     width: 60%;
+    height: auto;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -555,6 +675,50 @@ body {
 
 .personal-sizebox:not(:first-child) {
   display: none; }
+
+@media (min-width: 767px) {
+  .sizebox-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 900px;
+    margin: 0 auto; }
+  .personal-sizebox:not(:first-child) {
+    display: block; }
+  .personal-sizebox__img-wrap {
+    width: 80px;
+    height: 80px; }
+  .personal-sizebox:nth-child(2) .personal-sizebox__img-wrap {
+    width: 110px;
+    height: 110px; }
+  .personal-sizebox:nth-child(3) .personal-sizebox__img-wrap {
+    width: 120px;
+    height: 120px; }
+  .personal-sizebox:nth-child(4) .personal-sizebox__img-wrap {
+    width: 140px;
+    height: 140px; }
+  .personal-sizebox__img {
+    width: 100%;
+    height: auto; }
+  .personal-sizebox__btn {
+    display: none; } }
+
+@media (min-width: 1199px) {
+  .personal-sizebox__img-wrap {
+    width: 110px;
+    height: 110px; }
+  .personal-sizebox:nth-child(2) .personal-sizebox__img-wrap {
+    width: 150px;
+    height: 150px; }
+  .personal-sizebox:nth-child(3) .personal-sizebox__img-wrap {
+    width: 170px;
+    height: 170px; }
+  .personal-sizebox:nth-child(4) .personal-sizebox__img-wrap {
+    width: 210px;
+    height: 210px; }
+  .personal-sizebox__title {
+    font-size: 18px;
+    line-height: 30px; } }
 
 .appearbox-list {
   width: 100%; }
@@ -588,10 +752,42 @@ body {
     font-weight: bold;
     text-align: center; }
 
-.personal-card__title--final {
-  font-family: "Playfair display", serif;
-  font-size: 22px;
-  margin-bottom: 14px; }
+@media (min-width: 767px) {
+  .appearbox-list {
+    width: 430px;
+    margin-left: 200px; }
+  .personal-appearbox {
+    width: 200px;
+    height: 220px; }
+    .personal-appearbox__btn {
+      display: none; }
+    .personal-appearbox__title {
+      margin-top: 5px; }
+    .personal-appearbox__size {
+      font-size: 14px; } }
+
+@media (min-width: 900px) {
+  .appearbox-list {
+    margin: 0 auto; } }
+
+@media (min-width: 1199px) {
+  .appearbox-list {
+    width: 700px;
+    margin-left: 350px; }
+  .personal-appearbox {
+    width: 320px;
+    height: 360px; }
+    .personal-appearbox:before {
+      width: 250px;
+      height: 330px;
+      top: 150px; }
+    .personal-appearbox__img-wrap {
+      width: 300px;
+      height: 250px; }
+    .personal-appearbox__title {
+      font-size: 20px; }
+    .personal-appearbox__size {
+      font-size: 22px; } }
 
 .final-order__parametr {
   display: block;
@@ -613,113 +809,6 @@ body {
   line-height: 30px; }
 
 @media (min-width: 767px) {
-  .personal__title {
-    width: 300px; }
-  .personal-card__title {
-    display: inline-block;
-    height: 20px;
-    width: 90px;
-    position: relative;
-    margin-top: 50px;
-    margin-left: 30px;
-    margin-bottom: 0;
-    font-size: 18px; }
-  .personal-card__title--final {
-    margin-left: 30px;
-    margin-bottom: 10px; }
-  .personal-card__title span {
-    position: absolute;
-    top: -30px;
-    font-size: 36px; }
-  .personal-cakebox {
-    width: 450px;
-    height: 260px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: relative; }
-    .personal-cakebox__img-wrap {
-      width: 210px;
-      height: 240px;
-      overflow: hidden; }
-    .personal-cakebox__img {
-      height: 100%;
-      width: 200%; }
-  .cakebox-block {
-    width: 200px;
-    margin-top: 30px; }
-    .cakebox-block__size {
-      text-align: left; }
-    .cakebox-block__btn {
-      position: absolute;
-      right: 4%;
-      bottom: 15%; }
-  .sizebox-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    max-width: 900px;
-    margin: 0 auto; }
-  .personal-sizebox:not(:first-child) {
-    display: block; }
-  .personal-sizebox__img-wrap {
-    width: 80px;
-    height: 80px; }
-  .personal-sizebox:nth-child(2) .personal-sizebox__img-wrap {
-    width: 110px;
-    height: 110px; }
-  .personal-sizebox:nth-child(3) .personal-sizebox__img-wrap {
-    width: 120px;
-    height: 120px; }
-  .personal-sizebox:nth-child(4) .personal-sizebox__img-wrap {
-    width: 140px;
-    height: 140px; }
-  .personal-sizebox__img {
-    width: 100%;
-    height: auto; }
-  .personal-sizebox__btn {
-    display: none; }
-  .personal-card:nth-child(3):before {
-    content: '';
-    position: absolute;
-    background: url(../img/cake-picture.png) no-repeat center/cover;
-    width: 120px;
-    height: 150px;
-    left: 20px;
-    top: 120px; }
-  .appearbox-list {
-    width: 430px;
-    margin-left: 200px; }
-  .personal-appearbox {
-    width: 200px;
-    height: 220px; }
-    .personal-appearbox__btn {
-      display: none; }
-    .personal-appearbox__title {
-      margin-top: 5px; }
-    .personal-appearbox__size {
-      font-size: 14px; }
-  .personal-card:last-child {
-    min-height: 150px;
-    position: relative; }
-    .personal-card:last-child:before {
-      content: '';
-      width: 330px;
-      height: 80px;
-      position: absolute;
-      left: 10px;
-      bottom: -60px;
-      background: url(../img/illustrations/flags-left.png) no-repeat center/cover;
-      transform: rotate(5deg); }
-    .personal-card:last-child:after {
-      content: '';
-      width: 330px;
-      height: 80px;
-      position: absolute;
-      right: 10px;
-      bottom: -60px;
-      background: url(../img/illustrations/flags-right.png) no-repeat center/cover;
-      transform: rotate(-5deg); }
   .final-order {
     display: flex;
     justify-content: space-between;
@@ -733,89 +822,7 @@ body {
     .final-order__btn {
       margin: 0; } }
 
-@media (min-width: 900px) {
-  .appearbox-list {
-    margin: 0 auto; } }
-
 @media (min-width: 1199px) {
-  .personal__title {
-    width: 100%;
-    font-size: 2.85rem;
-    padding-top: 100px; }
-  .personal__subtitle {
-    font-size: 2.5rem; }
-  .personal-card__title {
-    font-size: 27px;
-    line-height: 27px;
-    margin-left: 60px;
-    margin-top: 100px; }
-    .personal-card__title span {
-      font-size: 58px;
-      top: -50px; }
-  .personal-card:last-child {
-    height: 200px; }
-  .personal-card__title--final {
-    font-size: 27px; }
-  .personal-cakebox {
-    width: 700px;
-    height: 350px;
-    bottom: 70px;
-    margin-top: 80px; }
-    .personal-cakebox__img-wrap {
-      width: 350px;
-      height: 350px; }
-    .personal-cakebox__img {
-      height: 90%;
-      width: 200%; }
-  .cakebox-block {
-    width: 300px;
-    height: 180px;
-    margin-top: 30px; }
-    .cakebox-block__title {
-      font-size: 20px; }
-    .cakebox-block__text {
-      font-size: 18px;
-      max-height: 120px; }
-    .cakebox-block__size {
-      font-size: 22px; }
-    .cakebox-block__btn {
-      right: 17%; }
-  .personal-sizebox__img-wrap {
-    width: 110px;
-    height: 110px; }
-  .personal-sizebox:nth-child(2) .personal-sizebox__img-wrap {
-    width: 150px;
-    height: 150px; }
-  .personal-sizebox:nth-child(3) .personal-sizebox__img-wrap {
-    width: 170px;
-    height: 170px; }
-  .personal-sizebox:nth-child(4) .personal-sizebox__img-wrap {
-    width: 210px;
-    height: 210px; }
-  .personal-sizebox__title {
-    font-size: 18px;
-    line-height: 30px; }
-  .appearbox-list {
-    width: 700px;
-    margin-left: 350px; }
-  .personal-appearbox {
-    width: 320px;
-    height: 360px; }
-    .personal-appearbox:before {
-      width: 250px;
-      height: 330px;
-      top: 150px; }
-    .personal-appearbox__img-wrap {
-      width: 300px;
-      height: 250px; }
-    .personal-appearbox__title {
-      font-size: 20px; }
-    .personal-appearbox__size {
-      font-size: 22px; }
-  .personal-card:nth-child(3):before {
-    width: 230px;
-    height: 300px;
-    top: 180px; }
   .final-order__parametr {
     font-size: 27px;
     text-align: center; }
@@ -883,14 +890,14 @@ body {
   .reviews__list {
     width: 500px; }
   .reviews-item {
-    width: 400px;
+    width: 480px;
     display: flex;
     justify-content: space-between; }
     .reviews-item__img-wrap {
       width: 110px;
       height: 110px; }
     .reviews-item__block {
-      width: 260px; }
+      width: 320px; }
     .reviews-item__name, .reviews-item__skills, .reviews-item__text {
       text-align: left; } }
 
@@ -907,7 +914,6 @@ body {
   .reviews-item__skills {
     font-size: 1.28rem; }
   .reviews-item__text {
-    width: 320px;
     font-size: 1.1rem; } }
 
 .about {
@@ -977,7 +983,8 @@ body {
 .about-subtext__title {
   display: block;
   max-width: 400px;
-  margin: 0 auto; }
+  margin: 10px auto;
+  font-weight: bold; }
 
 .about-subtext__lines {
   max-width: 400px;
@@ -1009,11 +1016,6 @@ body {
       color: #f50049;
       line-height: 36px; }
 
-.about-subtext__title {
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-top: 10px; }
-
 @media (min-width: 450px) {
   .about-socials {
     right: 18%; } }
@@ -1029,7 +1031,10 @@ body {
   .about__text {
     width: 315px;
     margin: 0; }
+  .about-subtext__title {
+    font-size: 1.1rem; }
   .about-subtext__lines {
+    font-size: 1.1rem;
     width: 350px;
     margin: 0 auto; }
   .about-socials {
@@ -1131,7 +1136,9 @@ body {
       top: 7px; }
     .advantages-block__title, .advantages-block__text {
       text-align: left;
-      margin: 0; } }
+      margin: 0; }
+    .advantages-block__text {
+      font-size: 1.1rem; } }
 
 @media (min-width: 1199px) {
   .advantages {
@@ -1145,7 +1152,7 @@ body {
     left: -400px; } }
 
 .clientcare {
-  background: url(../img/advantage-cake1.png) center 170px/80% no-repeat; }
+  background: url(../img/advantage-cake1.png) center 200px/80% no-repeat; }
   .clientcare__title {
     font-size: 1.7rem;
     text-align: center;
@@ -1180,13 +1187,15 @@ body {
       width: 440px;
       height: 440px;
       left: 40%;
-      top: -80px;
+      top: -50px;
+      z-index: -2;
       background: url(../img/advantage-cake1.png);
       background-repeat: no-repeat;
       background-size: contain; }
     .clientcare__title, .clientcare__subtitle {
       text-align: left; }
     .clientcare__text {
+      font-size: 1.1rem;
       width: 310px;
       text-align: left;
       margin-left: 0; } }
@@ -1341,18 +1350,18 @@ body {
   justify-content: space-between;
   padding-bottom: 50px;
   margin: 0 auto; }
-  .contacts-socials__instagram, .contacts-socials__vk {
+  .contacts-socials__instagram, .contacts-socials__vkontakte {
     width: 62px;
     height: 62px;
     background-color: #fff;
     border-radius: 31px; }
-    .contacts-socials__instagram:hover, .contacts-socials__vk:hover {
+    .contacts-socials__instagram:hover, .contacts-socials__vkontakte:hover {
       transition: transform 0.3s;
       transform: scale(1.5); }
   .contacts-socials__instagram i,
-  .contacts-socials__vk i {
-    line-height: 4.7rem;
-    font-size: 2.3rem;
+  .contacts-socials__vkontakte i {
+    line-height: 62px;
+    font-size: 32px;
     text-align: center;
     color: #f50049; }
 

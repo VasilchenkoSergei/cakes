@@ -1,0 +1,18 @@
+mixin appearbox(appearImg, appearAlt, appearTitle, appearSize)
+	.personal-appearbox
+		.personal-appearbox__img-wrap
+			img(
+				src=`img/${appearImg}.jpg`
+				alt= appearAlt
+				width="200"
+				height="200").personal-appearbox__img
+		h5.personal-appearbox__title #{appearTitle}
+		span.personal-appearbox__size #{appearSize}
+		button.personal-card__btn.personal-appearbox__btn
+
+article.personal-card
+	h4.personal-card__title <span>03</span>Оформление
+	.personal-card__appearbox-list.appearbox-list.owl-carousel.owl-theme
+		+appearbox('marshmallow-cake', 'маршмэллоу', 'Маршмэллоу', '600 руб/кг')
+		+appearbox('berries-cake', 'ягодное ассорти', 'Ягодное ассорти', '700 руб/кг')
+		+appearbox('marshmallow-cake', 'графские развалины', 'Графские развалины', '1000 руб/кг')

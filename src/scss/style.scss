@@ -94,28 +94,28 @@ body {
 }
 
 
-@import 'promo';
+@import '../blocks/promo/promo';
 
-@import 'main-nav';
+@import '../blocks/header/main-nav/main-nav';
 
-@import 'header';
+@import '../blocks/header/header';
 
-@import 'cakes-section';
+@import '../blocks/cakes-section/cakes-section';
 
-@import 'personal-section';
+@import '../blocks/personal-section/personal-section';
 
-@import 'reviews-section';
+@import '../blocks/reviews-section/reviews-section';
 
-@import 'about-section';
+@import '../blocks/about-section/about-section';
 
-@import 'advantages-section';
+@import '../blocks/advantages-section/advantages-section';
 
-@import 'clientcare-section';
+@import '../blocks/clientcare-section/clientcare-section';
 
-@import 'order-section';
+@import '../blocks/order-section/order-section';
 
-@import 'contacts-section';
+@import '../blocks/contacts-section/contacts-section';
 
-@import 'footer';
+@import '../blocks/footer/footer';
 
-@import 'popup';
+@import '../blocks/popup/popup';

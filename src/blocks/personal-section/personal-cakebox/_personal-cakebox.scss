@@ -1,0 +1,130 @@
+.personal-cakebox {
+  width: 200px;
+  border-radius: 5px;
+  margin: 10px auto 0 auto;
+  cursor: pointer;
+
+  &:hover {
+    @include box-hover;
+  }
+
+  &__img-wrap {
+    margin: 0 auto;
+    width: 190px;
+    height: 100px;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.cakebox-block {
+  margin-top: 40px;
+  position: relative;
+
+  &__title {
+    margin-bottom: 9px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__text {
+    margin-bottom: 17px;
+    max-width: 300px;
+    max-height: 90px;
+    overflow: hidden;
+    
+  }
+
+  &__size {
+    display: block;
+    font-family: $fair-font;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+
+@media(min-width: 767px) {
+  .personal-cakebox {
+  width: 450px;
+  height: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  
+
+  &__img-wrap {
+    width: 210px;
+    height: 240px;
+    overflow: hidden;
+  }
+
+  &__img {
+    height: 100%;
+    width: 200%;
+  }
+}
+  
+.cakebox-block {
+  width: 200px;
+  margin-top: 30px;
+
+  &__size {
+    text-align: left;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 4%;
+    bottom: 15%;
+  }
+}
+}
+
+
+@media (min-width: 1199px) {
+  .personal-cakebox {
+  width: 700px;
+  height: 350px;
+  bottom: 70px;
+  margin-top: 80px;
+
+  &__img-wrap {
+    width: 350px;
+    height: 350px;
+  }
+
+  &__img {
+    height: 90%;
+    width: 200%;
+  }
+}
+
+.cakebox-block {
+  width: 300px;
+  height: 180px;
+  margin-top: 30px;
+
+  &__title {
+    font-size: 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+    max-height: 120px;
+  }
+
+  &__size {
+    font-size: 22px;
+  }
+
+  &__btn {
+    right: 17%;
+  }
+}
+}

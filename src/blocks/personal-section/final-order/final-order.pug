@@ -1,0 +1,13 @@
+mixin final-order (finalParametr, className)
+	.final-order__box
+		span.final-order__parametr #{finalParametr}
+		div(class=`choice-${className}`).final-order__choice
+
+article.personal-card
+	h4.personal-card__title--final Ваш выбор
+	.personal-card__final-order.final-order
+		+final-order('Начинка', 'cakebox')
+		+final-order('Размер', 'sizebox')
+		+final-order('Оформление', 'appearbox')
+
+		button.personal-card__btn.final-order__btn Заказать торт

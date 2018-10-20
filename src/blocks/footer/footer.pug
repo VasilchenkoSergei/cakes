@@ -1,0 +1,22 @@
+mixin footer-nav (hrefLink, titleLink)
+	li.footer-nav__item
+		a(href=`${hrefLink}`).footer-nav__link #{titleLink}
+
+footer(role="contentinfo").page-footer
+	.page-footer__container.container
+		a(href="index.html").page-footer__logo.logo Cakes
+			ul.footer-nav
+				+footer-nav ('cakes', 'Наши торты')
+				+footer-nav ('personal', 'Индивидуальный заказ')
+				+footer-nav ('reviews', 'Отзывы')
+				+footer-nav ('about', 'О нас')
+				+footer-nav ('order', 'Как заказать')
+				+footer-nav ('contacts', 'Контакты')
+				+footer-nav ('+79068999296', '+7 906 899 92 96')
+
+		.page-footer__socials.footer-socials
+			a(href="#").footer-socials__instagram
+				i.icon-instagram
+			a(href="#").footer-socials__vk
+				i.icon-vkontakte
+		span.page-footer__copyright &copy; 2018 Cakes

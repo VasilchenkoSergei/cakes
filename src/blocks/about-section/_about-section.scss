@@ -74,7 +74,8 @@
   &__title {
     display: block;
     max-width: 400px;
-    margin: 0 auto;
+    margin: 10px auto;
+    font-weight: bold;
   }
   &__lines {
     max-width: 400px;
@@ -117,14 +118,6 @@
   }
 }
 
-.about-subtext {
-  &__title {
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-}
-
 @media(min-width: 450px) {
 .about-socials {
   right: 18%;
@@ -155,7 +148,12 @@
 
 .about-subtext {
 
+  &__title {
+    font-size: 1.1rem;
+  }
+
   &__lines {
+    font-size: 1.1rem;
     width: 350px;
     margin: 0 auto;
   }

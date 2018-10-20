@@ -1,0 +1,106 @@
+.appearbox-list {
+  width: 100%;
+}
+
+.personal-appearbox {
+  width: 230px;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding-bottom: 10px;
+  cursor: pointer;
+
+  &:hover {
+    @include box-hover;
+  }
+
+  &__img-wrap {
+    margin: 0 auto;
+    width: 200px;
+    height: 150px;
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 7px;
+  }
+
+  &__size {
+    display: block;
+    font-family: $fair-font;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+@media (min-width: 767px) {
+.appearbox-list {
+  width: 430px;
+  margin-left: 200px;
+}
+
+.personal-appearbox {
+  width: 200px;
+  height: 220px;
+
+  &__btn {
+    display: none;
+  }
+
+  &__title {
+    margin-top: 5px;
+  }
+
+  &__size {
+    font-size: 14px;
+  }
+}
+}
+
+
+@media (min-width: 900px) {
+
+.appearbox-list {
+  margin: 0 auto;
+}
+}
+
+@media (min-width: 1199px) {
+
+.appearbox-list {
+  width: 700px;
+  margin-left: 350px;
+}
+
+.personal-appearbox {
+  width: 320px;
+  height: 360px;
+
+  &:before {
+    width: 250px;
+    height: 330px;
+    top: 150px;
+  }
+
+  &__img-wrap {
+    width: 300px;
+    height: 250px;
+  }
+
+  &__title {
+    font-size: 20px;
+  }
+
+  &__size {
+    font-size: 22px;
+  }
+}
+}

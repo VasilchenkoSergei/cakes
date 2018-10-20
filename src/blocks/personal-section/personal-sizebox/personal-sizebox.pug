@@ -1,0 +1,19 @@
+mixin sizebox(sizeImg, sizeAlt, sizeTitle1, sizeTitle2)
+	.personal-sizebox
+		.personal-sizebox__img-wrap
+			img(
+			src=`img/icons/${sizeImg}.png`
+			alt= sizeAlt
+			width="100"
+			height="100").personal-sizebox__img
+		h5.personal-sizebox__title #{sizeTitle1}<br>#{sizeTitle2}
+		button.personal-card__btn.personal-sizebox__btn Выбрать
+
+
+article.personal-card
+	h4.personal-card__title <span>02</span>Размер
+	.personal-card__sizebox-list.sizebox-list.owl-carousel.owl-theme
+		+sizebox('1-kilo-icon', 'Размер 1', '17-18 см', '(1 кг - 6 персон)')
+		+sizebox('2-kilo-icon', 'Размер 2', '23 - 24 см', '(10 - 12 персон)')
+		+sizebox('5-kilo-icon', 'Размер 3', 'Два яруса 25 и 20 см', '(15 - 20 персон)')
+		+sizebox('8-kilo-icon', 'Размер 4', 'Три яруса 30, 25 и 18 см', '(25 - 30 персон)')

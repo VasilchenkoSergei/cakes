@@ -1,0 +1,13 @@
+mixin main-nav (hrefLink, navLink)
+	li.main-nav__item
+		a(href=`${hrefLink}`).main-nav__link #{navLink}
+
+nav.main-nav
+	ul.main-nav__list
+		+main-nav ('#cakes', 'Наши торты')
+		+main-nav ('#personal', 'Индивидуальный заказ')
+		+main-nav ('#reviews', 'Отзывы')
+		+main-nav ('#about', 'О нас')
+		+main-nav ('#order', 'Как заказать')
+		+main-nav ('#contacts', 'Контакты')
+

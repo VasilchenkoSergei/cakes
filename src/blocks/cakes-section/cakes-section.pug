@@ -1,0 +1,13 @@
+mixin cakes__list (cakeName, cakeNumber)
+	a(href='#').cakes__item #{cakeName}<br><span>#{cakeNumber}</span>
+
+section#cakes.cakes
+	h2.cakes__title Наши торты
+	.cakes__container.container
+		.cakes__list
+			+cakes__list ('Классические', '24 вида')
+			+cakes__list ('Муссовые', '12 видов')
+			+cakes__list ('Свадебные', '20 видов')
+			+cakes__list ('Мужчинам', '16 видов')
+			+cakes__list ('Женщинам', '22 вида')
+			+cakes__list ('Детские', '18 видов')

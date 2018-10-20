@@ -1,0 +1,23 @@
+mixin cakebox(cakeImg, cakeAlt, cakeTitle, cakeSize)
+	.personal-cakebox
+		.personal-cakebox__img-wrap
+			img(
+				src=`img/${cakeImg}.jpg`
+				alt= cakeAlt
+				width="200"
+				height="200").personal-cakebox__img
+		.personal-cakebox__block.cakebox-block
+			h5.cakebox-block__title.cakebox-block__title1 #{cakeTitle}
+			block
+			span.cakebox-block__size #{cakeSize}
+		button.personal-card__btn.cakebox-block__btn.cakebox-block__btn1 Выбрать
+
+article.personal-card
+	h4.personal-card__title <span>01</span>Выберите начинку
+	.personal-card__cakebox-list.cakebox-list.owl-carousel.owl-theme
+		+cakebox('filling1', 'ганаш', 'Шоколадный ганаш', '1000 руб/кг')
+			p.cakebox-block__text Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов!
+		+cakebox('filling2', 'фруктовая начинка', 'Фруктовый крем', '800 руб/кг')
+			p.cakebox-block__text Ароматный фруктовый крем, густой шоколадный крем - самый шоколадный из всех возможных десертов!
+		+cakebox('filling1', 'ореховое пралине', 'Ореховое пралине', '500 руб/кг')
+			p.cakebox-block__text Ароматное ореховое пралине, густой шоколадный крем - самый шоколадный из всех возможных десертов!Ароматное ореховое пралине, густой шоколадный крем - самый шоколадный из всех возможных десертов!

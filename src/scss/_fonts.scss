@@ -1,40 +1,40 @@
 @font-face {
   font-family: "Playfair display";
-  src: url("../fonts/Playfair Display/PlayfairDisplay-Regular.woff2") format("woff2");
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.woff") format("woff");*/
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.tff") format("ttf");*/
+  src: url("../fonts/Playfair Display/PlayfairDisplay-Regular.woff2") format("woff2"),
+       url("../fonts/Playfair_Display/PlayfairDisplay-Regular.woff") format("woff"),
+       url("../fonts/Playfair_Display/PlayfairDisplay-Regular.tff") format("ttf");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Playfair display";
-  src: url("../fonts/Playfair Display/PlayfairDisplay-Bold.woff2") format("woff2");
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.woff") format("woff");*/
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.tff") format("ttf");*/
+  src: url("../fonts/Playfair Display/PlayfairDisplay-Bold.woff2") format("woff2"),
+       url("../fonts/Playfair_Display/PlayfairDisplay-Bold.woff") format("woff"),
+       url("../fonts/Playfair_Display/PlayfairDisplay-Bold.tff") format("ttf");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Playfair display";
-  src: url("../fonts/Playfair Display/PlayfairDisplay-BoldItalic.woff2") format("woff2");
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.woff") format("woff");*/
-  /*src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.tff") format("ttf");*/
+  src: url("../fonts/Playfair Display/PlayfairDisplay-BoldItalic.woff2") format("woff2"),
+       url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.woff") format("woff"),
+       url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.tff") format("ttf");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Circe";
-  src: url("../fonts/Circe/Circe-Regular.woff2") format("woff2");
-  /*src: url("../fonts/Circe/Circe-Regular.woff") format("woff");*/
-  /*src: url("../fonts/Circe/Circe-Regular.tff") format("ttf");*/
+  src: url("../fonts/Circe/Circe-Regular.woff2") format("woff2"),
+       url("../fonts/Circe/Circe-Regular.woff") format("woff"),
+       url("../fonts/Circe/Circe-Regular.tff") format("ttf");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Intro Script R";
-  src: url("../fonts/Intro script R/IntroScriptR-Regular.woff2") format("woff2");
-   /*url("../fonts/Intro script R/Intro script R.woff") format("woff");*/
-   /*url("../fonts/Intro script R/Intro script R.tff") format("ttf");*/
+  src: url("../fonts/Intro script R/IntroScriptR-Regular.woff2") format("woff2"),
+       url("../fonts/Intro script R/Intro script R.woff") format("woff"),
+       url("../fonts/Intro script R/Intro script R.tff") format("ttf");
   font-style: normal;
 }
