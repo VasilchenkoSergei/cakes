@@ -11,7 +11,6 @@
 @font-face {
   font-family: "Playfair display";
   src: url("../fonts/Playfair Display/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.woff") format("woff"), url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.tff") format("ttf");
-  font-weight: bold;
   font-style: italic; }
 
 @font-face {
@@ -203,7 +202,7 @@ body {
       content: '';
       position: absolute;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       background-position: center;
       width: 33px;
       height: 33px;
@@ -303,7 +302,7 @@ body {
         content: '';
         position: absolute;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         width: 57px;
         height: 56px;
@@ -714,8 +713,8 @@ body {
     width: 170px;
     height: 170px; }
   .personal-sizebox:nth-child(4) .personal-sizebox__img-wrap {
-    width: 210px;
-    height: 210px; }
+    width: 190px;
+    height: 190px; }
   .personal-sizebox__title {
     font-size: 18px;
     line-height: 30px; } }
@@ -957,7 +956,7 @@ body {
       content: '';
       position: absolute;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       background-position: center;
       background-image: url(../img/icons/quotes-pic.png);
       width: 26px;
@@ -970,7 +969,7 @@ body {
       content: '';
       position: absolute;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       background-position: center;
       background-image: url(../img/icons/sign-pic.png);
       width: 70px;
@@ -1079,7 +1078,7 @@ body {
     content: '';
     position: absolute;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     width: 61px;
     height: 61px;
@@ -1092,7 +1091,7 @@ body {
     content: '';
     position: absolute;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     width: 84px;
     height: 50px;
