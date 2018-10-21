@@ -8,6 +8,18 @@ $('.promo__burger').on('click', function() {
 });
 
 
+// !!!!!!!!!!!!!!!SCROLL TO ANCHOR!!!!!!!!!!!!!
+
+
+$(function(){
+  $("a[href^='#']").click(function(){
+    var hrefLink = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(hrefLink).offset().top}, 1000);
+    return false;
+  });
+});
+
+
 // !!!!!!!!!!!!!!SLIDER!!!!!!!!!!!!!!!!!!!!
 
 
@@ -81,18 +93,13 @@ $(window).width(function() {
 
 // !!!!!!!!!!POPUP!!!!!!!!!!!!!
 
-// $('.final-order__btn').on('click', function() {
-//   if ($('.choice-cakebox').textContent('')) {
-//     $('.popup').fadeIn(500);
-//   }
-//   else {
-//     alert('Выберите начинку, размер и оформление торта');
-//   }
-// });
-
-
 $('.final-order__btn').on('click', function() {
-  $('.popup').fadeIn(500);
+  if ($('.choice-cakebox, .choice-sizebox, .choice-appearbox').html() == '') {
+    alert('Выберите все параметры для заказа');
+  }
+  else {
+    $('.popup').fadeIn(500);
+  }
 });
 
 $('.popup-cancel__btn').on('click', function() {
@@ -104,6 +111,10 @@ $('.popup-cancel__btn').on('click', function() {
 $(function($){
   $("#phone").mask("(999) 999-9999");
 });
+
+
+// !!!!!!!!!!ВЫБОР КОМПОНЕНТОВ ДЛЯ ЗАКАЗА!!!!!!!!!!!!
+
 
 $('.cakebox-block__btn').on('click', function() {
   $('.choice-cakebox').text($(this).prev('.cakebox-block').children('.cakebox-block__title').text().split('(')[0]);
@@ -134,15 +145,15 @@ $('.main-nav__link').on('click', function() {
 });
 
 
-// !!!!!!!!!!!!!!ITEM CHOICE!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!ВЫБОР КОМПОНЕНТОВ ПО КЛИКУ!!!!!!!!!!!!!!!!!!!!!!!
 
-$('.personal-sizebox', 'personal-appearbox').on('click', function() {
+$('.personal-sizebox,.personal-appearbox').on('click', function() {
   if ($(this).attr('click-state') == 1) {
     $(this).attr('click-state', 0)
-    $(this).css({'box-shadow':'0 0 7px 2px transparent'});
+    $(this).css({'box-shadow':'transparent'});
   } else {
     $(this).attr('click-state', 1)
-    $(this).css({'box-shadow':'0 0 7px 2px #f50049'});
+    $(this).children('.icon-ok').css({'display':'block'});
   }
 });
 

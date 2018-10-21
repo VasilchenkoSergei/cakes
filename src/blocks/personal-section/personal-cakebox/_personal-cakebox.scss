@@ -1,12 +1,9 @@
 .personal-cakebox {
   width: 200px;
   border-radius: 5px;
-  margin: 10px auto 0 auto;
+  margin: 10px auto;
   cursor: pointer;
-
-  &:hover {
-    @include box-hover;
-  }
+  padding-bottom: 10px;
 
   &__img-wrap {
     margin: 0 auto;
@@ -88,7 +85,7 @@
 
 
 @media (min-width: 1199px) {
-  .personal-cakebox {
+.personal-cakebox {
   width: 700px;
   height: 350px;
   bottom: 70px;

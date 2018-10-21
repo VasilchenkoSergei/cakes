@@ -24,12 +24,12 @@ const htmlbeautify = require('gulp-html-beautify');
 
 
 
-gulp.task('default', function() {
+gulp.task('default', ['sass'], function() {
     browserSync.init({
         server: 'src'
     });
 
-    gulp.watch('src/scss/**/*.scss', ['sass']);
+    gulp.watch('src/**/*.scss', ['sass']);
     gulp.watch('src/**/*.pug').on('change', browserSync.reload);
     gulp.watch('src/js/*.js').on('change', browserSync.reload);
 });
@@ -55,77 +55,77 @@ gulp.task('sass', function() {
 });
 
 
-gulp.task('html', function() {
-    return gulp.src('src/*.html')
-        .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest('dist/'))
-});
+// gulp.task('html', function() {
+//     return gulp.src('src/*.html')
+//         .pipe(htmlmin({collapseWhitespace: true}))
+//         .pipe(gulp.dest('dist/'))
+// });
 
 
-gulp.task('css', function() {
-    return gulp.src('src/css/*.+(scss|sass)')
-        .pipe(sourcemaps.init())
-        .pipe(sass())
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
-        .pipe(csslint())
-        .pipe(cssnano())
-        .pipe(concat('main.css'))
-        .pipe(plumber({errorHandler: onError}))
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest('dist/css'))
-        .pipe(browserSync.stream());
-});
+// gulp.task('css', function() {
+//     return gulp.src('src/css/*.+(scss|sass)')
+//         .pipe(sourcemaps.init())
+//         .pipe(sass())
+//         .pipe(autoprefixer({
+//             browsers: ['last 2 versions'],
+//             cascade: false
+//         }))
+//         .pipe(csslint())
+//         .pipe(cssnano())
+//         .pipe(concat('main.css'))
+//         .pipe(plumber({errorHandler: onError}))
+//         .pipe(sourcemaps.write())
+//         .pipe(gulp.dest('dist/css'))
+//         .pipe(browserSync.stream());
+// });
 
-let onError = function(err) {
-    notify.onError({
-        title: 'Error in ' + err.plugin,
-        message: err.message
-    }) (err);
-    this.emit('end');
-}
+// let onError = function(err) {
+//     notify.onError({
+//         title: 'Error in ' + err.plugin,
+//         message: err.message
+//     }) (err);
+//     this.emit('end');
+// }
 
-gulp.task('js', function() {
-    return gulp.src('src/js/*.js')
-        .pipe(sourcemaps.init())
-        .pipe(uglify())
-        .pipe(concat('script.js'))
-        .pipe(jshint())
-        .pipe(plumber())
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest('dist/js'))
-        .pipe(browserSync.stream());
-})
-
-
-gulp.task('imagemin', function() {
-    return gulp.src('src/img/**/*')
-        .pipe(cache(imagemin({
-            interlaced: true,
-            progressive: true,
-            use: [pngquant()]
-        })))
-        .pipe(gulp.dest("dist/img"))
-        .pipe(browserSync.stream());
-});
+// gulp.task('js', function() {
+//     return gulp.src('src/js/*.js')
+//         .pipe(sourcemaps.init())
+//         .pipe(uglify())
+//         .pipe(concat('script.js'))
+//         .pipe(jshint())
+//         .pipe(plumber())
+//         .pipe(sourcemaps.write())
+//         .pipe(gulp.dest('dist/js'))
+//         .pipe(browserSync.stream());
+// })
 
 
-gulp.task('fonts', function() {
-    return gulp.src('src/fonts/**/*')
-        .pipe(gulp.dest('dist/fonts'))
-});
+// gulp.task('imagemin', function() {
+//     return gulp.src('src/img/**/*')
+//         .pipe(cache(imagemin({
+//             interlaced: true,
+//             progressive: true,
+//             use: [pngquant()]
+//         })))
+//         .pipe(gulp.dest("dist/img"))
+//         .pipe(browserSync.stream());
+// });
 
 
-gulp.task('del', function() {
-  return del.sync(['dist/**', '!dist']);
-});
+// gulp.task('fonts', function() {
+//     return gulp.src('src/fonts/**/*')
+//         .pipe(gulp.dest('dist/fonts'))
+// });
 
 
-gulp.task('clear', function() {
-    cache.clearAll()
-});
+// gulp.task('del', function() {
+//   return del.sync(['dist/**', '!dist']);
+// });
 
 
-gulp.task('default', ['del', 'pug', 'sass', 'html', 'imagemin', 'css', 'js', 'fonts']);
+// gulp.task('clear', function() {
+//     cache.clearAll()
+// });
+
+
+// gulp.task('default', ['del', 'pug', 'sass', 'html', 'imagemin', 'css', 'js', 'fonts']);

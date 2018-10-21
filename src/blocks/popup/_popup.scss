@@ -10,7 +10,7 @@
 }
 
 .popup-container {
-	width: calc(100% - 40px);
+	width: calc(100% - 20px);
 	max-width: 550px;
 	background-color: $main-bgс;
 	border-radius: 10px;
@@ -29,9 +29,8 @@
 
 	&__text {
 		display: block;
-		
 		font-size: 20px;
-		margin: 20px;
+		margin: 10px;
 	}
 
 	&__box {
@@ -39,13 +38,18 @@
 		height: 50px;
 		border: 1px solid #f50049;
 		border-radius: 25px;
-		padding-left: 20px;
+		padding-left: 10px;
 		margin-bottom: 20px;
 		font-size: 20px;
 		line-height: 50px;
+		outline: none;
 
 		&::placeholder {
 			opacity: 0.5;
+		}
+
+		&:focus {
+			border: 2px solid #5E9ED6;
 		}
 	}
 

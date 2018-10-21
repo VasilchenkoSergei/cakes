@@ -9,10 +9,6 @@
   padding-bottom: 10px;
   cursor: pointer;
 
-  &:hover {
-    @include box-hover;
-  }
-
   &__img-wrap {
     margin: 0 auto;
     width: 200px;
@@ -39,6 +35,15 @@
     font-weight: bold;
     text-align: center;
   }
+
+  & i.icon-ok {
+    display: none;
+    position: absolute;
+    font-size: 50px;
+    right: -10px;
+    bottom: 100px;
+    color: green;
+  }
 }
 
 @media (min-width: 767px) {
@@ -62,6 +67,11 @@
   &__size {
     font-size: 14px;
   }
+
+  & i.icon-ok {
+    right: -13px;
+    bottom: 40px;
+  }
 }
 }
 
@@ -84,6 +94,10 @@
   width: 320px;
   height: 360px;
 
+  &:hover {
+    @include box-hover;
+  }
+
   &:before {
     width: 250px;
     height: 330px;
@@ -101,6 +115,11 @@
 
   &__size {
     font-size: 22px;
+  }
+
+  & i.icon-ok {
+    right: -13px;
+    bottom: 100px;
   }
 }
 }

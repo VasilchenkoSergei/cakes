@@ -35,14 +35,7 @@
       transition: all 0.4s;
       padding: 5px 5px;
     }
-
-    &--active {
-      background-color: #f50049; 
-      color: #fbebea;
-      border-radius: 5px;
-      padding: 5px 5px;
-    }
-	}
+  }
 }
 
 @media (min-width: 1199px) {
