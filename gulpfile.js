@@ -21,6 +21,7 @@ const csslint = require('gulp-csslint');
 const notify = require('gulp-notify');
 const pngquant = require('gulp-pngquant');
 const htmlbeautify = require('gulp-html-beautify');
+// const spritesmith = require('gulp-spritesmith');
 
 
 

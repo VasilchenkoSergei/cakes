@@ -41,12 +41,17 @@
 }
 
 .contacts-textblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  
   &__phone,
   &__mail {
     display: inline-block;
     text-decoration: none;
     color: #000;
-    margin-bottom: 10px;
+    flex-grow: 2;
   }
   
   &__socialtext {

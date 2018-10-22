@@ -148,14 +148,9 @@ $('.main-nav__link').on('click', function() {
 // !!!!!!!!!!!!!!ВЫБОР КОМПОНЕНТОВ ПО КЛИКУ!!!!!!!!!!!!!!!!!!!!!!!
 
 $('.personal-sizebox,.personal-appearbox').on('click', function() {
-  if ($(this).attr('click-state') == 1) {
-    $(this).attr('click-state', 0)
-    $(this).css({'box-shadow':'transparent'});
-  } else {
-    $(this).attr('click-state', 1)
-    $(this).children('.icon-ok').css({'display':'block'});
-  }
-});
+  $(this).children('i').toggleClass('.active');
+  $(this).children('i').toggle();
+})
 
 
 

@@ -173,7 +173,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
-    font-size: 1em;
+    font-size: 1rem;
     border: none;
     width: 180px;
     cursor: pointer;
@@ -243,7 +243,7 @@ body {
       text-transform: uppercase;
       text-align: center;
       margin: 0 auto;
-      font-size: 1em;
+      font-size: 1rem;
       border: none;
       width: 180px;
       cursor: pointer;
@@ -443,7 +443,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
-    font-size: 1em;
+    font-size: 1rem;
     border: none;
     width: 180px;
     cursor: pointer;
@@ -717,7 +717,8 @@ body {
   border-radius: 5px;
   margin: 10px auto;
   padding-bottom: 10px;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
   .personal-appearbox__img-wrap {
     margin: 0 auto;
     width: 200px;
@@ -741,7 +742,7 @@ body {
     display: none;
     position: absolute;
     font-size: 50px;
-    right: -10px;
+    right: -20px;
     bottom: 100px;
     color: green; }
 
@@ -759,8 +760,8 @@ body {
     .personal-appearbox__size {
       font-size: 14px; }
     .personal-appearbox i.icon-ok {
-      right: -13px;
-      bottom: 40px; } }
+      right: -16px;
+      bottom: 20px; } }
 
 @media (min-width: 900px) {
   .appearbox-list {
@@ -1324,7 +1325,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
-    font-size: 1em;
+    font-size: 1rem;
     border: none;
     width: 180px;
     cursor: pointer;
@@ -1339,15 +1340,19 @@ body {
     .contacts-form__btn:focus {
       border: 2px solid #5E9ED6; }
 
-.contacts-textblock__phone, .contacts-textblock__mail {
-  display: inline-block;
-  text-decoration: none;
-  color: #000;
-  margin-bottom: 10px; }
-
-.contacts-textblock__socialtext {
-  display: inline-block;
-  margin-bottom: 15px; }
+.contacts-textblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px; }
+  .contacts-textblock__phone, .contacts-textblock__mail {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    flex-grow: 2; }
+  .contacts-textblock__socialtext {
+    display: inline-block;
+    margin-bottom: 15px; }
 
 .contacts-socials {
   width: 160px;
@@ -1561,7 +1566,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
-    font-size: 1em;
+    font-size: 1rem;
     border: none;
     width: 180px;
     cursor: pointer;
