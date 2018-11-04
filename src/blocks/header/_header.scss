@@ -11,6 +11,10 @@
     font-size: 40px;
     padding-top: 134px;
     padding-bottom: 23px;
+    left: -1000px;
+    position: relative;
+    transition: left 0.7s;
+    transition-delay: 0.5s;
   }
 
   &__descr {
@@ -20,6 +24,10 @@
     font-size: 22px;
     margin: 0 auto;
     text-align: center;
+    left: -1000px;
+    position: relative;
+    transition: left 0.7s;
+    transition-delay: 0.5s;
   }
 
   &__btn {
