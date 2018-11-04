@@ -1,3 +1,10 @@
+window.onload = function() {
+  document.querySelector('.page-header__title').style.left = '0px';
+  document.querySelector('.page-header__descr').style.left = '0px';
+  // document.querySelector('.page-header').style.backgroundPos = '0px';
+};
+
+
 $(document).ready(function(){
 
 $('.popup').hide();
@@ -151,7 +158,5 @@ $('.personal-sizebox,.personal-appearbox').on('click', function() {
   $(this).children('i').toggleClass('.active');
   $(this).children('i').toggle();
 })
-
-
 
 });
