@@ -155,14 +155,22 @@ body {
     font-family: "Playfair display", serif;
     font-size: 40px;
     padding-top: 134px;
-    padding-bottom: 23px; }
+    padding-bottom: 23px;
+    left: -600px;
+    position: relative;
+    transition: left 0.7s;
+    transition-delay: 0.5s; }
   .page-header__descr {
     font-family: "Intro Script R", sans-serif;
     display: block;
     width: 133px;
     font-size: 22px;
     margin: 0 auto;
-    text-align: center; }
+    text-align: center;
+    left: -600px;
+    position: relative;
+    transition: left 0.7s;
+    transition-delay: 0.5s; }
   .page-header__btn {
     display: block;
     color: #fff;
